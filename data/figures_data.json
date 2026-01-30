@@ -1,0 +1,5980 @@
+{
+  "rate": [
+    {
+      "percentile": 53,
+      "sci": false,
+      "rate": 0.9056
+    },
+    {
+      "percentile": 29,
+      "sci": false,
+      "rate": 0.9308
+    },
+    {
+      "percentile": 7,
+      "sci": false,
+      "rate": 0.907
+    },
+    {
+      "percentile": 17,
+      "sci": false,
+      "rate": 0.8901
+    },
+    {
+      "percentile": 54,
+      "sci": false,
+      "rate": 0.9177
+    },
+    {
+      "percentile": 46,
+      "sci": false,
+      "rate": 0.8897
+    },
+    {
+      "percentile": 18,
+      "sci": false,
+      "rate": 0.8939
+    },
+    {
+      "percentile": 34,
+      "sci": false,
+      "rate": 0.8964
+    },
+    {
+      "percentile": 59,
+      "sci": false,
+      "rate": 0.9149
+    },
+    {
+      "percentile": 99,
+      "sci": false,
+      "rate": 0.8052
+    },
+    {
+      "percentile": 20,
+      "sci": false,
+      "rate": 0.9198
+    },
+    {
+      "percentile": 96,
+      "sci": false,
+      "rate": 0.8565
+    },
+    {
+      "percentile": 31,
+      "sci": false,
+      "rate": 0.8959
+    },
+    {
+      "percentile": 10,
+      "sci": false,
+      "rate": 0.8959
+    },
+    {
+      "percentile": 90,
+      "sci": false,
+      "rate": 0.8696
+    },
+    {
+      "percentile": 21,
+      "sci": false,
+      "rate": 0.9061
+    },
+    {
+      "percentile": 32,
+      "sci": false,
+      "rate": 0.8918
+    },
+    {
+      "percentile": 51,
+      "sci": false,
+      "rate": 0.8903
+    },
+    {
+      "percentile": 78,
+      "sci": false,
+      "rate": 0.8913
+    },
+    {
+      "percentile": 11,
+      "sci": false,
+      "rate": 0.9144
+    },
+    {
+      "percentile": 57,
+      "sci": false,
+      "rate": 0.9072
+    },
+    {
+      "percentile": 44,
+      "sci": false,
+      "rate": 0.8971
+    },
+    {
+      "percentile": 92,
+      "sci": false,
+      "rate": 0.88
+    },
+    {
+      "percentile": 94,
+      "sci": false,
+      "rate": 0.8648
+    },
+    {
+      "percentile": 36,
+      "sci": false,
+      "rate": 0.8942
+    },
+    {
+      "percentile": 12,
+      "sci": false,
+      "rate": 0.9071
+    },
+    {
+      "percentile": 45,
+      "sci": false,
+      "rate": 0.9009
+    },
+    {
+      "percentile": 42,
+      "sci": false,
+      "rate": 0.9157
+    },
+    {
+      "percentile": 100,
+      "sci": false,
+      "rate": 0.2301
+    },
+    {
+      "percentile": 97,
+      "sci": true,
+      "rate": 0.8713
+    },
+    {
+      "percentile": 79,
+      "sci": true,
+      "rate": 0.92
+    },
+    {
+      "percentile": 99,
+      "sci": true,
+      "rate": 0.8374
+    },
+    {
+      "percentile": 93,
+      "sci": false,
+      "rate": 0.8694
+    },
+    {
+      "percentile": 100,
+      "sci": true,
+      "rate": 0.4022
+    },
+    {
+      "percentile": 65,
+      "sci": false,
+      "rate": 0.906
+    },
+    {
+      "percentile": 82,
+      "sci": false,
+      "rate": 0.874
+    },
+    {
+      "percentile": 87,
+      "sci": false,
+      "rate": 0.8933
+    },
+    {
+      "percentile": 83,
+      "sci": false,
+      "rate": 0.8786
+    },
+    {
+      "percentile": 77,
+      "sci": false,
+      "rate": 0.884
+    },
+    {
+      "percentile": 47,
+      "sci": false,
+      "rate": 0.9013
+    },
+    {
+      "percentile": 28,
+      "sci": false,
+      "rate": 0.913
+    },
+    {
+      "percentile": 98,
+      "sci": false,
+      "rate": 0.8329
+    },
+    {
+      "percentile": 9,
+      "sci": false,
+      "rate": 0.8969
+    },
+    {
+      "percentile": 81,
+      "sci": false,
+      "rate": 0.8833
+    },
+    {
+      "percentile": 86,
+      "sci": true,
+      "rate": 0.895
+    },
+    {
+      "percentile": 76,
+      "sci": false,
+      "rate": 0.9023
+    },
+    {
+      "percentile": 75,
+      "sci": false,
+      "rate": 0.9086
+    },
+    {
+      "percentile": 41,
+      "sci": false,
+      "rate": 0.9157
+    },
+    {
+      "percentile": 35,
+      "sci": false,
+      "rate": 0.9273
+    },
+    {
+      "percentile": 79,
+      "sci": false,
+      "rate": 0.9004
+    },
+    {
+      "percentile": 27,
+      "sci": false,
+      "rate": 0.9048
+    },
+    {
+      "percentile": 84,
+      "sci": false,
+      "rate": 0.8983
+    },
+    {
+      "percentile": 2,
+      "sci": false,
+      "rate": 0.9127
+    },
+    {
+      "percentile": 89,
+      "sci": false,
+      "rate": 0.8743
+    },
+    {
+      "percentile": 43,
+      "sci": true,
+      "rate": 0.9257
+    },
+    {
+      "percentile": 74,
+      "sci": false,
+      "rate": 0.9279
+    },
+    {
+      "percentile": 91,
+      "sci": false,
+      "rate": 0.882
+    },
+    {
+      "percentile": 95,
+      "sci": false,
+      "rate": 0.8337
+    },
+    {
+      "percentile": 69,
+      "sci": false,
+      "rate": 0.9062
+    },
+    {
+      "percentile": 97,
+      "sci": false,
+      "rate": 0.8475
+    },
+    {
+      "percentile": 38,
+      "sci": false,
+      "rate": 0.9188
+    },
+    {
+      "percentile": 24,
+      "sci": false,
+      "rate": 0.9279
+    },
+    {
+      "percentile": 68,
+      "sci": false,
+      "rate": 0.9129
+    },
+    {
+      "percentile": 16,
+      "sci": false,
+      "rate": 0.9016
+    },
+    {
+      "percentile": 22,
+      "sci": false,
+      "rate": 0.9123
+    },
+    {
+      "percentile": 52,
+      "sci": false,
+      "rate": 0.8963
+    },
+    {
+      "percentile": 3,
+      "sci": false,
+      "rate": 0.9044
+    },
+    {
+      "percentile": 88,
+      "sci": false,
+      "rate": 0.8714
+    },
+    {
+      "percentile": 19,
+      "sci": false,
+      "rate": 0.9145
+    },
+    {
+      "percentile": 56,
+      "sci": false,
+      "rate": 0.9172
+    },
+    {
+      "percentile": 6,
+      "sci": false,
+      "rate": 0.9216
+    },
+    {
+      "percentile": 13,
+      "sci": false,
+      "rate": 0.9184
+    },
+    {
+      "percentile": 58,
+      "sci": false,
+      "rate": 0.9039
+    },
+    {
+      "percentile": 67,
+      "sci": false,
+      "rate": 0.9006
+    },
+    {
+      "percentile": 49,
+      "sci": true,
+      "rate": 0.9294
+    },
+    {
+      "percentile": 64,
+      "sci": false,
+      "rate": 0.9027
+    },
+    {
+      "percentile": 33,
+      "sci": false,
+      "rate": 0.9218
+    },
+    {
+      "percentile": 15,
+      "sci": false,
+      "rate": 0.9098
+    },
+    {
+      "percentile": 70,
+      "sci": false,
+      "rate": 0.8965
+    },
+    {
+      "percentile": 61,
+      "sci": false,
+      "rate": 0.9047
+    },
+    {
+      "percentile": 5,
+      "sci": false,
+      "rate": 0.8954
+    },
+    {
+      "percentile": 45,
+      "sci": true,
+      "rate": 0.921
+    },
+    {
+      "percentile": 60,
+      "sci": false,
+      "rate": 0.8833
+    },
+    {
+      "percentile": 71,
+      "sci": false,
+      "rate": 0.92
+    },
+    {
+      "percentile": 23,
+      "sci": false,
+      "rate": 0.9212
+    },
+    {
+      "percentile": 55,
+      "sci": false,
+      "rate": 0.9098
+    },
+    {
+      "percentile": 75,
+      "sci": true,
+      "rate": 0.9299
+    },
+    {
+      "percentile": 40,
+      "sci": false,
+      "rate": 0.9345
+    },
+    {
+      "percentile": 17,
+      "sci": true,
+      "rate": 0.9174
+    },
+    {
+      "percentile": 43,
+      "sci": false,
+      "rate": 0.8907
+    },
+    {
+      "percentile": 26,
+      "sci": false,
+      "rate": 0.9139
+    },
+    {
+      "percentile": 85,
+      "sci": false,
+      "rate": 0.8868
+    },
+    {
+      "percentile": 74,
+      "sci": true,
+      "rate": 0.9069
+    },
+    {
+      "percentile": 61,
+      "sci": true,
+      "rate": 0.9201
+    },
+    {
+      "percentile": 77,
+      "sci": true,
+      "rate": 0.916
+    },
+    {
+      "percentile": 53,
+      "sci": true,
+      "rate": 0.9217
+    },
+    {
+      "percentile": 50,
+      "sci": false,
+      "rate": 0.9009
+    },
+    {
+      "percentile": 32,
+      "sci": true,
+      "rate": 0.9177
+    },
+    {
+      "percentile": 62,
+      "sci": false,
+      "rate": 0.8929
+    },
+    {
+      "percentile": 8,
+      "sci": false,
+      "rate": 0.8959
+    },
+    {
+      "percentile": 96,
+      "sci": true,
+      "rate": 0.8803
+    },
+    {
+      "percentile": 73,
+      "sci": false,
+      "rate": 0.9076
+    },
+    {
+      "percentile": 25,
+      "sci": false,
+      "rate": 0.8985
+    },
+    {
+      "percentile": 4,
+      "sci": true,
+      "rate": 0.9188
+    },
+    {
+      "percentile": 1,
+      "sci": false,
+      "rate": 0.908
+    },
+    {
+      "percentile": 86,
+      "sci": false,
+      "rate": 0.862
+    },
+    {
+      "percentile": 30,
+      "sci": false,
+      "rate": 0.9178
+    },
+    {
+      "percentile": 46,
+      "sci": true,
+      "rate": 0.9254
+    },
+    {
+      "percentile": 49,
+      "sci": false,
+      "rate": 0.9026
+    },
+    {
+      "percentile": 4,
+      "sci": false,
+      "rate": 0.8789
+    },
+    {
+      "percentile": 72,
+      "sci": false,
+      "rate": 0.9116
+    },
+    {
+      "percentile": 80,
+      "sci": false,
+      "rate": 0.8952
+    },
+    {
+      "percentile": 41,
+      "sci": true,
+      "rate": 0.9256
+    },
+    {
+      "percentile": 65,
+      "sci": true,
+      "rate": 0.9113
+    },
+    {
+      "percentile": 20,
+      "sci": true,
+      "rate": 0.9358
+    },
+    {
+      "percentile": 39,
+      "sci": false,
+      "rate": 0.9113
+    },
+    {
+      "percentile": 2,
+      "sci": true,
+      "rate": 0.9186
+    },
+    {
+      "percentile": 91,
+      "sci": true,
+      "rate": 0.893
+    },
+    {
+      "percentile": 54,
+      "sci": true,
+      "rate": 0.9298
+    },
+    {
+      "percentile": 27,
+      "sci": true,
+      "rate": 0.9248
+    },
+    {
+      "percentile": 72,
+      "sci": true,
+      "rate": 0.9175
+    },
+    {
+      "percentile": 23,
+      "sci": true,
+      "rate": 0.9286
+    },
+    {
+      "percentile": 14,
+      "sci": false,
+      "rate": 0.9062
+    },
+    {
+      "percentile": 78,
+      "sci": true,
+      "rate": 0.9182
+    },
+    {
+      "percentile": 92,
+      "sci": true,
+      "rate": 0.9088
+    },
+    {
+      "percentile": 31,
+      "sci": true,
+      "rate": 0.9329
+    },
+    {
+      "percentile": 37,
+      "sci": false,
+      "rate": 0.8795
+    },
+    {
+      "percentile": 12,
+      "sci": true,
+      "rate": 0.9137
+    },
+    {
+      "percentile": 51,
+      "sci": true,
+      "rate": 0.9283
+    },
+    {
+      "percentile": 82,
+      "sci": true,
+      "rate": 0.9145
+    },
+    {
+      "percentile": 24,
+      "sci": true,
+      "rate": 0.9275
+    },
+    {
+      "percentile": 70,
+      "sci": true,
+      "rate": 0.9182
+    },
+    {
+      "percentile": 35,
+      "sci": true,
+      "rate": 0.9199
+    },
+    {
+      "percentile": 71,
+      "sci": true,
+      "rate": 0.9105
+    },
+    {
+      "percentile": 39,
+      "sci": true,
+      "rate": 0.9214
+    },
+    {
+      "percentile": 93,
+      "sci": true,
+      "rate": 0.8811
+    },
+    {
+      "percentile": 94,
+      "sci": true,
+      "rate": 0.8912
+    },
+    {
+      "percentile": 66,
+      "sci": false,
+      "rate": 0.8817
+    },
+    {
+      "percentile": 44,
+      "sci": true,
+      "rate": 0.9351
+    },
+    {
+      "percentile": 42,
+      "sci": true,
+      "rate": 0.9338
+    },
+    {
+      "percentile": 73,
+      "sci": true,
+      "rate": 0.9171
+    },
+    {
+      "percentile": 85,
+      "sci": true,
+      "rate": 0.9028
+    },
+    {
+      "percentile": 68,
+      "sci": true,
+      "rate": 0.9255
+    },
+    {
+      "percentile": 48,
+      "sci": true,
+      "rate": 0.9293
+    },
+    {
+      "percentile": 33,
+      "sci": true,
+      "rate": 0.9364
+    },
+    {
+      "percentile": 19,
+      "sci": true,
+      "rate": 0.9204
+    },
+    {
+      "percentile": 66,
+      "sci": true,
+      "rate": 0.9104
+    },
+    {
+      "percentile": 47,
+      "sci": true,
+      "rate": 0.9255
+    },
+    {
+      "percentile": 62,
+      "sci": true,
+      "rate": 0.9223
+    },
+    {
+      "percentile": 50,
+      "sci": true,
+      "rate": 0.9283
+    },
+    {
+      "percentile": 60,
+      "sci": true,
+      "rate": 0.9231
+    },
+    {
+      "percentile": 22,
+      "sci": true,
+      "rate": 0.9252
+    },
+    {
+      "percentile": 59,
+      "sci": true,
+      "rate": 0.9212
+    },
+    {
+      "percentile": 30,
+      "sci": true,
+      "rate": 0.9241
+    },
+    {
+      "percentile": 89,
+      "sci": true,
+      "rate": 0.9007
+    },
+    {
+      "percentile": 83,
+      "sci": true,
+      "rate": 0.9129
+    },
+    {
+      "percentile": 98,
+      "sci": true,
+      "rate": 0.8627
+    },
+    {
+      "percentile": 38,
+      "sci": true,
+      "rate": 0.9276
+    },
+    {
+      "percentile": 6,
+      "sci": true,
+      "rate": 0.9221
+    },
+    {
+      "percentile": 64,
+      "sci": true,
+      "rate": 0.9265
+    },
+    {
+      "percentile": 95,
+      "sci": true,
+      "rate": 0.8786
+    },
+    {
+      "percentile": 81,
+      "sci": true,
+      "rate": 0.9257
+    },
+    {
+      "percentile": 63,
+      "sci": false,
+      "rate": 0.8922
+    },
+    {
+      "percentile": 87,
+      "sci": true,
+      "rate": 0.9008
+    },
+    {
+      "percentile": 63,
+      "sci": true,
+      "rate": 0.9167
+    },
+    {
+      "percentile": 80,
+      "sci": true,
+      "rate": 0.9033
+    },
+    {
+      "percentile": 21,
+      "sci": true,
+      "rate": 0.928
+    },
+    {
+      "percentile": 76,
+      "sci": true,
+      "rate": 0.918
+    },
+    {
+      "percentile": 67,
+      "sci": true,
+      "rate": 0.9302
+    },
+    {
+      "percentile": 5,
+      "sci": true,
+      "rate": 0.9191
+    },
+    {
+      "percentile": 36,
+      "sci": true,
+      "rate": 0.9277
+    },
+    {
+      "percentile": 52,
+      "sci": true,
+      "rate": 0.9232
+    },
+    {
+      "percentile": 25,
+      "sci": true,
+      "rate": 0.9283
+    },
+    {
+      "percentile": 69,
+      "sci": true,
+      "rate": 0.9137
+    },
+    {
+      "percentile": 16,
+      "sci": true,
+      "rate": 0.9216
+    },
+    {
+      "percentile": 34,
+      "sci": true,
+      "rate": 0.9256
+    },
+    {
+      "percentile": 29,
+      "sci": true,
+      "rate": 0.9324
+    },
+    {
+      "percentile": 90,
+      "sci": true,
+      "rate": 0.9086
+    },
+    {
+      "percentile": 8,
+      "sci": true,
+      "rate": 0.9165
+    },
+    {
+      "percentile": 48,
+      "sci": false,
+      "rate": 0.9217
+    },
+    {
+      "percentile": 7,
+      "sci": true,
+      "rate": 0.9216
+    },
+    {
+      "percentile": 37,
+      "sci": true,
+      "rate": 0.9262
+    },
+    {
+      "percentile": 56,
+      "sci": true,
+      "rate": 0.9288
+    },
+    {
+      "percentile": 58,
+      "sci": true,
+      "rate": 0.924
+    },
+    {
+      "percentile": 88,
+      "sci": true,
+      "rate": 0.8941
+    },
+    {
+      "percentile": 3,
+      "sci": true,
+      "rate": 0.9238
+    },
+    {
+      "percentile": 55,
+      "sci": true,
+      "rate": 0.9271
+    },
+    {
+      "percentile": 28,
+      "sci": true,
+      "rate": 0.9304
+    },
+    {
+      "percentile": 26,
+      "sci": true,
+      "rate": 0.925
+    },
+    {
+      "percentile": 11,
+      "sci": true,
+      "rate": 0.9176
+    },
+    {
+      "percentile": 57,
+      "sci": true,
+      "rate": 0.9252
+    },
+    {
+      "percentile": 14,
+      "sci": true,
+      "rate": 0.9219
+    },
+    {
+      "percentile": 84,
+      "sci": true,
+      "rate": 0.9055
+    },
+    {
+      "percentile": 1,
+      "sci": true,
+      "rate": 0.9281
+    },
+    {
+      "percentile": 18,
+      "sci": true,
+      "rate": 0.9251
+    },
+    {
+      "percentile": 10,
+      "sci": true,
+      "rate": 0.9258
+    },
+    {
+      "percentile": 40,
+      "sci": true,
+      "rate": 0.9243
+    },
+    {
+      "percentile": 13,
+      "sci": true,
+      "rate": 0.9283
+    },
+    {
+      "percentile": 9,
+      "sci": true,
+      "rate": 0.9206
+    },
+    {
+      "percentile": 15,
+      "sci": true,
+      "rate": 0.9211
+    }
+  ],
+  "share_foreign": [
+    {
+      "percentile": 29,
+      "sci": false,
+      "share_foreign": 0.042
+    },
+    {
+      "percentile": 34,
+      "sci": false,
+      "share_foreign": 0.0288
+    },
+    {
+      "percentile": 96,
+      "sci": false,
+      "share_foreign": 0.1544
+    },
+    {
+      "percentile": 35,
+      "sci": false,
+      "share_foreign": 0.0259
+    },
+    {
+      "percentile": 98,
+      "sci": false,
+      "share_foreign": 0.175
+    },
+    {
+      "percentile": 12,
+      "sci": false,
+      "share_foreign": 0.0211
+    },
+    {
+      "percentile": 19,
+      "sci": false,
+      "share_foreign": 0.0244
+    },
+    {
+      "percentile": 49,
+      "sci": true,
+      "share_foreign": 0.0224
+    },
+    {
+      "percentile": 2,
+      "sci": false,
+      "share_foreign": 0.0279
+    },
+    {
+      "percentile": 18,
+      "sci": false,
+      "share_foreign": 0.0451
+    },
+    {
+      "percentile": 5,
+      "sci": false,
+      "share_foreign": 0.0292
+    },
+    {
+      "percentile": 20,
+      "sci": false,
+      "share_foreign": 0.0332
+    },
+    {
+      "percentile": 1,
+      "sci": false,
+      "share_foreign": 0.024
+    },
+    {
+      "percentile": 83,
+      "sci": false,
+      "share_foreign": 0.0751
+    },
+    {
+      "percentile": 11,
+      "sci": false,
+      "share_foreign": 0.0278
+    },
+    {
+      "percentile": 46,
+      "sci": false,
+      "share_foreign": 0.0391
+    },
+    {
+      "percentile": 94,
+      "sci": false,
+      "share_foreign": 0.1332
+    },
+    {
+      "percentile": 9,
+      "sci": false,
+      "share_foreign": 0.034
+    },
+    {
+      "percentile": 65,
+      "sci": true,
+      "share_foreign": 0.0279
+    },
+    {
+      "percentile": 47,
+      "sci": false,
+      "share_foreign": 0.0326
+    },
+    {
+      "percentile": 91,
+      "sci": true,
+      "share_foreign": 0.0668
+    },
+    {
+      "percentile": 100,
+      "sci": false,
+      "share_foreign": 0.2264
+    },
+    {
+      "percentile": 72,
+      "sci": true,
+      "share_foreign": 0.0364
+    },
+    {
+      "percentile": 2,
+      "sci": true,
+      "share_foreign": 0.0148
+    },
+    {
+      "percentile": 99,
+      "sci": false,
+      "share_foreign": 0.1887
+    },
+    {
+      "percentile": 43,
+      "sci": false,
+      "share_foreign": 0.0434
+    },
+    {
+      "percentile": 88,
+      "sci": false,
+      "share_foreign": 0.0914
+    },
+    {
+      "percentile": 62,
+      "sci": false,
+      "share_foreign": 0.058
+    },
+    {
+      "percentile": 82,
+      "sci": true,
+      "share_foreign": 0.0492
+    },
+    {
+      "percentile": 93,
+      "sci": true,
+      "share_foreign": 0.0794
+    },
+    {
+      "percentile": 68,
+      "sci": true,
+      "share_foreign": 0.0349
+    },
+    {
+      "percentile": 90,
+      "sci": false,
+      "share_foreign": 0.1009
+    },
+    {
+      "percentile": 85,
+      "sci": true,
+      "share_foreign": 0.0595
+    },
+    {
+      "percentile": 89,
+      "sci": false,
+      "share_foreign": 0.0918
+    },
+    {
+      "percentile": 15,
+      "sci": false,
+      "share_foreign": 0.0214
+    },
+    {
+      "percentile": 45,
+      "sci": false,
+      "share_foreign": 0.039
+    },
+    {
+      "percentile": 79,
+      "sci": false,
+      "share_foreign": 0.0714
+    },
+    {
+      "percentile": 100,
+      "sci": true,
+      "share_foreign": 0.2414
+    },
+    {
+      "percentile": 21,
+      "sci": true,
+      "share_foreign": 0.0163
+    },
+    {
+      "percentile": 34,
+      "sci": true,
+      "share_foreign": 0.0225
+    },
+    {
+      "percentile": 57,
+      "sci": false,
+      "share_foreign": 0.0337
+    },
+    {
+      "percentile": 58,
+      "sci": false,
+      "share_foreign": 0.051
+    },
+    {
+      "percentile": 24,
+      "sci": false,
+      "share_foreign": 0.0326
+    },
+    {
+      "percentile": 92,
+      "sci": false,
+      "share_foreign": 0.1256
+    },
+    {
+      "percentile": 50,
+      "sci": false,
+      "share_foreign": 0.0314
+    },
+    {
+      "percentile": 99,
+      "sci": true,
+      "share_foreign": 0.206
+    },
+    {
+      "percentile": 48,
+      "sci": false,
+      "share_foreign": 0.043
+    },
+    {
+      "percentile": 41,
+      "sci": true,
+      "share_foreign": 0.0231
+    },
+    {
+      "percentile": 56,
+      "sci": false,
+      "share_foreign": 0.0387
+    },
+    {
+      "percentile": 83,
+      "sci": true,
+      "share_foreign": 0.0512
+    },
+    {
+      "percentile": 13,
+      "sci": false,
+      "share_foreign": 0.0366
+    },
+    {
+      "percentile": 78,
+      "sci": true,
+      "share_foreign": 0.0485
+    },
+    {
+      "percentile": 31,
+      "sci": true,
+      "share_foreign": 0.0195
+    },
+    {
+      "percentile": 66,
+      "sci": false,
+      "share_foreign": 0.057
+    },
+    {
+      "percentile": 69,
+      "sci": true,
+      "share_foreign": 0.0364
+    },
+    {
+      "percentile": 7,
+      "sci": false,
+      "share_foreign": 0.0353
+    },
+    {
+      "percentile": 53,
+      "sci": false,
+      "share_foreign": 0.0387
+    },
+    {
+      "percentile": 89,
+      "sci": true,
+      "share_foreign": 0.073
+    },
+    {
+      "percentile": 55,
+      "sci": false,
+      "share_foreign": 0.0443
+    },
+    {
+      "percentile": 53,
+      "sci": true,
+      "share_foreign": 0.0271
+    },
+    {
+      "percentile": 54,
+      "sci": false,
+      "share_foreign": 0.0417
+    },
+    {
+      "percentile": 97,
+      "sci": false,
+      "share_foreign": 0.1566
+    },
+    {
+      "percentile": 85,
+      "sci": false,
+      "share_foreign": 0.0776
+    },
+    {
+      "percentile": 54,
+      "sci": true,
+      "share_foreign": 0.0304
+    },
+    {
+      "percentile": 98,
+      "sci": true,
+      "share_foreign": 0.1788
+    },
+    {
+      "percentile": 77,
+      "sci": true,
+      "share_foreign": 0.0421
+    },
+    {
+      "percentile": 94,
+      "sci": true,
+      "share_foreign": 0.0966
+    },
+    {
+      "percentile": 92,
+      "sci": true,
+      "share_foreign": 0.0773
+    },
+    {
+      "percentile": 96,
+      "sci": true,
+      "share_foreign": 0.1199
+    },
+    {
+      "percentile": 26,
+      "sci": false,
+      "share_foreign": 0.0273
+    },
+    {
+      "percentile": 15,
+      "sci": true,
+      "share_foreign": 0.0202
+    },
+    {
+      "percentile": 22,
+      "sci": true,
+      "share_foreign": 0.0181
+    },
+    {
+      "percentile": 31,
+      "sci": false,
+      "share_foreign": 0.0307
+    },
+    {
+      "percentile": 28,
+      "sci": false,
+      "share_foreign": 0.0292
+    },
+    {
+      "percentile": 21,
+      "sci": false,
+      "share_foreign": 0.0365
+    },
+    {
+      "percentile": 17,
+      "sci": false,
+      "share_foreign": 0.0263
+    },
+    {
+      "percentile": 3,
+      "sci": true,
+      "share_foreign": 0.0162
+    },
+    {
+      "percentile": 81,
+      "sci": false,
+      "share_foreign": 0.0562
+    },
+    {
+      "percentile": 56,
+      "sci": true,
+      "share_foreign": 0.0316
+    },
+    {
+      "percentile": 17,
+      "sci": true,
+      "share_foreign": 0.0189
+    },
+    {
+      "percentile": 36,
+      "sci": false,
+      "share_foreign": 0.025
+    },
+    {
+      "percentile": 1,
+      "sci": true,
+      "share_foreign": 0.0155
+    },
+    {
+      "percentile": 43,
+      "sci": true,
+      "share_foreign": 0.0192
+    },
+    {
+      "percentile": 90,
+      "sci": true,
+      "share_foreign": 0.0737
+    },
+    {
+      "percentile": 51,
+      "sci": true,
+      "share_foreign": 0.0225
+    },
+    {
+      "percentile": 59,
+      "sci": true,
+      "share_foreign": 0.0266
+    },
+    {
+      "percentile": 73,
+      "sci": true,
+      "share_foreign": 0.0376
+    },
+    {
+      "percentile": 30,
+      "sci": true,
+      "share_foreign": 0.0206
+    },
+    {
+      "percentile": 86,
+      "sci": false,
+      "share_foreign": 0.0777
+    },
+    {
+      "percentile": 93,
+      "sci": false,
+      "share_foreign": 0.0993
+    },
+    {
+      "percentile": 61,
+      "sci": true,
+      "share_foreign": 0.033
+    },
+    {
+      "percentile": 74,
+      "sci": true,
+      "share_foreign": 0.0432
+    },
+    {
+      "percentile": 67,
+      "sci": false,
+      "share_foreign": 0.0464
+    },
+    {
+      "percentile": 81,
+      "sci": true,
+      "share_foreign": 0.0527
+    },
+    {
+      "percentile": 71,
+      "sci": true,
+      "share_foreign": 0.0368
+    },
+    {
+      "percentile": 84,
+      "sci": true,
+      "share_foreign": 0.0608
+    },
+    {
+      "percentile": 18,
+      "sci": true,
+      "share_foreign": 0.0167
+    },
+    {
+      "percentile": 73,
+      "sci": false,
+      "share_foreign": 0.0531
+    },
+    {
+      "percentile": 44,
+      "sci": false,
+      "share_foreign": 0.0298
+    },
+    {
+      "percentile": 40,
+      "sci": true,
+      "share_foreign": 0.0228
+    },
+    {
+      "percentile": 79,
+      "sci": true,
+      "share_foreign": 0.0455
+    },
+    {
+      "percentile": 48,
+      "sci": true,
+      "share_foreign": 0.0236
+    },
+    {
+      "percentile": 41,
+      "sci": false,
+      "share_foreign": 0.0359
+    },
+    {
+      "percentile": 97,
+      "sci": true,
+      "share_foreign": 0.1383
+    },
+    {
+      "percentile": 50,
+      "sci": true,
+      "share_foreign": 0.0253
+    },
+    {
+      "percentile": 58,
+      "sci": true,
+      "share_foreign": 0.0313
+    },
+    {
+      "percentile": 19,
+      "sci": true,
+      "share_foreign": 0.0165
+    },
+    {
+      "percentile": 59,
+      "sci": false,
+      "share_foreign": 0.0453
+    },
+    {
+      "percentile": 42,
+      "sci": false,
+      "share_foreign": 0.0357
+    },
+    {
+      "percentile": 88,
+      "sci": true,
+      "share_foreign": 0.0672
+    },
+    {
+      "percentile": 87,
+      "sci": false,
+      "share_foreign": 0.0856
+    },
+    {
+      "percentile": 95,
+      "sci": true,
+      "share_foreign": 0.0997
+    },
+    {
+      "percentile": 61,
+      "sci": false,
+      "share_foreign": 0.052
+    },
+    {
+      "percentile": 3,
+      "sci": false,
+      "share_foreign": 0.0284
+    },
+    {
+      "percentile": 25,
+      "sci": true,
+      "share_foreign": 0.0202
+    },
+    {
+      "percentile": 95,
+      "sci": false,
+      "share_foreign": 0.1373
+    },
+    {
+      "percentile": 25,
+      "sci": false,
+      "share_foreign": 0.039
+    },
+    {
+      "percentile": 23,
+      "sci": false,
+      "share_foreign": 0.0308
+    },
+    {
+      "percentile": 72,
+      "sci": false,
+      "share_foreign": 0.0553
+    },
+    {
+      "percentile": 64,
+      "sci": true,
+      "share_foreign": 0.0283
+    },
+    {
+      "percentile": 64,
+      "sci": false,
+      "share_foreign": 0.045
+    },
+    {
+      "percentile": 76,
+      "sci": true,
+      "share_foreign": 0.0377
+    },
+    {
+      "percentile": 57,
+      "sci": true,
+      "share_foreign": 0.0261
+    },
+    {
+      "percentile": 60,
+      "sci": false,
+      "share_foreign": 0.0479
+    },
+    {
+      "percentile": 38,
+      "sci": true,
+      "share_foreign": 0.0192
+    },
+    {
+      "percentile": 63,
+      "sci": false,
+      "share_foreign": 0.0471
+    },
+    {
+      "percentile": 32,
+      "sci": false,
+      "share_foreign": 0.0345
+    },
+    {
+      "percentile": 78,
+      "sci": false,
+      "share_foreign": 0.0792
+    },
+    {
+      "percentile": 14,
+      "sci": true,
+      "share_foreign": 0.0163
+    },
+    {
+      "percentile": 35,
+      "sci": true,
+      "share_foreign": 0.0204
+    },
+    {
+      "percentile": 49,
+      "sci": false,
+      "share_foreign": 0.0356
+    },
+    {
+      "percentile": 66,
+      "sci": true,
+      "share_foreign": 0.0343
+    },
+    {
+      "percentile": 68,
+      "sci": false,
+      "share_foreign": 0.0563
+    },
+    {
+      "percentile": 6,
+      "sci": true,
+      "share_foreign": 0.0133
+    },
+    {
+      "percentile": 75,
+      "sci": true,
+      "share_foreign": 0.0432
+    },
+    {
+      "percentile": 80,
+      "sci": true,
+      "share_foreign": 0.046
+    },
+    {
+      "percentile": 33,
+      "sci": false,
+      "share_foreign": 0.0377
+    },
+    {
+      "percentile": 8,
+      "sci": false,
+      "share_foreign": 0.0231
+    },
+    {
+      "percentile": 77,
+      "sci": false,
+      "share_foreign": 0.0721
+    },
+    {
+      "percentile": 86,
+      "sci": true,
+      "share_foreign": 0.0639
+    },
+    {
+      "percentile": 27,
+      "sci": true,
+      "share_foreign": 0.0196
+    },
+    {
+      "percentile": 13,
+      "sci": true,
+      "share_foreign": 0.0176
+    },
+    {
+      "percentile": 47,
+      "sci": true,
+      "share_foreign": 0.0246
+    },
+    {
+      "percentile": 10,
+      "sci": true,
+      "share_foreign": 0.017
+    },
+    {
+      "percentile": 26,
+      "sci": true,
+      "share_foreign": 0.017
+    },
+    {
+      "percentile": 55,
+      "sci": true,
+      "share_foreign": 0.0254
+    },
+    {
+      "percentile": 76,
+      "sci": false,
+      "share_foreign": 0.0536
+    },
+    {
+      "percentile": 28,
+      "sci": true,
+      "share_foreign": 0.0218
+    },
+    {
+      "percentile": 80,
+      "sci": false,
+      "share_foreign": 0.0637
+    },
+    {
+      "percentile": 14,
+      "sci": false,
+      "share_foreign": 0.0315
+    },
+    {
+      "percentile": 75,
+      "sci": false,
+      "share_foreign": 0.0579
+    },
+    {
+      "percentile": 84,
+      "sci": false,
+      "share_foreign": 0.0744
+    },
+    {
+      "percentile": 33,
+      "sci": true,
+      "share_foreign": 0.0189
+    },
+    {
+      "percentile": 23,
+      "sci": true,
+      "share_foreign": 0.0167
+    },
+    {
+      "percentile": 63,
+      "sci": true,
+      "share_foreign": 0.0273
+    },
+    {
+      "percentile": 8,
+      "sci": true,
+      "share_foreign": 0.0152
+    },
+    {
+      "percentile": 38,
+      "sci": false,
+      "share_foreign": 0.0386
+    },
+    {
+      "percentile": 11,
+      "sci": true,
+      "share_foreign": 0.0193
+    },
+    {
+      "percentile": 37,
+      "sci": false,
+      "share_foreign": 0.032
+    },
+    {
+      "percentile": 6,
+      "sci": false,
+      "share_foreign": 0.0218
+    },
+    {
+      "percentile": 91,
+      "sci": false,
+      "share_foreign": 0.1029
+    },
+    {
+      "percentile": 87,
+      "sci": true,
+      "share_foreign": 0.0629
+    },
+    {
+      "percentile": 62,
+      "sci": true,
+      "share_foreign": 0.0248
+    },
+    {
+      "percentile": 67,
+      "sci": true,
+      "share_foreign": 0.0308
+    },
+    {
+      "percentile": 52,
+      "sci": false,
+      "share_foreign": 0.0423
+    },
+    {
+      "percentile": 70,
+      "sci": true,
+      "share_foreign": 0.0427
+    },
+    {
+      "percentile": 24,
+      "sci": true,
+      "share_foreign": 0.0177
+    },
+    {
+      "percentile": 12,
+      "sci": true,
+      "share_foreign": 0.0172
+    },
+    {
+      "percentile": 51,
+      "sci": false,
+      "share_foreign": 0.0451
+    },
+    {
+      "percentile": 10,
+      "sci": false,
+      "share_foreign": 0.0241
+    },
+    {
+      "percentile": 74,
+      "sci": false,
+      "share_foreign": 0.0654
+    },
+    {
+      "percentile": 71,
+      "sci": false,
+      "share_foreign": 0.0698
+    },
+    {
+      "percentile": 39,
+      "sci": true,
+      "share_foreign": 0.0252
+    },
+    {
+      "percentile": 20,
+      "sci": true,
+      "share_foreign": 0.0218
+    },
+    {
+      "percentile": 4,
+      "sci": true,
+      "share_foreign": 0.0141
+    },
+    {
+      "percentile": 5,
+      "sci": true,
+      "share_foreign": 0.0156
+    },
+    {
+      "percentile": 22,
+      "sci": false,
+      "share_foreign": 0.0265
+    },
+    {
+      "percentile": 65,
+      "sci": false,
+      "share_foreign": 0.0437
+    },
+    {
+      "percentile": 7,
+      "sci": true,
+      "share_foreign": 0.0171
+    },
+    {
+      "percentile": 44,
+      "sci": true,
+      "share_foreign": 0.0199
+    },
+    {
+      "percentile": 32,
+      "sci": true,
+      "share_foreign": 0.0197
+    },
+    {
+      "percentile": 16,
+      "sci": true,
+      "share_foreign": 0.0165
+    },
+    {
+      "percentile": 9,
+      "sci": true,
+      "share_foreign": 0.013
+    },
+    {
+      "percentile": 16,
+      "sci": false,
+      "share_foreign": 0.0263
+    },
+    {
+      "percentile": 46,
+      "sci": true,
+      "share_foreign": 0.0263
+    },
+    {
+      "percentile": 39,
+      "sci": false,
+      "share_foreign": 0.0299
+    },
+    {
+      "percentile": 60,
+      "sci": true,
+      "share_foreign": 0.0278
+    },
+    {
+      "percentile": 29,
+      "sci": true,
+      "share_foreign": 0.022
+    },
+    {
+      "percentile": 82,
+      "sci": false,
+      "share_foreign": 0.0707
+    },
+    {
+      "percentile": 37,
+      "sci": true,
+      "share_foreign": 0.0202
+    },
+    {
+      "percentile": 69,
+      "sci": false,
+      "share_foreign": 0.0513
+    },
+    {
+      "percentile": 36,
+      "sci": true,
+      "share_foreign": 0.0203
+    },
+    {
+      "percentile": 42,
+      "sci": true,
+      "share_foreign": 0.0294
+    },
+    {
+      "percentile": 70,
+      "sci": false,
+      "share_foreign": 0.0454
+    },
+    {
+      "percentile": 52,
+      "sci": true,
+      "share_foreign": 0.0256
+    },
+    {
+      "percentile": 45,
+      "sci": true,
+      "share_foreign": 0.0231
+    },
+    {
+      "percentile": 27,
+      "sci": false,
+      "share_foreign": 0.0339
+    },
+    {
+      "percentile": 4,
+      "sci": false,
+      "share_foreign": 0.0304
+    },
+    {
+      "percentile": 30,
+      "sci": false,
+      "share_foreign": 0.0325
+    },
+    {
+      "percentile": 40,
+      "sci": false,
+      "share_foreign": 0.039
+    }
+  ],
+  "detention": [
+    {
+      "percentile": 53,
+      "sci": false,
+      "share_detention_ind": 0.1031
+    },
+    {
+      "percentile": 59,
+      "sci": false,
+      "share_detention_ind": 0.0825
+    },
+    {
+      "percentile": 31,
+      "sci": false,
+      "share_detention_ind": 0.0791
+    },
+    {
+      "percentile": 96,
+      "sci": false,
+      "share_detention_ind": 0.1486
+    },
+    {
+      "percentile": 90,
+      "sci": false,
+      "share_detention_ind": 0.1221
+    },
+    {
+      "percentile": 21,
+      "sci": false,
+      "share_detention_ind": 0.0825
+    },
+    {
+      "percentile": 57,
+      "sci": false,
+      "share_detention_ind": 0.0882
+    },
+    {
+      "percentile": 36,
+      "sci": false,
+      "share_detention_ind": 0.0677
+    },
+    {
+      "percentile": 79,
+      "sci": true,
+      "share_detention_ind": 0.0571
+    },
+    {
+      "percentile": 93,
+      "sci": false,
+      "share_detention_ind": 0.1352
+    },
+    {
+      "percentile": 87,
+      "sci": false,
+      "share_detention_ind": 0.1008
+    },
+    {
+      "percentile": 83,
+      "sci": false,
+      "share_detention_ind": 0.0869
+    },
+    {
+      "percentile": 77,
+      "sci": false,
+      "share_detention_ind": 0.0931
+    },
+    {
+      "percentile": 47,
+      "sci": false,
+      "share_detention_ind": 0.0948
+    },
+    {
+      "percentile": 9,
+      "sci": false,
+      "share_detention_ind": 0.0761
+    },
+    {
+      "percentile": 35,
+      "sci": false,
+      "share_detention_ind": 0.0868
+    },
+    {
+      "percentile": 91,
+      "sci": false,
+      "share_detention_ind": 0.121
+    },
+    {
+      "percentile": 81,
+      "sci": false,
+      "share_detention_ind": 0.0815
+    },
+    {
+      "percentile": 19,
+      "sci": false,
+      "share_detention_ind": 0.0732
+    },
+    {
+      "percentile": 24,
+      "sci": false,
+      "share_detention_ind": 0.0668
+    },
+    {
+      "percentile": 12,
+      "sci": false,
+      "share_detention_ind": 0.0865
+    },
+    {
+      "percentile": 13,
+      "sci": false,
+      "share_detention_ind": 0.0708
+    },
+    {
+      "percentile": 65,
+      "sci": false,
+      "share_detention_ind": 0.0892
+    },
+    {
+      "percentile": 15,
+      "sci": false,
+      "share_detention_ind": 0.0827
+    },
+    {
+      "percentile": 41,
+      "sci": false,
+      "share_detention_ind": 0.0785
+    },
+    {
+      "percentile": 43,
+      "sci": true,
+      "share_detention_ind": 0.0449
+    },
+    {
+      "percentile": 44,
+      "sci": false,
+      "share_detention_ind": 0.0805
+    },
+    {
+      "percentile": 60,
+      "sci": false,
+      "share_detention_ind": 0.0882
+    },
+    {
+      "percentile": 22,
+      "sci": false,
+      "share_detention_ind": 0.0786
+    },
+    {
+      "percentile": 54,
+      "sci": false,
+      "share_detention_ind": 0.0854
+    },
+    {
+      "percentile": 70,
+      "sci": false,
+      "share_detention_ind": 0.0749
+    },
+    {
+      "percentile": 95,
+      "sci": false,
+      "share_detention_ind": 0.14
+    },
+    {
+      "percentile": 26,
+      "sci": false,
+      "share_detention_ind": 0.0852
+    },
+    {
+      "percentile": 5,
+      "sci": false,
+      "share_detention_ind": 0.0816
+    },
+    {
+      "percentile": 32,
+      "sci": true,
+      "share_detention_ind": 0.041
+    },
+    {
+      "percentile": 73,
+      "sci": false,
+      "share_detention_ind": 0.0765
+    },
+    {
+      "percentile": 4,
+      "sci": true,
+      "share_detention_ind": 0.0298
+    },
+    {
+      "percentile": 1,
+      "sci": false,
+      "share_detention_ind": 0.0589
+    },
+    {
+      "percentile": 7,
+      "sci": false,
+      "share_detention_ind": 0.0999
+    },
+    {
+      "percentile": 43,
+      "sci": false,
+      "share_detention_ind": 0.0882
+    },
+    {
+      "percentile": 20,
+      "sci": false,
+      "share_detention_ind": 0.0856
+    },
+    {
+      "percentile": 11,
+      "sci": false,
+      "share_detention_ind": 0.0696
+    },
+    {
+      "percentile": 64,
+      "sci": false,
+      "share_detention_ind": 0.0894
+    },
+    {
+      "percentile": 79,
+      "sci": false,
+      "share_detention_ind": 0.0945
+    },
+    {
+      "percentile": 25,
+      "sci": false,
+      "share_detention_ind": 0.0709
+    },
+    {
+      "percentile": 99,
+      "sci": false,
+      "share_detention_ind": 0.2223
+    },
+    {
+      "percentile": 94,
+      "sci": false,
+      "share_detention_ind": 0.1378
+    },
+    {
+      "percentile": 54,
+      "sci": true,
+      "share_detention_ind": 0.0431
+    },
+    {
+      "percentile": 10,
+      "sci": false,
+      "share_detention_ind": 0.0838
+    },
+    {
+      "percentile": 14,
+      "sci": false,
+      "share_detention_ind": 0.0939
+    },
+    {
+      "percentile": 51,
+      "sci": false,
+      "share_detention_ind": 0.086
+    },
+    {
+      "percentile": 31,
+      "sci": true,
+      "share_detention_ind": 0.04
+    },
+    {
+      "percentile": 28,
+      "sci": false,
+      "share_detention_ind": 0.0878
+    },
+    {
+      "percentile": 42,
+      "sci": false,
+      "share_detention_ind": 0.0652
+    },
+    {
+      "percentile": 100,
+      "sci": false,
+      "share_detention_ind": 0.3466
+    },
+    {
+      "percentile": 82,
+      "sci": true,
+      "share_detention_ind": 0.0648
+    },
+    {
+      "percentile": 24,
+      "sci": true,
+      "share_detention_ind": 0.0347
+    },
+    {
+      "percentile": 96,
+      "sci": true,
+      "share_detention_ind": 0.0999
+    },
+    {
+      "percentile": 4,
+      "sci": false,
+      "share_detention_ind": 0.0728
+    },
+    {
+      "percentile": 8,
+      "sci": false,
+      "share_detention_ind": 0.0761
+    },
+    {
+      "percentile": 82,
+      "sci": false,
+      "share_detention_ind": 0.1026
+    },
+    {
+      "percentile": 68,
+      "sci": true,
+      "share_detention_ind": 0.051
+    },
+    {
+      "percentile": 40,
+      "sci": false,
+      "share_detention_ind": 0.0996
+    },
+    {
+      "percentile": 97,
+      "sci": false,
+      "share_detention_ind": 0.1741
+    },
+    {
+      "percentile": 78,
+      "sci": false,
+      "share_detention_ind": 0.0889
+    },
+    {
+      "percentile": 47,
+      "sci": true,
+      "share_detention_ind": 0.0431
+    },
+    {
+      "percentile": 72,
+      "sci": false,
+      "share_detention_ind": 0.0929
+    },
+    {
+      "percentile": 32,
+      "sci": false,
+      "share_detention_ind": 0.0847
+    },
+    {
+      "percentile": 99,
+      "sci": true,
+      "share_detention_ind": 0.1447
+    },
+    {
+      "percentile": 59,
+      "sci": true,
+      "share_detention_ind": 0.0488
+    },
+    {
+      "percentile": 27,
+      "sci": true,
+      "share_detention_ind": 0.0416
+    },
+    {
+      "percentile": 100,
+      "sci": true,
+      "share_detention_ind": 0.2042
+    },
+    {
+      "percentile": 61,
+      "sci": false,
+      "share_detention_ind": 0.0622
+    },
+    {
+      "percentile": 18,
+      "sci": false,
+      "share_detention_ind": 0.0896
+    },
+    {
+      "percentile": 63,
+      "sci": true,
+      "share_detention_ind": 0.0546
+    },
+    {
+      "percentile": 36,
+      "sci": true,
+      "share_detention_ind": 0.039
+    },
+    {
+      "percentile": 39,
+      "sci": false,
+      "share_detention_ind": 0.075
+    },
+    {
+      "percentile": 69,
+      "sci": false,
+      "share_detention_ind": 0.08
+    },
+    {
+      "percentile": 3,
+      "sci": false,
+      "share_detention_ind": 0.0869
+    },
+    {
+      "percentile": 58,
+      "sci": false,
+      "share_detention_ind": 0.0761
+    },
+    {
+      "percentile": 50,
+      "sci": false,
+      "share_detention_ind": 0.081
+    },
+    {
+      "percentile": 87,
+      "sci": true,
+      "share_detention_ind": 0.0701
+    },
+    {
+      "percentile": 92,
+      "sci": true,
+      "share_detention_ind": 0.0821
+    },
+    {
+      "percentile": 48,
+      "sci": false,
+      "share_detention_ind": 0.0963
+    },
+    {
+      "percentile": 74,
+      "sci": true,
+      "share_detention_ind": 0.0544
+    },
+    {
+      "percentile": 30,
+      "sci": true,
+      "share_detention_ind": 0.0377
+    },
+    {
+      "percentile": 30,
+      "sci": false,
+      "share_detention_ind": 0.0899
+    },
+    {
+      "percentile": 42,
+      "sci": true,
+      "share_detention_ind": 0.0425
+    },
+    {
+      "percentile": 72,
+      "sci": true,
+      "share_detention_ind": 0.0504
+    },
+    {
+      "percentile": 89,
+      "sci": false,
+      "share_detention_ind": 0.1044
+    },
+    {
+      "percentile": 98,
+      "sci": false,
+      "share_detention_ind": 0.1745
+    },
+    {
+      "percentile": 66,
+      "sci": false,
+      "share_detention_ind": 0.0876
+    },
+    {
+      "percentile": 63,
+      "sci": false,
+      "share_detention_ind": 0.055
+    },
+    {
+      "percentile": 75,
+      "sci": true,
+      "share_detention_ind": 0.0534
+    },
+    {
+      "percentile": 93,
+      "sci": true,
+      "share_detention_ind": 0.0859
+    },
+    {
+      "percentile": 2,
+      "sci": false,
+      "share_detention_ind": 0.0804
+    },
+    {
+      "percentile": 95,
+      "sci": true,
+      "share_detention_ind": 0.0894
+    },
+    {
+      "percentile": 88,
+      "sci": false,
+      "share_detention_ind": 0.0985
+    },
+    {
+      "percentile": 76,
+      "sci": true,
+      "share_detention_ind": 0.0689
+    },
+    {
+      "percentile": 48,
+      "sci": true,
+      "share_detention_ind": 0.0392
+    },
+    {
+      "percentile": 52,
+      "sci": false,
+      "share_detention_ind": 0.0784
+    },
+    {
+      "percentile": 51,
+      "sci": true,
+      "share_detention_ind": 0.0512
+    },
+    {
+      "percentile": 55,
+      "sci": false,
+      "share_detention_ind": 0.0967
+    },
+    {
+      "percentile": 85,
+      "sci": false,
+      "share_detention_ind": 0.0955
+    },
+    {
+      "percentile": 18,
+      "sci": true,
+      "share_detention_ind": 0.0362
+    },
+    {
+      "percentile": 91,
+      "sci": true,
+      "share_detention_ind": 0.0734
+    },
+    {
+      "percentile": 49,
+      "sci": true,
+      "share_detention_ind": 0.0424
+    },
+    {
+      "percentile": 12,
+      "sci": true,
+      "share_detention_ind": 0.0352
+    },
+    {
+      "percentile": 85,
+      "sci": true,
+      "share_detention_ind": 0.0692
+    },
+    {
+      "percentile": 73,
+      "sci": true,
+      "share_detention_ind": 0.0606
+    },
+    {
+      "percentile": 40,
+      "sci": true,
+      "share_detention_ind": 0.0489
+    },
+    {
+      "percentile": 56,
+      "sci": true,
+      "share_detention_ind": 0.0475
+    },
+    {
+      "percentile": 38,
+      "sci": false,
+      "share_detention_ind": 0.0728
+    },
+    {
+      "percentile": 74,
+      "sci": false,
+      "share_detention_ind": 0.0829
+    },
+    {
+      "percentile": 84,
+      "sci": true,
+      "share_detention_ind": 0.0681
+    },
+    {
+      "percentile": 23,
+      "sci": false,
+      "share_detention_ind": 0.0886
+    },
+    {
+      "percentile": 20,
+      "sci": true,
+      "share_detention_ind": 0.0355
+    },
+    {
+      "percentile": 92,
+      "sci": false,
+      "share_detention_ind": 0.1363
+    },
+    {
+      "percentile": 15,
+      "sci": true,
+      "share_detention_ind": 0.0369
+    },
+    {
+      "percentile": 64,
+      "sci": true,
+      "share_detention_ind": 0.051
+    },
+    {
+      "percentile": 33,
+      "sci": true,
+      "share_detention_ind": 0.0391
+    },
+    {
+      "percentile": 97,
+      "sci": true,
+      "share_detention_ind": 0.1044
+    },
+    {
+      "percentile": 68,
+      "sci": false,
+      "share_detention_ind": 0.0782
+    },
+    {
+      "percentile": 6,
+      "sci": true,
+      "share_detention_ind": 0.0305
+    },
+    {
+      "percentile": 19,
+      "sci": true,
+      "share_detention_ind": 0.0369
+    },
+    {
+      "percentile": 37,
+      "sci": false,
+      "share_detention_ind": 0.0868
+    },
+    {
+      "percentile": 61,
+      "sci": true,
+      "share_detention_ind": 0.0521
+    },
+    {
+      "percentile": 78,
+      "sci": true,
+      "share_detention_ind": 0.0607
+    },
+    {
+      "percentile": 56,
+      "sci": false,
+      "share_detention_ind": 0.0877
+    },
+    {
+      "percentile": 45,
+      "sci": false,
+      "share_detention_ind": 0.0701
+    },
+    {
+      "percentile": 2,
+      "sci": true,
+      "share_detention_ind": 0.0334
+    },
+    {
+      "percentile": 49,
+      "sci": false,
+      "share_detention_ind": 0.0775
+    },
+    {
+      "percentile": 35,
+      "sci": true,
+      "share_detention_ind": 0.041
+    },
+    {
+      "percentile": 83,
+      "sci": true,
+      "share_detention_ind": 0.0579
+    },
+    {
+      "percentile": 88,
+      "sci": true,
+      "share_detention_ind": 0.0743
+    },
+    {
+      "percentile": 25,
+      "sci": true,
+      "share_detention_ind": 0.0443
+    },
+    {
+      "percentile": 89,
+      "sci": true,
+      "share_detention_ind": 0.0772
+    },
+    {
+      "percentile": 67,
+      "sci": true,
+      "share_detention_ind": 0.0485
+    },
+    {
+      "percentile": 33,
+      "sci": false,
+      "share_detention_ind": 0.0828
+    },
+    {
+      "percentile": 86,
+      "sci": false,
+      "share_detention_ind": 0.1052
+    },
+    {
+      "percentile": 71,
+      "sci": true,
+      "share_detention_ind": 0.0468
+    },
+    {
+      "percentile": 41,
+      "sci": true,
+      "share_detention_ind": 0.0429
+    },
+    {
+      "percentile": 13,
+      "sci": true,
+      "share_detention_ind": 0.0354
+    },
+    {
+      "percentile": 6,
+      "sci": false,
+      "share_detention_ind": 0.068
+    },
+    {
+      "percentile": 94,
+      "sci": true,
+      "share_detention_ind": 0.0902
+    },
+    {
+      "percentile": 37,
+      "sci": true,
+      "share_detention_ind": 0.04
+    },
+    {
+      "percentile": 50,
+      "sci": true,
+      "share_detention_ind": 0.0497
+    },
+    {
+      "percentile": 27,
+      "sci": false,
+      "share_detention_ind": 0.0859
+    },
+    {
+      "percentile": 45,
+      "sci": true,
+      "share_detention_ind": 0.0471
+    },
+    {
+      "percentile": 17,
+      "sci": false,
+      "share_detention_ind": 0.0653
+    },
+    {
+      "percentile": 23,
+      "sci": true,
+      "share_detention_ind": 0.0396
+    },
+    {
+      "percentile": 86,
+      "sci": true,
+      "share_detention_ind": 0.0631
+    },
+    {
+      "percentile": 70,
+      "sci": true,
+      "share_detention_ind": 0.0506
+    },
+    {
+      "percentile": 29,
+      "sci": true,
+      "share_detention_ind": 0.0495
+    },
+    {
+      "percentile": 65,
+      "sci": true,
+      "share_detention_ind": 0.0513
+    },
+    {
+      "percentile": 53,
+      "sci": true,
+      "share_detention_ind": 0.0494
+    },
+    {
+      "percentile": 26,
+      "sci": true,
+      "share_detention_ind": 0.038
+    },
+    {
+      "percentile": 75,
+      "sci": false,
+      "share_detention_ind": 0.0959
+    },
+    {
+      "percentile": 14,
+      "sci": true,
+      "share_detention_ind": 0.039
+    },
+    {
+      "percentile": 98,
+      "sci": true,
+      "share_detention_ind": 0.1189
+    },
+    {
+      "percentile": 80,
+      "sci": false,
+      "share_detention_ind": 0.0906
+    },
+    {
+      "percentile": 10,
+      "sci": true,
+      "share_detention_ind": 0.0302
+    },
+    {
+      "percentile": 55,
+      "sci": true,
+      "share_detention_ind": 0.0458
+    },
+    {
+      "percentile": 1,
+      "sci": true,
+      "share_detention_ind": 0.0381
+    },
+    {
+      "percentile": 62,
+      "sci": true,
+      "share_detention_ind": 0.0519
+    },
+    {
+      "percentile": 66,
+      "sci": true,
+      "share_detention_ind": 0.0538
+    },
+    {
+      "percentile": 22,
+      "sci": true,
+      "share_detention_ind": 0.0372
+    },
+    {
+      "percentile": 80,
+      "sci": true,
+      "share_detention_ind": 0.0558
+    },
+    {
+      "percentile": 76,
+      "sci": false,
+      "share_detention_ind": 0.0919
+    },
+    {
+      "percentile": 71,
+      "sci": false,
+      "share_detention_ind": 0.105
+    },
+    {
+      "percentile": 46,
+      "sci": false,
+      "share_detention_ind": 0.0864
+    },
+    {
+      "percentile": 84,
+      "sci": false,
+      "share_detention_ind": 0.0944
+    },
+    {
+      "percentile": 46,
+      "sci": true,
+      "share_detention_ind": 0.0516
+    },
+    {
+      "percentile": 90,
+      "sci": true,
+      "share_detention_ind": 0.0821
+    },
+    {
+      "percentile": 60,
+      "sci": true,
+      "share_detention_ind": 0.0512
+    },
+    {
+      "percentile": 8,
+      "sci": true,
+      "share_detention_ind": 0.0332
+    },
+    {
+      "percentile": 38,
+      "sci": true,
+      "share_detention_ind": 0.0428
+    },
+    {
+      "percentile": 21,
+      "sci": true,
+      "share_detention_ind": 0.034
+    },
+    {
+      "percentile": 34,
+      "sci": false,
+      "share_detention_ind": 0.0793
+    },
+    {
+      "percentile": 16,
+      "sci": true,
+      "share_detention_ind": 0.0338
+    },
+    {
+      "percentile": 3,
+      "sci": true,
+      "share_detention_ind": 0.0308
+    },
+    {
+      "percentile": 69,
+      "sci": true,
+      "share_detention_ind": 0.0522
+    },
+    {
+      "percentile": 34,
+      "sci": true,
+      "share_detention_ind": 0.0416
+    },
+    {
+      "percentile": 29,
+      "sci": false,
+      "share_detention_ind": 0.0911
+    },
+    {
+      "percentile": 44,
+      "sci": true,
+      "share_detention_ind": 0.0465
+    },
+    {
+      "percentile": 81,
+      "sci": true,
+      "share_detention_ind": 0.0685
+    },
+    {
+      "percentile": 39,
+      "sci": true,
+      "share_detention_ind": 0.0412
+    },
+    {
+      "percentile": 9,
+      "sci": true,
+      "share_detention_ind": 0.0322
+    },
+    {
+      "percentile": 17,
+      "sci": true,
+      "share_detention_ind": 0.0379
+    },
+    {
+      "percentile": 5,
+      "sci": true,
+      "share_detention_ind": 0.0367
+    },
+    {
+      "percentile": 11,
+      "sci": true,
+      "share_detention_ind": 0.0344
+    },
+    {
+      "percentile": 52,
+      "sci": true,
+      "share_detention_ind": 0.0514
+    },
+    {
+      "percentile": 58,
+      "sci": true,
+      "share_detention_ind": 0.0453
+    },
+    {
+      "percentile": 7,
+      "sci": true,
+      "share_detention_ind": 0.0371
+    },
+    {
+      "percentile": 67,
+      "sci": false,
+      "share_detention_ind": 0.0888
+    },
+    {
+      "percentile": 57,
+      "sci": true,
+      "share_detention_ind": 0.051
+    },
+    {
+      "percentile": 28,
+      "sci": true,
+      "share_detention_ind": 0.0377
+    },
+    {
+      "percentile": 77,
+      "sci": true,
+      "share_detention_ind": 0.0633
+    },
+    {
+      "percentile": 16,
+      "sci": false,
+      "share_detention_ind": 0.0644
+    },
+    {
+      "percentile": 62,
+      "sci": false,
+      "share_detention_ind": 0.0863
+    }
+  ],
+  "percentile_region": [
+    {
+      "percentile": 36,
+      "region": "Asia",
+      "share": 0.0015
+    },
+    {
+      "percentile": 95,
+      "region": "Asia",
+      "share": 0.0033
+    },
+    {
+      "percentile": 35,
+      "region": "Asia",
+      "share": 0.0017
+    },
+    {
+      "percentile": 27,
+      "region": "Asia",
+      "share": 0.0004
+    },
+    {
+      "percentile": 6,
+      "region": "Asia",
+      "share": 0.0012
+    },
+    {
+      "percentile": 100,
+      "region": "Africa",
+      "share": 0.0055
+    },
+    {
+      "percentile": 66,
+      "region": "Africa",
+      "share": 0.0022
+    },
+    {
+      "percentile": 42,
+      "region": "Africa",
+      "share": 0.0021
+    },
+    {
+      "percentile": 72,
+      "region": "Africa",
+      "share": 0.0014
+    },
+    {
+      "percentile": 84,
+      "region": "Africa",
+      "share": 0.0035
+    },
+    {
+      "percentile": 89,
+      "region": "Africa",
+      "share": 0.0035
+    },
+    {
+      "percentile": 65,
+      "region": "Africa",
+      "share": 0.0022
+    },
+    {
+      "percentile": 30,
+      "region": "Africa",
+      "share": 0.0008
+    },
+    {
+      "percentile": 80,
+      "region": "Africa",
+      "share": 0.0032
+    },
+    {
+      "percentile": 8,
+      "region": "Africa",
+      "share": 0.0008
+    },
+    {
+      "percentile": 90,
+      "region": "Africa",
+      "share": 0.0026
+    },
+    {
+      "percentile": 96,
+      "region": "Africa",
+      "share": 0.0067
+    },
+    {
+      "percentile": 86,
+      "region": "Africa",
+      "share": 0.003
+    },
+    {
+      "percentile": 47,
+      "region": "Africa",
+      "share": 0.0025
+    },
+    {
+      "percentile": 2,
+      "region": "Europe",
+      "share": 0.0126
+    },
+    {
+      "percentile": 60,
+      "region": "Europe",
+      "share": 0.0225
+    },
+    {
+      "percentile": 66,
+      "region": "Europe",
+      "share": 0.0279
+    },
+    {
+      "percentile": 23,
+      "region": "Europe",
+      "share": 0.0147
+    },
+    {
+      "percentile": 91,
+      "region": "Europe",
+      "share": 0.0499
+    },
+    {
+      "percentile": 79,
+      "region": "Europe",
+      "share": 0.0336
+    },
+    {
+      "percentile": 39,
+      "region": "Europe",
+      "share": 0.0179
+    },
+    {
+      "percentile": 73,
+      "region": "Europe",
+      "share": 0.0251
+    },
+    {
+      "percentile": 96,
+      "region": "Europe",
+      "share": 0.082
+    },
+    {
+      "percentile": 82,
+      "region": "Europe",
+      "share": 0.0369
+    },
+    {
+      "percentile": 61,
+      "region": "Europe",
+      "share": 0.025
+    },
+    {
+      "percentile": 71,
+      "region": "Europe",
+      "share": 0.0302
+    },
+    {
+      "percentile": 29,
+      "region": "Europe",
+      "share": 0.0186
+    },
+    {
+      "percentile": 40,
+      "region": "Europe",
+      "share": 0.0184
+    },
+    {
+      "percentile": 80,
+      "region": "Europe",
+      "share": 0.0343
+    },
+    {
+      "percentile": 7,
+      "region": "Europe",
+      "share": 0.0158
+    },
+    {
+      "percentile": 85,
+      "region": "Europe",
+      "share": 0.0413
+    },
+    {
+      "percentile": 45,
+      "region": "Europe",
+      "share": 0.02
+    },
+    {
+      "percentile": 53,
+      "region": "Europe",
+      "share": 0.0194
+    },
+    {
+      "percentile": 69,
+      "region": "Europe",
+      "share": 0.0256
+    },
+    {
+      "percentile": 90,
+      "region": "Europe",
+      "share": 0.0573
+    },
+    {
+      "percentile": 88,
+      "region": "Europe",
+      "share": 0.047
+    },
+    {
+      "percentile": 5,
+      "region": "Europe",
+      "share": 0.0144
+    },
+    {
+      "percentile": 35,
+      "region": "Europe",
+      "share": 0.0147
+    },
+    {
+      "percentile": 3,
+      "region": "Europe",
+      "share": 0.0139
+    },
+    {
+      "percentile": 32,
+      "region": "Europe",
+      "share": 0.0162
+    },
+    {
+      "percentile": 9,
+      "region": "Europe",
+      "share": 0.012
+    },
+    {
+      "percentile": 54,
+      "region": "Europe",
+      "share": 0.0218
+    },
+    {
+      "percentile": 14,
+      "region": "Europe",
+      "share": 0.0132
+    },
+    {
+      "percentile": 77,
+      "region": "Europe",
+      "share": 0.0344
+    },
+    {
+      "percentile": 51,
+      "region": "Europe",
+      "share": 0.0183
+    },
+    {
+      "percentile": 83,
+      "region": "Europe",
+      "share": 0.0378
+    },
+    {
+      "percentile": 20,
+      "region": "Europe",
+      "share": 0.0153
+    },
+    {
+      "percentile": 63,
+      "region": "Europe",
+      "share": 0.0219
+    },
+    {
+      "percentile": 72,
+      "region": "Europe",
+      "share": 0.0284
+    },
+    {
+      "percentile": 52,
+      "region": "Europe",
+      "share": 0.0177
+    },
+    {
+      "percentile": 13,
+      "region": "Europe",
+      "share": 0.0162
+    },
+    {
+      "percentile": 70,
+      "region": "Europe",
+      "share": 0.0302
+    },
+    {
+      "percentile": 10,
+      "region": "Europe",
+      "share": 0.0141
+    },
+    {
+      "percentile": 25,
+      "region": "Europe",
+      "share": 0.0168
+    },
+    {
+      "percentile": 12,
+      "region": "Europe",
+      "share": 0.0145
+    },
+    {
+      "percentile": 75,
+      "region": "Europe",
+      "share": 0.032
+    },
+    {
+      "percentile": 26,
+      "region": "Europe",
+      "share": 0.014
+    },
+    {
+      "percentile": 59,
+      "region": "Europe",
+      "share": 0.0206
+    },
+    {
+      "percentile": 31,
+      "region": "Europe",
+      "share": 0.0159
+    },
+    {
+      "percentile": 47,
+      "region": "Europe",
+      "share": 0.0182
+    },
+    {
+      "percentile": 76,
+      "region": "Europe",
+      "share": 0.0277
+    },
+    {
+      "percentile": 81,
+      "region": "Europe",
+      "share": 0.0356
+    },
+    {
+      "percentile": 78,
+      "region": "Europe",
+      "share": 0.0347
+    },
+    {
+      "percentile": 24,
+      "region": "Europe",
+      "share": 0.0156
+    },
+    {
+      "percentile": 56,
+      "region": "Europe",
+      "share": 0.0223
+    },
+    {
+      "percentile": 18,
+      "region": "Europe",
+      "share": 0.016
+    },
+    {
+      "percentile": 86,
+      "region": "Europe",
+      "share": 0.0442
+    },
+    {
+      "percentile": 4,
+      "region": "Europe",
+      "share": 0.0124
+    },
+    {
+      "percentile": 74,
+      "region": "Europe",
+      "share": 0.0318
+    },
+    {
+      "percentile": 30,
+      "region": "Europe",
+      "share": 0.0171
+    },
+    {
+      "percentile": 89,
+      "region": "Europe",
+      "share": 0.0514
+    },
+    {
+      "percentile": 94,
+      "region": "Europe",
+      "share": 0.0707
+    },
+    {
+      "percentile": 46,
+      "region": "Europe",
+      "share": 0.0207
+    },
+    {
+      "percentile": 81,
+      "region": "Middle East",
+      "share": 0.0046
+    },
+    {
+      "percentile": 97,
+      "region": "Middle East",
+      "share": 0.0143
+    },
+    {
+      "percentile": 26,
+      "region": "Middle East",
+      "share": 0.0005
+    },
+    {
+      "percentile": 58,
+      "region": "Middle East",
+      "share": 0.0015
+    },
+    {
+      "percentile": 21,
+      "region": "Middle East",
+      "share": 0.0007
+    },
+    {
+      "percentile": 87,
+      "region": "Middle East",
+      "share": 0.006
+    },
+    {
+      "percentile": 44,
+      "region": "Middle East",
+      "share": 0.0006
+    },
+    {
+      "percentile": 93,
+      "region": "Middle East",
+      "share": 0.0077
+    },
+    {
+      "percentile": 91,
+      "region": "Middle East",
+      "share": 0.0053
+    },
+    {
+      "percentile": 95,
+      "region": "Middle East",
+      "share": 0.0105
+    },
+    {
+      "percentile": 70,
+      "region": "Middle East",
+      "share": 0.0024
+    },
+    {
+      "percentile": 89,
+      "region": "Middle East",
+      "share": 0.0061
+    },
+    {
+      "percentile": 82,
+      "region": "Middle East",
+      "share": 0.0037
+    },
+    {
+      "percentile": 80,
+      "region": "Middle East",
+      "share": 0.0031
+    },
+    {
+      "percentile": 98,
+      "region": "Middle East",
+      "share": 0.0214
+    },
+    {
+      "percentile": 77,
+      "region": "Middle East",
+      "share": 0.0029
+    },
+    {
+      "percentile": 100,
+      "region": "Middle East",
+      "share": 0.0619
+    },
+    {
+      "percentile": 17,
+      "region": "Middle East",
+      "share": 0.0004
+    },
+    {
+      "percentile": 31,
+      "region": "Middle East",
+      "share": 0.0018
+    },
+    {
+      "percentile": 30,
+      "region": "Middle East",
+      "share": 0.0004
+    },
+    {
+      "percentile": 59,
+      "region": "Middle East",
+      "share": 0.0016
+    },
+    {
+      "percentile": 99,
+      "region": "Middle East",
+      "share": 0.0278
+    },
+    {
+      "percentile": 72,
+      "region": "Middle East",
+      "share": 0.0026
+    },
+    {
+      "percentile": 48,
+      "region": "Middle East",
+      "share": 0.0011
+    },
+    {
+      "percentile": 96,
+      "region": "Middle East",
+      "share": 0.012
+    },
+    {
+      "percentile": 92,
+      "region": "Middle East",
+      "share": 0.0047
+    },
+    {
+      "percentile": 64,
+      "region": "Middle East",
+      "share": 0.0013
+    },
+    {
+      "percentile": 66,
+      "region": "Middle East",
+      "share": 0.0021
+    },
+    {
+      "percentile": 88,
+      "region": "Middle East",
+      "share": 0.006
+    },
+    {
+      "percentile": 86,
+      "region": "Middle East",
+      "share": 0.005
+    },
+    {
+      "percentile": 16,
+      "region": "Middle East",
+      "share": 0.001
+    },
+    {
+      "percentile": 74,
+      "region": "Middle East",
+      "share": 0.0027
+    },
+    {
+      "percentile": 85,
+      "region": "Middle East",
+      "share": 0.0057
+    },
+    {
+      "percentile": 79,
+      "region": "Middle East",
+      "share": 0.0035
+    },
+    {
+      "percentile": 67,
+      "region": "Middle East",
+      "share": 0.0012
+    },
+    {
+      "percentile": 53,
+      "region": "Middle East",
+      "share": 0.0019
+    },
+    {
+      "percentile": 83,
+      "region": "Middle East",
+      "share": 0.0037
+    },
+    {
+      "percentile": 52,
+      "region": "Middle East",
+      "share": 0.0016
+    },
+    {
+      "percentile": 73,
+      "region": "Middle East",
+      "share": 0.0027
+    },
+    {
+      "percentile": 2,
+      "region": "Middle East",
+      "share": 0.0009
+    },
+    {
+      "percentile": 24,
+      "region": "Middle East",
+      "share": 0.0005
+    },
+    {
+      "percentile": 68,
+      "region": "Middle East",
+      "share": 0.0031
+    },
+    {
+      "percentile": 94,
+      "region": "Middle East",
+      "share": 0.0095
+    },
+    {
+      "percentile": 90,
+      "region": "Middle East",
+      "share": 0.0047
+    },
+    {
+      "percentile": 9,
+      "region": "Middle East",
+      "share": 0.0006
+    },
+    {
+      "percentile": 84,
+      "region": "Middle East",
+      "share": 0.0037
+    },
+    {
+      "percentile": 36,
+      "region": "Middle East",
+      "share": 0.0008
+    },
+    {
+      "percentile": 69,
+      "region": "Middle East",
+      "share": 0.0011
+    },
+    {
+      "percentile": 5,
+      "region": "Middle East",
+      "share": 0.0008
+    },
+    {
+      "percentile": 78,
+      "region": "Middle East",
+      "share": 0.0032
+    },
+    {
+      "percentile": 27,
+      "region": "Middle East",
+      "share": 0.0012
+    },
+    {
+      "percentile": 4,
+      "region": "Middle East",
+      "share": 0.0006
+    },
+    {
+      "percentile": 50,
+      "region": "Middle East",
+      "share": 0.001
+    },
+    {
+      "percentile": 19,
+      "region": "Middle East",
+      "share": 0.001
+    },
+    {
+      "percentile": 45,
+      "region": "Middle East",
+      "share": 0.0008
+    },
+    {
+      "percentile": 55,
+      "region": "Middle East",
+      "share": 0.001
+    },
+    {
+      "percentile": 62,
+      "region": "Middle East",
+      "share": 0.0012
+    },
+    {
+      "percentile": 71,
+      "region": "Middle East",
+      "share": 0.003
+    },
+    {
+      "percentile": 56,
+      "region": "Middle East",
+      "share": 0.0024
+    },
+    {
+      "percentile": 39,
+      "region": "Middle East",
+      "share": 0.0009
+    },
+    {
+      "percentile": 63,
+      "region": "Middle East",
+      "share": 0.0011
+    },
+    {
+      "percentile": 23,
+      "region": "Middle East",
+      "share": 0.0003
+    },
+    {
+      "percentile": 60,
+      "region": "Middle East",
+      "share": 0.0009
+    },
+    {
+      "percentile": 42,
+      "region": "Middle East",
+      "share": 0.0009
+    },
+    {
+      "percentile": 13,
+      "region": "Middle East",
+      "share": 0.0009
+    },
+    {
+      "percentile": 76,
+      "region": "Middle East",
+      "share": 0.0025
+    },
+    {
+      "percentile": 41,
+      "region": "Middle East",
+      "share": 0.0007
+    },
+    {
+      "percentile": 65,
+      "region": "Middle East",
+      "share": 0.0011
+    },
+    {
+      "percentile": 3,
+      "region": "Middle East",
+      "share": 0.001
+    },
+    {
+      "percentile": 51,
+      "region": "Middle East",
+      "share": 0.0015
+    },
+    {
+      "percentile": 43,
+      "region": "Middle East",
+      "share": 0.0005
+    },
+    {
+      "percentile": 49,
+      "region": "Middle East",
+      "share": 0.0007
+    },
+    {
+      "percentile": 46,
+      "region": "Middle East",
+      "share": 0.0007
+    },
+    {
+      "percentile": 57,
+      "region": "Middle East",
+      "share": 0.0016
+    },
+    {
+      "percentile": 54,
+      "region": "Middle East",
+      "share": 0.0013
+    },
+    {
+      "percentile": 1,
+      "region": "Middle East",
+      "share": 0.0011
+    },
+    {
+      "percentile": 33,
+      "region": "Middle East",
+      "share": 0.0008
+    },
+    {
+      "percentile": 28,
+      "region": "Middle East",
+      "share": 0.0013
+    },
+    {
+      "percentile": 35,
+      "region": "Middle East",
+      "share": 0.0005
+    },
+    {
+      "percentile": 37,
+      "region": "Middle East",
+      "share": 0.001
+    },
+    {
+      "percentile": 32,
+      "region": "Middle East",
+      "share": 0.0009
+    },
+    {
+      "percentile": 29,
+      "region": "Middle East",
+      "share": 0.0004
+    },
+    {
+      "percentile": 25,
+      "region": "Middle East",
+      "share": 0.0009
+    },
+    {
+      "percentile": 61,
+      "region": "Middle East",
+      "share": 0.002
+    },
+    {
+      "percentile": 11,
+      "region": "Middle East",
+      "share": 0.0012
+    },
+    {
+      "percentile": 6,
+      "region": "Middle East",
+      "share": 0.0005
+    },
+    {
+      "percentile": 15,
+      "region": "Middle East",
+      "share": 0.0003
+    },
+    {
+      "percentile": 14,
+      "region": "Middle East",
+      "share": 0.0012
+    },
+    {
+      "percentile": 22,
+      "region": "Middle East",
+      "share": 0.0013
+    },
+    {
+      "percentile": 40,
+      "region": "Middle East",
+      "share": 0.0006
+    },
+    {
+      "percentile": 18,
+      "region": "Middle East",
+      "share": 0.0008
+    },
+    {
+      "percentile": 7,
+      "region": "Middle East",
+      "share": 0.0013
+    },
+    {
+      "percentile": 47,
+      "region": "Middle East",
+      "share": 0.001
+    },
+    {
+      "percentile": 20,
+      "region": "Middle East",
+      "share": 0.0008
+    },
+    {
+      "percentile": 88,
+      "region": "Americas",
+      "share": 0.0086
+    },
+    {
+      "percentile": 99,
+      "region": "Americas",
+      "share": 0.0189
+    },
+    {
+      "percentile": 77,
+      "region": "Americas",
+      "share": 0.0048
+    },
+    {
+      "percentile": 100,
+      "region": "Americas",
+      "share": 0.0168
+    },
+    {
+      "percentile": 94,
+      "region": "Americas",
+      "share": 0.012
+    },
+    {
+      "percentile": 92,
+      "region": "Americas",
+      "share": 0.0094
+    },
+    {
+      "percentile": 68,
+      "region": "Americas",
+      "share": 0.0028
+    },
+    {
+      "percentile": 89,
+      "region": "Americas",
+      "share": 0.0072
+    },
+    {
+      "percentile": 87,
+      "region": "Americas",
+      "share": 0.0086
+    },
+    {
+      "percentile": 20,
+      "region": "Americas",
+      "share": 0.0034
+    },
+    {
+      "percentile": 62,
+      "region": "Americas",
+      "share": 0.0039
+    },
+    {
+      "percentile": 97,
+      "region": "Americas",
+      "share": 0.0166
+    },
+    {
+      "percentile": 54,
+      "region": "Americas",
+      "share": 0.0036
+    },
+    {
+      "percentile": 70,
+      "region": "Americas",
+      "share": 0.0047
+    },
+    {
+      "percentile": 43,
+      "region": "Americas",
+      "share": 0.0034
+    },
+    {
+      "percentile": 96,
+      "region": "Americas",
+      "share": 0.015
+    },
+    {
+      "percentile": 48,
+      "region": "Americas",
+      "share": 0.003
+    },
+    {
+      "percentile": 66,
+      "region": "Americas",
+      "share": 0.0034
+    },
+    {
+      "percentile": 82,
+      "region": "Americas",
+      "share": 0.0059
+    },
+    {
+      "percentile": 4,
+      "region": "Americas",
+      "share": 0.0016
+    },
+    {
+      "percentile": 60,
+      "region": "Americas",
+      "share": 0.0048
+    },
+    {
+      "percentile": 49,
+      "region": "Americas",
+      "share": 0.0029
+    },
+    {
+      "percentile": 23,
+      "region": "Americas",
+      "share": 0.0021
+    },
+    {
+      "percentile": 65,
+      "region": "Americas",
+      "share": 0.0029
+    },
+    {
+      "percentile": 58,
+      "region": "Americas",
+      "share": 0.0035
+    },
+    {
+      "percentile": 98,
+      "region": "Americas",
+      "share": 0.0169
+    },
+    {
+      "percentile": 46,
+      "region": "Americas",
+      "share": 0.003
+    },
+    {
+      "percentile": 81,
+      "region": "Americas",
+      "share": 0.0053
+    },
+    {
+      "percentile": 97,
+      "region": "Oceania",
+      "share": 0.0009
+    },
+    {
+      "percentile": 40,
+      "region": "Oceania",
+      "share": 0.0003
+    },
+    {
+      "percentile": 13,
+      "region": "Oceania",
+      "share": 0.0003
+    },
+    {
+      "percentile": 100,
+      "region": "Oceania",
+      "share": 0.0003
+    },
+    {
+      "percentile": 90,
+      "region": "Oceania",
+      "share": 0.0009
+    },
+    {
+      "percentile": 24,
+      "region": "Oceania",
+      "share": 0.0002
+    },
+    {
+      "percentile": 80,
+      "region": "Oceania",
+      "share": 0.0006
+    },
+    {
+      "percentile": 81,
+      "region": "Oceania",
+      "share": 0.0006
+    },
+    {
+      "percentile": 77,
+      "region": "Oceania",
+      "share": 0.0006
+    },
+    {
+      "percentile": 92,
+      "region": "Oceania",
+      "share": 0.0002
+    },
+    {
+      "percentile": 23,
+      "region": "Oceania",
+      "share": 0.0002
+    },
+    {
+      "percentile": 49,
+      "region": "Oceania",
+      "share": 0.0007
+    },
+    {
+      "percentile": 67,
+      "region": "Oceania",
+      "share": 0.0003
+    },
+    {
+      "percentile": 39,
+      "region": "Oceania",
+      "share": 0.0009
+    },
+    {
+      "percentile": 54,
+      "region": "Oceania",
+      "share": 0.0009
+    },
+    {
+      "percentile": 98,
+      "region": "Oceania",
+      "share": 0.001
+    },
+    {
+      "percentile": 99,
+      "region": "Oceania",
+      "share": 0.0019
+    },
+    {
+      "percentile": 29,
+      "region": "Oceania",
+      "share": 0.0003
+    },
+    {
+      "percentile": 78,
+      "region": "Oceania",
+      "share": 0.0004
+    },
+    {
+      "percentile": 71,
+      "region": "Oceania",
+      "share": 0.0008
+    },
+    {
+      "percentile": 48,
+      "region": "Oceania",
+      "share": 0.0008
+    },
+    {
+      "percentile": 89,
+      "region": "Oceania",
+      "share": 0.0014
+    },
+    {
+      "percentile": 46,
+      "region": "Oceania",
+      "share": 0.0001
+    },
+    {
+      "percentile": 53,
+      "region": "Oceania",
+      "share": 0.0004
+    },
+    {
+      "percentile": 74,
+      "region": "Oceania",
+      "share": 0.0008
+    },
+    {
+      "percentile": 34,
+      "region": "Oceania",
+      "share": 0.0003
+    },
+    {
+      "percentile": 45,
+      "region": "Oceania",
+      "share": 0.0005
+    },
+    {
+      "percentile": 25,
+      "region": "Oceania",
+      "share": 0.0001
+    },
+    {
+      "percentile": 65,
+      "region": "Oceania",
+      "share": 0.0006
+    },
+    {
+      "percentile": 86,
+      "region": "Oceania",
+      "share": 0.0013
+    },
+    {
+      "percentile": 75,
+      "region": "Oceania",
+      "share": 0.0008
+    },
+    {
+      "percentile": 50,
+      "region": "Oceania",
+      "share": 0.0006
+    },
+    {
+      "percentile": 60,
+      "region": "Oceania",
+      "share": 0.0004
+    },
+    {
+      "percentile": 52,
+      "region": "Oceania",
+      "share": 0.0006
+    },
+    {
+      "percentile": 96,
+      "region": "Oceania",
+      "share": 0.0006
+    },
+    {
+      "percentile": 66,
+      "region": "Oceania",
+      "share": 0.0007
+    },
+    {
+      "percentile": 4,
+      "region": "Oceania",
+      "share": 0.0002
+    },
+    {
+      "percentile": 63,
+      "region": "Oceania",
+      "share": 0.0007
+    },
+    {
+      "percentile": 32,
+      "region": "Oceania",
+      "share": 0.0005
+    },
+    {
+      "percentile": 57,
+      "region": "Oceania",
+      "share": 0
+    },
+    {
+      "percentile": 1,
+      "region": "Oceania",
+      "share": 0.0001
+    },
+    {
+      "percentile": 59,
+      "region": "Oceania",
+      "share": 0.0008
+    },
+    {
+      "percentile": 83,
+      "region": "Oceania",
+      "share": 0.0009
+    },
+    {
+      "percentile": 91,
+      "region": "Oceania",
+      "share": 0.0004
+    },
+    {
+      "percentile": 41,
+      "region": "Oceania",
+      "share": 0.0008
+    },
+    {
+      "percentile": 11,
+      "region": "Oceania",
+      "share": 0.0005
+    },
+    {
+      "percentile": 22,
+      "region": "Oceania",
+      "share": 0.0008
+    },
+    {
+      "percentile": 16,
+      "region": "Oceania",
+      "share": 0.0002
+    },
+    {
+      "percentile": 85,
+      "region": "Oceania",
+      "share": 0.0004
+    },
+    {
+      "percentile": 28,
+      "region": "Oceania",
+      "share": 0.0001
+    },
+    {
+      "percentile": 76,
+      "region": "Oceania",
+      "share": 0.0008
+    },
+    {
+      "percentile": 94,
+      "region": "Oceania",
+      "share": 0.0001
+    },
+    {
+      "percentile": 69,
+      "region": "Oceania",
+      "share": 0.0007
+    },
+    {
+      "percentile": 88,
+      "region": "Oceania",
+      "share": 0.0007
+    },
+    {
+      "percentile": 47,
+      "region": "Oceania",
+      "share": 0.0002
+    },
+    {
+      "percentile": 87,
+      "region": "Oceania",
+      "share": 0.0007
+    },
+    {
+      "percentile": 35,
+      "region": "Oceania",
+      "share": 0.0006
+    },
+    {
+      "percentile": 37,
+      "region": "Oceania",
+      "share": 0.0002
+    },
+    {
+      "percentile": 20,
+      "region": "Oceania",
+      "share": 0.0004
+    },
+    {
+      "percentile": 7,
+      "region": "Oceania",
+      "share": 0.0001
+    },
+    {
+      "percentile": 56,
+      "region": "Oceania",
+      "share": 0.0002
+    },
+    {
+      "percentile": 84,
+      "region": "Oceania",
+      "share": 0.0006
+    },
+    {
+      "percentile": 8,
+      "region": "Oceania",
+      "share": 0.0008
+    },
+    {
+      "percentile": 18,
+      "region": "Oceania",
+      "share": 0.0001
+    },
+    {
+      "percentile": 2,
+      "region": "Oceania",
+      "share": 0.0006
+    },
+    {
+      "percentile": 10,
+      "region": "Oceania",
+      "share": 0.0006
+    },
+    {
+      "percentile": 70,
+      "region": "Oceania",
+      "share": 0.001
+    },
+    {
+      "percentile": 33,
+      "region": "Oceania",
+      "share": 0.0003
+    },
+    {
+      "percentile": 27,
+      "region": "Oceania",
+      "share": 0.0004
+    },
+    {
+      "percentile": 93,
+      "region": "Oceania",
+      "share": 0.0007
+    },
+    {
+      "percentile": 95,
+      "region": "Oceania",
+      "share": 0.0004
+    },
+    {
+      "percentile": 9,
+      "region": "Oceania",
+      "share": 0.0002
+    },
+    {
+      "percentile": 19,
+      "region": "Oceania",
+      "share": 0.0002
+    },
+    {
+      "percentile": 15,
+      "region": "Oceania",
+      "share": 0.0002
+    },
+    {
+      "percentile": 3,
+      "region": "Oceania",
+      "share": 0.0002
+    },
+    {
+      "percentile": 58,
+      "region": "Oceania",
+      "share": 0.0003
+    },
+    {
+      "percentile": 30,
+      "region": "Oceania",
+      "share": 0.0006
+    },
+    {
+      "percentile": 72,
+      "region": "Oceania",
+      "share": 0.0004
+    },
+    {
+      "percentile": 62,
+      "region": "Oceania",
+      "share": 0.0002
+    },
+    {
+      "percentile": 21,
+      "region": "Oceania",
+      "share": 0.0004
+    },
+    {
+      "percentile": 73,
+      "region": "Oceania",
+      "share": 0.0003
+    },
+    {
+      "percentile": 38,
+      "region": "Oceania",
+      "share": 0.0009
+    },
+    {
+      "percentile": 64,
+      "region": "Oceania",
+      "share": 0.0002
+    },
+    {
+      "percentile": 6,
+      "region": "Oceania",
+      "share": 0.0002
+    },
+    {
+      "percentile": 26,
+      "region": "Oceania",
+      "share": 0.0003
+    },
+    {
+      "percentile": 79,
+      "region": "Oceania",
+      "share": 0.0004
+    },
+    {
+      "percentile": 36,
+      "region": "Oceania",
+      "share": 0.0002
+    },
+    {
+      "percentile": 17,
+      "region": "Oceania",
+      "share": 0.0003
+    },
+    {
+      "percentile": 14,
+      "region": "Oceania",
+      "share": 0.0004
+    },
+    {
+      "percentile": 82,
+      "region": "Oceania",
+      "share": 0.0001
+    },
+    {
+      "percentile": 55,
+      "region": "Oceania",
+      "share": 0.0001
+    },
+    {
+      "percentile": 58,
+      "region": "Europe",
+      "share": 0.0246
+    },
+    {
+      "percentile": 92,
+      "region": "Europe",
+      "share": 0.0626
+    },
+    {
+      "percentile": 95,
+      "region": "Europe",
+      "share": 0.0717
+    },
+    {
+      "percentile": 15,
+      "region": "Europe",
+      "share": 0.0153
+    },
+    {
+      "percentile": 21,
+      "region": "Europe",
+      "share": 0.0145
+    },
+    {
+      "percentile": 93,
+      "region": "Europe",
+      "share": 0.0566
+    },
+    {
+      "percentile": 87,
+      "region": "Europe",
+      "share": 0.045
+    },
+    {
+      "percentile": 50,
+      "region": "Europe",
+      "share": 0.0178
+    },
+    {
+      "percentile": 100,
+      "region": "Europe",
+      "share": 0.1069
+    },
+    {
+      "percentile": 99,
+      "region": "Europe",
+      "share": 0.1136
+    },
+    {
+      "percentile": 97,
+      "region": "Europe",
+      "share": 0.086
+    },
+    {
+      "percentile": 33,
+      "region": "Europe",
+      "share": 0.016
+    },
+    {
+      "percentile": 98,
+      "region": "Europe",
+      "share": 0.1048
+    },
+    {
+      "percentile": 37,
+      "region": "Europe",
+      "share": 0.0167
+    },
+    {
+      "percentile": 6,
+      "region": "Europe",
+      "share": 0.0112
+    },
+    {
+      "percentile": 28,
+      "region": "Europe",
+      "share": 0.017
+    },
+    {
+      "percentile": 62,
+      "region": "Europe",
+      "share": 0.0223
+    },
+    {
+      "percentile": 84,
+      "region": "Europe",
+      "share": 0.0436
+    },
+    {
+      "percentile": 65,
+      "region": "Europe",
+      "share": 0.0216
+    },
+    {
+      "percentile": 16,
+      "region": "Europe",
+      "share": 0.0145
+    },
+    {
+      "percentile": 41,
+      "region": "Europe",
+      "share": 0.0171
+    },
+    {
+      "percentile": 19,
+      "region": "Europe",
+      "share": 0.0125
+    },
+    {
+      "percentile": 44,
+      "region": "Europe",
+      "share": 0.0158
+    },
+    {
+      "percentile": 68,
+      "region": "Europe",
+      "share": 0.0277
+    },
+    {
+      "percentile": 49,
+      "region": "Europe",
+      "share": 0.0175
+    },
+    {
+      "percentile": 1,
+      "region": "Europe",
+      "share": 0.0113
+    },
+    {
+      "percentile": 57,
+      "region": "Europe",
+      "share": 0.0189
+    },
+    {
+      "percentile": 8,
+      "region": "Europe",
+      "share": 0.0125
+    },
+    {
+      "percentile": 38,
+      "region": "Europe",
+      "share": 0.0147
+    },
+    {
+      "percentile": 42,
+      "region": "Europe",
+      "share": 0.0224
+    },
+    {
+      "percentile": 22,
+      "region": "Europe",
+      "share": 0.0127
+    },
+    {
+      "percentile": 48,
+      "region": "Europe",
+      "share": 0.0196
+    },
+    {
+      "percentile": 34,
+      "region": "Europe",
+      "share": 0.0183
+    },
+    {
+      "percentile": 43,
+      "region": "Europe",
+      "share": 0.017
+    },
+    {
+      "percentile": 11,
+      "region": "Europe",
+      "share": 0.0151
+    },
+    {
+      "percentile": 36,
+      "region": "Europe",
+      "share": 0.014
+    },
+    {
+      "percentile": 27,
+      "region": "Europe",
+      "share": 0.0163
+    },
+    {
+      "percentile": 55,
+      "region": "Europe",
+      "share": 0.0201
+    },
+    {
+      "percentile": 17,
+      "region": "Europe",
+      "share": 0.0143
+    },
+    {
+      "percentile": 64,
+      "region": "Europe",
+      "share": 0.0232
+    },
+    {
+      "percentile": 67,
+      "region": "Europe",
+      "share": 0.0215
+    },
+    {
+      "percentile": 98,
+      "region": "Africa",
+      "share": 0.008
+    },
+    {
+      "percentile": 91,
+      "region": "Africa",
+      "share": 0.0035
+    },
+    {
+      "percentile": 27,
+      "region": "Africa",
+      "share": 0.0011
+    },
+    {
+      "percentile": 39,
+      "region": "Africa",
+      "share": 0.0015
+    },
+    {
+      "percentile": 46,
+      "region": "Africa",
+      "share": 0.0021
+    },
+    {
+      "percentile": 36,
+      "region": "Africa",
+      "share": 0.0013
+    },
+    {
+      "percentile": 61,
+      "region": "Africa",
+      "share": 0.0018
+    },
+    {
+      "percentile": 53,
+      "region": "Africa",
+      "share": 0.0016
+    },
+    {
+      "percentile": 41,
+      "region": "Africa",
+      "share": 0.0013
+    },
+    {
+      "percentile": 50,
+      "region": "Africa",
+      "share": 0.0018
+    },
+    {
+      "percentile": 75,
+      "region": "Africa",
+      "share": 0.0019
+    },
+    {
+      "percentile": 69,
+      "region": "Africa",
+      "share": 0.0033
+    },
+    {
+      "percentile": 78,
+      "region": "Africa",
+      "share": 0.0046
+    },
+    {
+      "percentile": 68,
+      "region": "Africa",
+      "share": 0.0026
+    },
+    {
+      "percentile": 88,
+      "region": "Africa",
+      "share": 0.0034
+    },
+    {
+      "percentile": 24,
+      "region": "Africa",
+      "share": 0.0007
+    },
+    {
+      "percentile": 57,
+      "region": "Africa",
+      "share": 0.0019
+    },
+    {
+      "percentile": 99,
+      "region": "Asia",
+      "share": 0.0069
+    },
+    {
+      "percentile": 15,
+      "region": "Asia",
+      "share": 0.0006
+    },
+    {
+      "percentile": 80,
+      "region": "Americas",
+      "share": 0.0044
+    },
+    {
+      "percentile": 85,
+      "region": "Americas",
+      "share": 0.0069
+    },
+    {
+      "percentile": 78,
+      "region": "Americas",
+      "share": 0.0076
+    },
+    {
+      "percentile": 95,
+      "region": "Americas",
+      "share": 0.0128
+    },
+    {
+      "percentile": 91,
+      "region": "Americas",
+      "share": 0.0083
+    },
+    {
+      "percentile": 79,
+      "region": "Americas",
+      "share": 0.0071
+    },
+    {
+      "percentile": 2,
+      "region": "Americas",
+      "share": 0.0022
+    },
+    {
+      "percentile": 63,
+      "region": "Americas",
+      "share": 0.0034
+    },
+    {
+      "percentile": 44,
+      "region": "Americas",
+      "share": 0.0023
+    },
+    {
+      "percentile": 56,
+      "region": "Americas",
+      "share": 0.0042
+    },
+    {
+      "percentile": 51,
+      "region": "Americas",
+      "share": 0.0034
+    },
+    {
+      "percentile": 67,
+      "region": "Americas",
+      "share": 0.0052
+    },
+    {
+      "percentile": 53,
+      "region": "Americas",
+      "share": 0.0037
+    },
+    {
+      "percentile": 61,
+      "region": "Americas",
+      "share": 0.0049
+    },
+    {
+      "percentile": 84,
+      "region": "Americas",
+      "share": 0.0069
+    },
+    {
+      "percentile": 15,
+      "region": "Americas",
+      "share": 0.0025
+    },
+    {
+      "percentile": 64,
+      "region": "Americas",
+      "share": 0.0029
+    },
+    {
+      "percentile": 14,
+      "region": "Americas",
+      "share": 0.0023
+    },
+    {
+      "percentile": 16,
+      "region": "Americas",
+      "share": 0.0015
+    },
+    {
+      "percentile": 32,
+      "region": "Americas",
+      "share": 0.0031
+    },
+    {
+      "percentile": 40,
+      "region": "Americas",
+      "share": 0.0038
+    },
+    {
+      "percentile": 11,
+      "region": "Americas",
+      "share": 0.002
+    },
+    {
+      "percentile": 9,
+      "region": "Americas",
+      "share": 0.0017
+    },
+    {
+      "percentile": 10,
+      "region": "Americas",
+      "share": 0.0014
+    },
+    {
+      "percentile": 73,
+      "region": "Americas",
+      "share": 0.0063
+    },
+    {
+      "percentile": 17,
+      "region": "Americas",
+      "share": 0.0023
+    },
+    {
+      "percentile": 52,
+      "region": "Americas",
+      "share": 0.0034
+    },
+    {
+      "percentile": 69,
+      "region": "Americas",
+      "share": 0.0053
+    },
+    {
+      "percentile": 83,
+      "region": "Americas",
+      "share": 0.0055
+    },
+    {
+      "percentile": 39,
+      "region": "Americas",
+      "share": 0.0033
+    },
+    {
+      "percentile": 3,
+      "region": "Americas",
+      "share": 0.0018
+    },
+    {
+      "percentile": 21,
+      "region": "Americas",
+      "share": 0.0025
+    },
+    {
+      "percentile": 26,
+      "region": "Americas",
+      "share": 0.0023
+    },
+    {
+      "percentile": 34,
+      "region": "Americas",
+      "share": 0.0027
+    },
+    {
+      "percentile": 93,
+      "region": "Americas",
+      "share": 0.0068
+    },
+    {
+      "percentile": 41,
+      "region": "Americas",
+      "share": 0.0037
+    },
+    {
+      "percentile": 76,
+      "region": "Americas",
+      "share": 0.0047
+    },
+    {
+      "percentile": 90,
+      "region": "Americas",
+      "share": 0.0073
+    },
+    {
+      "percentile": 59,
+      "region": "Americas",
+      "share": 0.0026
+    },
+    {
+      "percentile": 33,
+      "region": "Americas",
+      "share": 0.0029
+    },
+    {
+      "percentile": 25,
+      "region": "Americas",
+      "share": 0.0028
+    },
+    {
+      "percentile": 8,
+      "region": "Americas",
+      "share": 0.0014
+    },
+    {
+      "percentile": 74,
+      "region": "Americas",
+      "share": 0.0063
+    },
+    {
+      "percentile": 42,
+      "region": "Americas",
+      "share": 0.0034
+    },
+    {
+      "percentile": 36,
+      "region": "Americas",
+      "share": 0.0028
+    },
+    {
+      "percentile": 50,
+      "region": "Americas",
+      "share": 0.0025
+    },
+    {
+      "percentile": 86,
+      "region": "Americas",
+      "share": 0.007
+    },
+    {
+      "percentile": 1,
+      "region": "Americas",
+      "share": 0.0021
+    },
+    {
+      "percentile": 19,
+      "region": "Americas",
+      "share": 0.0026
+    },
+    {
+      "percentile": 75,
+      "region": "Americas",
+      "share": 0.0049
+    },
+    {
+      "percentile": 7,
+      "region": "Americas",
+      "share": 0.0016
+    },
+    {
+      "percentile": 55,
+      "region": "Africa",
+      "share": 0.0018
+    },
+    {
+      "percentile": 47,
+      "region": "Americas",
+      "share": 0.0028
+    },
+    {
+      "percentile": 30,
+      "region": "Americas",
+      "share": 0.0021
+    },
+    {
+      "percentile": 35,
+      "region": "Americas",
+      "share": 0.0018
+    },
+    {
+      "percentile": 13,
+      "region": "Americas",
+      "share": 0.0021
+    },
+    {
+      "percentile": 28,
+      "region": "Americas",
+      "share": 0.0022
+    },
+    {
+      "percentile": 72,
+      "region": "Americas",
+      "share": 0.0034
+    },
+    {
+      "percentile": 55,
+      "region": "Americas",
+      "share": 0.0035
+    },
+    {
+      "percentile": 22,
+      "region": "Americas",
+      "share": 0.0026
+    },
+    {
+      "percentile": 5,
+      "region": "Americas",
+      "share": 0.0008
+    },
+    {
+      "percentile": 45,
+      "region": "Americas",
+      "share": 0.002
+    },
+    {
+      "percentile": 24,
+      "region": "Americas",
+      "share": 0.0022
+    },
+    {
+      "percentile": 27,
+      "region": "Americas",
+      "share": 0.0024
+    },
+    {
+      "percentile": 29,
+      "region": "Americas",
+      "share": 0.0034
+    },
+    {
+      "percentile": 6,
+      "region": "Americas",
+      "share": 0.0013
+    },
+    {
+      "percentile": 12,
+      "region": "Americas",
+      "share": 0.0012
+    },
+    {
+      "percentile": 37,
+      "region": "Americas",
+      "share": 0.0016
+    },
+    {
+      "percentile": 71,
+      "region": "Americas",
+      "share": 0.0034
+    },
+    {
+      "percentile": 57,
+      "region": "Americas",
+      "share": 0.0032
+    },
+    {
+      "percentile": 38,
+      "region": "Americas",
+      "share": 0.0031
+    },
+    {
+      "percentile": 31,
+      "region": "Americas",
+      "share": 0.0016
+    },
+    {
+      "percentile": 69,
+      "region": "Asia",
+      "share": 0.0027
+    },
+    {
+      "percentile": 89,
+      "region": "Asia",
+      "share": 0.0044
+    },
+    {
+      "percentile": 42,
+      "region": "Asia",
+      "share": 0.0015
+    },
+    {
+      "percentile": 54,
+      "region": "Asia",
+      "share": 0.0023
+    },
+    {
+      "percentile": 2,
+      "region": "Asia",
+      "share": 0.0007
+    },
+    {
+      "percentile": 18,
+      "region": "Asia",
+      "share": 0.001
+    },
+    {
+      "percentile": 74,
+      "region": "Asia",
+      "share": 0.0041
+    },
+    {
+      "percentile": 50,
+      "region": "Asia",
+      "share": 0.0024
+    },
+    {
+      "percentile": 98,
+      "region": "Asia",
+      "share": 0.0081
+    },
+    {
+      "percentile": 79,
+      "region": "Asia",
+      "share": 0.0027
+    },
+    {
+      "percentile": 81,
+      "region": "Asia",
+      "share": 0.0029
+    },
+    {
+      "percentile": 83,
+      "region": "Asia",
+      "share": 0.0042
+    },
+    {
+      "percentile": 9,
+      "region": "Asia",
+      "share": 0.0008
+    },
+    {
+      "percentile": 96,
+      "region": "Asia",
+      "share": 0.0053
+    },
+    {
+      "percentile": 87,
+      "region": "Asia",
+      "share": 0.0028
+    },
+    {
+      "percentile": 67,
+      "region": "Asia",
+      "share": 0.0024
+    },
+    {
+      "percentile": 97,
+      "region": "Asia",
+      "share": 0.0075
+    },
+    {
+      "percentile": 93,
+      "region": "Asia",
+      "share": 0.0044
+    },
+    {
+      "percentile": 13,
+      "region": "Asia",
+      "share": 0.0003
+    },
+    {
+      "percentile": 88,
+      "region": "Asia",
+      "share": 0.0047
+    },
+    {
+      "percentile": 4,
+      "region": "Asia",
+      "share": 0.0015
+    },
+    {
+      "percentile": 100,
+      "region": "Asia",
+      "share": 0.005
+    },
+    {
+      "percentile": 44,
+      "region": "Asia",
+      "share": 0.001
+    },
+    {
+      "percentile": 46,
+      "region": "Asia",
+      "share": 0.0016
+    },
+    {
+      "percentile": 62,
+      "region": "Asia",
+      "share": 0.002
+    },
+    {
+      "percentile": 92,
+      "region": "Asia",
+      "share": 0.0058
+    },
+    {
+      "percentile": 76,
+      "region": "Asia",
+      "share": 0.0025
+    },
+    {
+      "percentile": 75,
+      "region": "Asia",
+      "share": 0.0025
+    },
+    {
+      "percentile": 84,
+      "region": "Asia",
+      "share": 0.0031
+    },
+    {
+      "percentile": 86,
+      "region": "Asia",
+      "share": 0.0041
+    },
+    {
+      "percentile": 85,
+      "region": "Asia",
+      "share": 0.0039
+    },
+    {
+      "percentile": 8,
+      "region": "Asia",
+      "share": 0.0004
+    },
+    {
+      "percentile": 68,
+      "region": "Asia",
+      "share": 0.002
+    },
+    {
+      "percentile": 45,
+      "region": "Asia",
+      "share": 0.0012
+    },
+    {
+      "percentile": 73,
+      "region": "Asia",
+      "share": 0.0036
+    },
+    {
+      "percentile": 94,
+      "region": "Asia",
+      "share": 0.0052
+    },
+    {
+      "percentile": 23,
+      "region": "Asia",
+      "share": 0.0008
+    },
+    {
+      "percentile": 21,
+      "region": "Asia",
+      "share": 0.0006
+    },
+    {
+      "percentile": 38,
+      "region": "Asia",
+      "share": 0.0015
+    },
+    {
+      "percentile": 78,
+      "region": "Asia",
+      "share": 0.0036
+    },
+    {
+      "percentile": 29,
+      "region": "Asia",
+      "share": 0.0006
+    },
+    {
+      "percentile": 63,
+      "region": "Asia",
+      "share": 0.0022
+    },
+    {
+      "percentile": 77,
+      "region": "Asia",
+      "share": 0.0038
+    },
+    {
+      "percentile": 61,
+      "region": "Asia",
+      "share": 0.0021
+    },
+    {
+      "percentile": 59,
+      "region": "Asia",
+      "share": 0.002
+    },
+    {
+      "percentile": 11,
+      "region": "Asia",
+      "share": 0.0013
+    },
+    {
+      "percentile": 16,
+      "region": "Asia",
+      "share": 0.0002
+    },
+    {
+      "percentile": 58,
+      "region": "Asia",
+      "share": 0.0024
+    },
+    {
+      "percentile": 91,
+      "region": "Asia",
+      "share": 0.0062
+    },
+    {
+      "percentile": 48,
+      "region": "Asia",
+      "share": 0.0013
+    },
+    {
+      "percentile": 80,
+      "region": "Asia",
+      "share": 0.0028
+    },
+    {
+      "percentile": 20,
+      "region": "Asia",
+      "share": 0.0018
+    },
+    {
+      "percentile": 72,
+      "region": "Asia",
+      "share": 0.0032
+    },
+    {
+      "percentile": 52,
+      "region": "Asia",
+      "share": 0.0029
+    },
+    {
+      "percentile": 82,
+      "region": "Asia",
+      "share": 0.0027
+    },
+    {
+      "percentile": 30,
+      "region": "Asia",
+      "share": 0.0015
+    },
+    {
+      "percentile": 66,
+      "region": "Asia",
+      "share": 0.0016
+    },
+    {
+      "percentile": 55,
+      "region": "Asia",
+      "share": 0.0016
+    },
+    {
+      "percentile": 31,
+      "region": "Asia",
+      "share": 0.0009
+    },
+    {
+      "percentile": 90,
+      "region": "Asia",
+      "share": 0.004
+    },
+    {
+      "percentile": 34,
+      "region": "Asia",
+      "share": 0.0008
+    },
+    {
+      "percentile": 24,
+      "region": "Asia",
+      "share": 0.0009
+    },
+    {
+      "percentile": 57,
+      "region": "Asia",
+      "share": 0.0013
+    },
+    {
+      "percentile": 41,
+      "region": "Asia",
+      "share": 0.0014
+    },
+    {
+      "percentile": 33,
+      "region": "Asia",
+      "share": 0.0007
+    },
+    {
+      "percentile": 49,
+      "region": "Asia",
+      "share": 0.001
+    },
+    {
+      "percentile": 17,
+      "region": "Asia",
+      "share": 0.0007
+    },
+    {
+      "percentile": 32,
+      "region": "Asia",
+      "share": 0.0006
+    },
+    {
+      "percentile": 71,
+      "region": "Asia",
+      "share": 0.0022
+    },
+    {
+      "percentile": 53,
+      "region": "Asia",
+      "share": 0.002
+    },
+    {
+      "percentile": 64,
+      "region": "Asia",
+      "share": 0.002
+    },
+    {
+      "percentile": 70,
+      "region": "Asia",
+      "share": 0.0019
+    },
+    {
+      "percentile": 12,
+      "region": "Asia",
+      "share": 0.0008
+    },
+    {
+      "percentile": 60,
+      "region": "Asia",
+      "share": 0.0017
+    },
+    {
+      "percentile": 65,
+      "region": "Asia",
+      "share": 0.0018
+    },
+    {
+      "percentile": 43,
+      "region": "Asia",
+      "share": 0.0008
+    },
+    {
+      "percentile": 39,
+      "region": "Asia",
+      "share": 0.0012
+    },
+    {
+      "percentile": 51,
+      "region": "Asia",
+      "share": 0.002
+    },
+    {
+      "percentile": 56,
+      "region": "Asia",
+      "share": 0.0014
+    },
+    {
+      "percentile": 22,
+      "region": "Asia",
+      "share": 0.0004
+    },
+    {
+      "percentile": 40,
+      "region": "Asia",
+      "share": 0.0014
+    },
+    {
+      "percentile": 25,
+      "region": "Asia",
+      "share": 0.001
+    },
+    {
+      "percentile": 37,
+      "region": "Asia",
+      "share": 0.0008
+    },
+    {
+      "percentile": 28,
+      "region": "Asia",
+      "share": 0.0012
+    },
+    {
+      "percentile": 19,
+      "region": "Asia",
+      "share": 0.0005
+    },
+    {
+      "percentile": 47,
+      "region": "Asia",
+      "share": 0.0007
+    },
+    {
+      "percentile": 14,
+      "region": "Asia",
+      "share": 0.0008
+    },
+    {
+      "percentile": 10,
+      "region": "Asia",
+      "share": 0.0008
+    },
+    {
+      "percentile": 1,
+      "region": "Asia",
+      "share": 0.0011
+    },
+    {
+      "percentile": 26,
+      "region": "Asia",
+      "share": 0.0006
+    },
+    {
+      "percentile": 85,
+      "region": "Africa",
+      "share": 0.0033
+    },
+    {
+      "percentile": 74,
+      "region": "Africa",
+      "share": 0.0013
+    },
+    {
+      "percentile": 23,
+      "region": "Africa",
+      "share": 0.0005
+    },
+    {
+      "percentile": 70,
+      "region": "Africa",
+      "share": 0.0016
+    },
+    {
+      "percentile": 63,
+      "region": "Africa",
+      "share": 0.0012
+    },
+    {
+      "percentile": 97,
+      "region": "Africa",
+      "share": 0.0065
+    },
+    {
+      "percentile": 92,
+      "region": "Africa",
+      "share": 0.0045
+    },
+    {
+      "percentile": 14,
+      "region": "Africa",
+      "share": 0.001
+    },
+    {
+      "percentile": 81,
+      "region": "Africa",
+      "share": 0.0028
+    },
+    {
+      "percentile": 1,
+      "region": "Africa",
+      "share": 0.0013
+    },
+    {
+      "percentile": 21,
+      "region": "Africa",
+      "share": 0.001
+    },
+    {
+      "percentile": 87,
+      "region": "Africa",
+      "share": 0.0026
+    },
+    {
+      "percentile": 9,
+      "region": "Africa",
+      "share": 0.0012
+    },
+    {
+      "percentile": 93,
+      "region": "Africa",
+      "share": 0.0046
+    },
+    {
+      "percentile": 99,
+      "region": "Africa",
+      "share": 0.0075
+    },
+    {
+      "percentile": 95,
+      "region": "Africa",
+      "share": 0.0057
+    },
+    {
+      "percentile": 71,
+      "region": "Africa",
+      "share": 0.0028
+    },
+    {
+      "percentile": 13,
+      "region": "Africa",
+      "share": 0.0011
+    },
+    {
+      "percentile": 52,
+      "region": "Africa",
+      "share": 0.002
+    },
+    {
+      "percentile": 67,
+      "region": "Africa",
+      "share": 0.0023
+    },
+    {
+      "percentile": 58,
+      "region": "Africa",
+      "share": 0.002
+    },
+    {
+      "percentile": 49,
+      "region": "Africa",
+      "share": 0.0016
+    },
+    {
+      "percentile": 48,
+      "region": "Africa",
+      "share": 0.0011
+    },
+    {
+      "percentile": 83,
+      "region": "Africa",
+      "share": 0.0029
+    },
+    {
+      "percentile": 45,
+      "region": "Africa",
+      "share": 0.0009
+    },
+    {
+      "percentile": 17,
+      "region": "Africa",
+      "share": 0.002
+    },
+    {
+      "percentile": 94,
+      "region": "Africa",
+      "share": 0.0029
+    },
+    {
+      "percentile": 25,
+      "region": "Africa",
+      "share": 0.0017
+    },
+    {
+      "percentile": 26,
+      "region": "Africa",
+      "share": 0.001
+    },
+    {
+      "percentile": 73,
+      "region": "Africa",
+      "share": 0.0021
+    },
+    {
+      "percentile": 56,
+      "region": "Africa",
+      "share": 0.0018
+    },
+    {
+      "percentile": 51,
+      "region": "Africa",
+      "share": 0.0011
+    },
+    {
+      "percentile": 35,
+      "region": "Africa",
+      "share": 0.0018
+    },
+    {
+      "percentile": 76,
+      "region": "Africa",
+      "share": 0.0019
+    },
+    {
+      "percentile": 16,
+      "region": "Africa",
+      "share": 0.0006
+    },
+    {
+      "percentile": 5,
+      "region": "Africa",
+      "share": 0.0012
+    },
+    {
+      "percentile": 37,
+      "region": "Africa",
+      "share": 0.0018
+    },
+    {
+      "percentile": 32,
+      "region": "Africa",
+      "share": 0.0008
+    },
+    {
+      "percentile": 19,
+      "region": "Africa",
+      "share": 0.0009
+    },
+    {
+      "percentile": 20,
+      "region": "Africa",
+      "share": 0.0018
+    },
+    {
+      "percentile": 82,
+      "region": "Africa",
+      "share": 0.0031
+    },
+    {
+      "percentile": 60,
+      "region": "Africa",
+      "share": 0.0007
+    },
+    {
+      "percentile": 40,
+      "region": "Africa",
+      "share": 0.001
+    },
+    {
+      "percentile": 43,
+      "region": "Africa",
+      "share": 0.0016
+    },
+    {
+      "percentile": 28,
+      "region": "Africa",
+      "share": 0.0011
+    },
+    {
+      "percentile": 79,
+      "region": "Africa",
+      "share": 0.002
+    },
+    {
+      "percentile": 18,
+      "region": "Africa",
+      "share": 0.0009
+    },
+    {
+      "percentile": 54,
+      "region": "Africa",
+      "share": 0.002
+    },
+    {
+      "percentile": 44,
+      "region": "Africa",
+      "share": 0.0017
+    },
+    {
+      "percentile": 59,
+      "region": "Africa",
+      "share": 0.002
+    },
+    {
+      "percentile": 3,
+      "region": "Africa",
+      "share": 0.0011
+    },
+    {
+      "percentile": 12,
+      "region": "Africa",
+      "share": 0.001
+    },
+    {
+      "percentile": 77,
+      "region": "Africa",
+      "share": 0.0013
+    },
+    {
+      "percentile": 29,
+      "region": "Africa",
+      "share": 0.0018
+    },
+    {
+      "percentile": 62,
+      "region": "Africa",
+      "share": 0.0012
+    },
+    {
+      "percentile": 18,
+      "region": "Americas",
+      "share": 0.0023
+    },
+    {
+      "percentile": 75,
+      "region": "Middle East",
+      "share": 0.0027
+    },
+    {
+      "percentile": 64,
+      "region": "Africa",
+      "share": 0.0011
+    },
+    {
+      "percentile": 22,
+      "region": "Africa",
+      "share": 0.0015
+    },
+    {
+      "percentile": 15,
+      "region": "Africa",
+      "share": 0.0014
+    },
+    {
+      "percentile": 2,
+      "region": "Africa",
+      "share": 0.0004
+    },
+    {
+      "percentile": 38,
+      "region": "Africa",
+      "share": 0.0012
+    },
+    {
+      "percentile": 33,
+      "region": "Africa",
+      "share": 0.0014
+    },
+    {
+      "percentile": 34,
+      "region": "Africa",
+      "share": 0.001
+    },
+    {
+      "percentile": 7,
+      "region": "Africa",
+      "share": 0.001
+    },
+    {
+      "percentile": 11,
+      "region": "Africa",
+      "share": 0.0005
+    },
+    {
+      "percentile": 10,
+      "region": "Africa",
+      "share": 0.0009
+    },
+    {
+      "percentile": 5,
+      "region": "Asia",
+      "share": 0.0007
+    },
+    {
+      "percentile": 7,
+      "region": "Asia",
+      "share": 0.0008
+    },
+    {
+      "percentile": 12,
+      "region": "Middle East",
+      "share": 0.0002
+    },
+    {
+      "percentile": 34,
+      "region": "Middle East",
+      "share": 0.0002
+    },
+    {
+      "percentile": 8,
+      "region": "Middle East",
+      "share": 0.0005
+    },
+    {
+      "percentile": 10,
+      "region": "Middle East",
+      "share": 0.0002
+    },
+    {
+      "percentile": 38,
+      "region": "Middle East",
+      "share": 0.0008
+    },
+    {
+      "percentile": 31,
+      "region": "Africa",
+      "share": 0.0007
+    },
+    {
+      "percentile": 6,
+      "region": "Africa",
+      "share": 0.0005
+    },
+    {
+      "percentile": 4,
+      "region": "Africa",
+      "share": 0.0005
+    },
+    {
+      "percentile": 31,
+      "region": "Oceania",
+      "share": 0.0004
+    },
+    {
+      "percentile": 3,
+      "region": "Asia",
+      "share": 0.0003
+    },
+    {
+      "percentile": 61,
+      "region": "Oceania",
+      "share": 0.0001
+    },
+    {
+      "percentile": 43,
+      "region": "Oceania",
+      "share": 0.0002
+    }
+  ]
+}

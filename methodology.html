@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INTREALES - Methodology</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --color-bg: #f8f7f4;
+            --color-panel: #ffffff;
+            --color-text: #1a1a1a;
+            --color-text-muted: #6b6b6b;
+            --color-border: #e5e3df;
+            --color-accent: #2c5282;
+            --color-accent-light: #ebf4ff;
+            --shadow-md: 0 4px 12px rgba(0,0,0,0.1);
+            --font-serif: 'Source Serif 4', Georgia, serif;
+            --font-sans: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: var(--font-sans);
+            background: var(--color-bg);
+            color: var(--color-text);
+            min-height: 100vh;
+        }
+        
+        header {
+            background: var(--color-panel);
+            border-bottom: 1px solid var(--color-border);
+            padding: 1rem 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+        }
+        
+        .logo h1 {
+            font-family: var(--font-serif);
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--color-accent);
+        }
+        
+        nav {
+            display: flex;
+            gap: 1rem;
+        }
+        
+        nav a {
+            text-decoration: none;
+            color: var(--color-text-muted);
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            transition: all 0.2s;
+            font-weight: 500;
+        }
+        
+        nav a:hover, nav a.active {
+            color: var(--color-accent);
+            background: var(--color-accent-light);
+        }
+        
+        main {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+        
+        .page-title {
+            font-family: var(--font-serif);
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .page-subtitle {
+            color: var(--color-text-muted);
+            font-size: 1.1rem;
+            margin-bottom: 3rem;
+            line-height: 1.6;
+        }
+        
+        .content-section {
+            background: var(--color-panel);
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: var(--shadow-md);
+        }
+        
+        .content-section h2 {
+            font-family: var(--font-serif);
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--color-accent);
+        }
+        
+        .content-section h3 {
+            font-family: var(--font-serif);
+            font-size: 1.1rem;
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+        }
+        
+        .content-section p {
+            line-height: 1.8;
+            margin-bottom: 1rem;
+            color: var(--color-text);
+        }
+        
+        .content-section ul, .content-section ol {
+            margin-left: 1.5rem;
+            margin-bottom: 1rem;
+            line-height: 1.8;
+        }
+        
+        .content-section li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .placeholder {
+            background: var(--color-bg);
+            border: 2px dashed var(--color-border);
+            border-radius: 8px;
+            padding: 2rem;
+            text-align: center;
+            color: var(--color-text-muted);
+            font-style: italic;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: var(--color-text-muted);
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>INTREALES</h1>
+        </div>
+        <nav>
+            <a href="index.html">Homepage</a>
+            <a href="map.html">Carte</a>
+            <a href="figures.html">Figures</a>
+            <a href="methodology.html" class="active">Methodology</a>
+        </nav>
+    </header>
+    
+    <main>
+        <h1 class="page-title">Methodology</h1>
+        <p class="page-subtitle">
+            Data source descriptions, definitions, calculation methods, and detailed chart explanations
+        </p>
+        
+        <section class="content-section">
+            <h2>1. Data sources</h2>
+            <div class="placeholder">
+                To complete (Fichiers Fonciers, RBE, INPI, etc.)
+            </div>
+        </section>
+        
+        <section class="content-section">
+            <h2>2. Définitions</h2>
+            <div class="placeholder">
+               To complete (bénéficiaire effectif, SCI, non-résident, etc.)
+            </div>
+        </section>
+        
+        <section class="content-section">
+            <h2>3. Indicator Methodology</h2>
+            <div class="placeholder">
+                Tbd (part SCI, part non-résidents, ratio prix/m², etc.)
+            </div>
+        </section>
+        
+        <section class="content-section">
+            <h2>4. Limits</h2>
+            <div class="placeholder">
+                To complete
+            </div>
+        </section>
+        
+        <section class="content-section">
+            <h2>5. References</h2>
+            <div class="placeholder">
+                Pas grand chose à dire ici
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+    INTREALES Project &copy; 2025<br>
+    For any questions or suggestions, please contact
+    <a href="mailto:frachot.stephane@gmail.com">
+        Stéphane Frachot</a> or 
+        <a href="https://remilei.github.io/website" target="_blank" rel="noopener noreferrer">
+       Rémi Lei
+    </a>
+</footer>
+</body>
+</html>

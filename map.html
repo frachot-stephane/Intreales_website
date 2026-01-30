@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INTREALES - Map</title>
+    
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --color-bg: #f8f7f4;
+            --color-panel: #ffffff;
+            --color-text: #1a1a1a;
+            --color-text-muted: #6b6b6b;
+            --color-border: #e5e3df;
+            --color-accent: #2c5282;
+            --color-accent-light: #ebf4ff;
+            --shadow-sm: 0 1px 3px rgba(0,0,0,0.08);
+            --shadow-md: 0 4px 12px rgba(0,0,0,0.1);
+            --shadow-lg: 0 8px 24px rgba(0,0,0,0.12);
+            --font-serif: 'Source Serif 4', Georgia, serif;
+            --font-sans: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        html, body {
+            height: 100%;
+            overflow: hidden;
+        }
+        
+        body {
+            font-family: var(--font-sans);
+            background: var(--color-bg);
+            color: var(--color-text);
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+        
+        header {
+            background: var(--color-panel);
+            border-bottom: 1px solid var(--color-border);
+            padding: 0.5rem 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: var(--shadow-sm);
+            z-index: 1000;
+            flex-shrink: 0;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: baseline;
+            gap: 0.5rem;
+        }
+        
+        .logo h1 {
+            font-family: var(--font-serif);
+            font-size: 1.25rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            color: var(--color-accent);
+        }
+        
+        .logo span {
+            font-size: 0.75rem;
+            color: var(--color-text-muted);
+        }
+        
+        nav.main-nav {
+            display: flex;
+            gap: 0.25rem;
+        }
+        
+        nav.main-nav a {
+            padding: 0.35rem 0.75rem;
+            text-decoration: none;
+            color: var(--color-text-muted);
+            border-radius: 4px;
+            font-weight: 500;
+            font-size: 0.85rem;
+            transition: all 0.2s;
+        }
+        
+        nav.main-nav a:hover {
+            background: var(--color-bg);
+            color: var(--color-text);
+        }
+        
+        nav.main-nav a.active {
+            background: var(--color-accent);
+            color: white;
+        }
+        
+        main { 
+            flex: 1; 
+            display: flex; 
+            overflow: hidden;
+            min-height: 0;
+        }
+        
+        .sidebar {
+            width: 380px;
+            background: var(--color-panel);
+            border-right: 1px solid var(--color-border);
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            flex-shrink: 0;
+        }
+        
+        .sidebar-section {
+            padding: 0.75rem;
+            border-bottom: 1px solid var(--color-border);
+            flex-shrink: 0;
+        }
+        
+        .sidebar-section h2 {
+            font-family: var(--font-serif);
+            font-size: 0.9rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--color-text-muted);
+            margin-bottom: 0.5rem;
+        }
+        
+        .indicator-grid { 
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+             gap: 0.5rem;
+}
+        
+        .indicator-btn {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.6rem 0.7rem;
+            background: var(--color-bg);
+            border: 1px solid var(--color-border);
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            text-align: left;
+            font-family: inherit;
+        }
+        
+        .indicator-btn:hover { border-color: var(--color-accent); background: var(--color-accent-light); }
+        .indicator-btn.active { background: var(--color-accent); border-color: var(--color-accent); color: white; }
+        
+        .indicator-btn .icon {
+            width: 26px;
+            height: 26px;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.85rem;
+            flex-shrink: 0;
+        }
+        
+        .indicator-btn.active .icon { background: rgba(255,255,255,0.2); }
+        .indicator-btn .label { font-size: 0.85rem; font-weight: 500; line-height: 1.2; }
+        
+        .info-panel { 
+            padding: 0.75rem; 
+            flex: 1; 
+            display: flex; 
+            flex-direction: column;
+            min-height: 0;
+            overflow: hidden;
+        }
+        
+        .info-panel h3 { 
+            font-family: var(--font-serif); 
+            font-size: 0.95rem; 
+            margin-bottom: 0.25rem;
+            flex-shrink: 0;
+        }
+        
+        .info-panel .description { 
+            font-size: 0.7rem; 
+            color: var(--color-text-muted); 
+            line-height: 1.4; 
+            margin-bottom: 0.5rem;
+            flex-shrink: 0;
+        }
+        
+        .chart-container {
+            flex: 1;
+            background: var(--color-bg);
+            border-radius: 6px;
+            padding: 0.5rem;
+            display: flex;
+            flex-direction: column;
+            min-height: 0;
+            overflow: hidden;
+        }
+        
+        .chart-container h4 {
+            font-size: 0.65rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--color-text-muted);
+            margin-bottom: 0.5rem;
+            flex-shrink: 0;
+        }
+        
+        .chart-wrapper {
+            flex: 1;
+            position: relative;
+            min-height: 0;
+        }
+        
+        .chart-totals {
+            font-size: 0.65rem;
+            color: var(--color-text-muted);
+            margin-top: 0.5rem;
+            padding-top: 0.5rem;
+            border-top: 1px solid var(--color-border);
+            flex-shrink: 0;
+        }
+        
+        .map-container { flex: 1; position: relative; min-width: 0; }
+        #map { width: 100%; height: 100%; }
+        
+        .custom-tooltip {
+            background: var(--color-panel);
+            border: none;
+            border-radius: 6px;
+            box-shadow: var(--shadow-lg);
+            padding: 0.75rem;
+            font-family: var(--font-sans);
+            min-width: 180px;
+        }
+        
+        .custom-tooltip::before { display: none; }
+        .tooltip-title { font-family: var(--font-serif); font-size: 0.9rem; font-weight: 600; margin-bottom: 0.35rem; padding-bottom: 0.35rem; border-bottom: 1px solid var(--color-border); }
+        .tooltip-row { display: flex; justify-content: space-between; align-items: center; padding: 0.25rem 0; font-size: 0.75rem; }
+        .tooltip-row .label { color: var(--color-text-muted); }
+        .tooltip-row .value { font-weight: 600; }
+        .tooltip-hint { margin-top: 0.5rem; padding-top: 0.35rem; border-top: 1px solid var(--color-border); font-size: 0.65rem; color: var(--color-text-muted); text-align: center; }
+        
+        .legend {
+            position: absolute;
+            bottom: 1.5rem;
+            right: 1.5rem;
+            background: var(--color-panel);
+            border-radius: 6px;
+            box-shadow: var(--shadow-md);
+            padding: 0.75rem;
+            z-index: 1000;
+            min-width: 160px;
+        }
+        
+        .legend h4 { font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: var(--color-text-muted); margin-bottom: 0.5rem; }
+        .legend-gradient { height: 10px; border-radius: 3px; margin-bottom: 0.35rem; }
+        .legend-labels { display: flex; justify-content: space-between; font-size: 0.65rem; color: var(--color-text-muted); }
+        .legend-level { font-size: 0.7rem; color: var(--color-text-muted); margin-top: 0.35rem; text-align: center; font-style: italic; }
+        
+        .loading-overlay {
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(248, 247, 244, 0.9);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 2000;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s;
+        }
+        
+        .loading-overlay.active { opacity: 1; pointer-events: auto; }
+        
+        .loading-spinner {
+            width: 32px;
+            height: 32px;
+            border: 3px solid var(--color-border);
+            border-top-color: var(--color-accent);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+        
+        @keyframes spin { to { transform: rotate(360deg); } }
+        
+        .leaflet-control-zoom { border: none !important; box-shadow: var(--shadow-md) !important; }
+        .leaflet-control-zoom a { background: var(--color-panel) !important; color: var(--color-text) !important; border: none !important; width: 28px !important; height: 28px !important; line-height: 28px !important; font-size: 14px !important; }
+        .leaflet-control-zoom a:hover { background: var(--color-bg) !important; }
+        
+        .back-button {
+            position: absolute;
+            top: 0.75rem;
+            left: 0.75rem;
+            z-index: 1000;
+            background: var(--color-panel);
+            border: none;
+            border-radius: 6px;
+            box-shadow: var(--shadow-md);
+            padding: 0.5rem 0.75rem;
+            cursor: pointer;
+            font-family: var(--font-sans);
+            font-size: 0.75rem;
+            font-weight: 500;
+            display: none;
+            align-items: center;
+            gap: 0.35rem;
+            transition: all 0.2s;
+        }
+        
+        .back-button.visible { display: flex; }
+        .back-button:hover { background: var(--color-bg); }
+        
+        .leaflet-interactive:focus { outline: none; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>INTREALES</h1>
+            <span>Foreign real estate property in France</span>
+        </div>
+        <nav class="main-nav">
+    <a href="index.html">Homepage</a>
+    <a href="map.html">Map</a>
+    <a href="figures.html">Figures</a>
+    <a href="methodology.html">Methodology</a>
+</nav>
+    </header>
+    
+    <main>
+        <aside class="sidebar">
+            <div class="sidebar-section">
+                <h2>Indicator</h2>
+                <div class="indicator-grid" id="indicatorButtons"></div>
+            </div>
+            
+            <div class="info-panel" id="infoPanel">
+                <h3 id="infoTitle">France</h3>
+                <p class="description" id="infoDescription">
+                    Hover over an area to see its statistics.
+                </p>
+                
+                <div class="chart-container">
+                    <h4 id="chartTitle">Repartition by country (without France)</h4>
+                    <div class="chart-wrapper">
+                        <canvas id="countryChart"></canvas>
+                    </div>
+                    <div class="chart-totals" id="chartTotals"></div>
+                </div>
+            </div>
+        </aside>
+        
+        <div class="map-container">
+            <div id="map"></div>
+            
+            <button class="back-button" id="backButton">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M19 12H5M12 19l-7-7 7-7"/>
+                </svg>
+                Retour
+            </button>
+            
+            <div class="legend" id="legend">
+                <h4 id="legendTitle">Légende</h4>
+                <div class="legend-gradient" id="legendGradient"></div>
+                <div class="legend-labels">
+                    <span id="legendMin">0</span>
+                    <span id="legendMax">100%</span>
+                </div>
+                <div class="legend-level" id="legendLevel">France (régions)</div>
+            </div>
+            
+            <div class="loading-overlay" id="loadingOverlay">
+                <div class="loading-spinner"></div>
+            </div>
+        </div>
+    </main>
+    
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <script>
+        const CONFIG = {
+            dataPath: 'data/',
+            defaultCenter: [46.603354, 2.3],
+            defaultZoom: 6,
+            maxZoom: 18,
+            minZoom: 5
+        };
+        
+        const INDICATORS = {
+            sci_share: { name: 'Share of SCI', description: 'A Civil Real Estate Company (Société Civile Immobilière - SCI) is the preferred legal structure for holding real estate assets in France. The SCI share represents the proportion of total corporate-owned real estate value that is held through SCIs. Check the methodology for more informations about SCIs.', icon: '🏢', iconBg: '#e6f3e6', format: 'percent', colorScale: ['#ffffff', '#228b22'] },
+            n_foreign: { name: 'Number of non-résidents BOs', description: 'Number of non-résidents beneficial owners of a french company that held real-estate in France. See the methodology for more informations.', icon: '👥', iconBg: '#fce4e4', format: 'number', colorScale: ['#ffffff', '#8b0000'], logScale: true },
+            foreign_share: { name: 'Share held by non-residents', description: 'Share of real estate value held by non-residents through companies. See the methodology for more informations.', icon: '🌍', iconBg: '#fff3e6', format: 'percent', colorScale: ['#ffffff', '#8b0000'] },
+            val_m2_foreign: { name: 'Price per sqm for non-residents', description: 'Price per square meter ratio of real estate owned by foreigners through companies. See the methodology for more informations.', icon: '💰', iconBg: '#e6f7e6', format: 'currency', colorScale: ['#ffffff', '#006400'] },
+            ratio_m2: { name: 'Price per sqm ratio', description: 'Price per square meter ratio comparing real estate owned by foreigners versus French nationals. A (>1) ratio implies implies the real estate held by non-residents through companies is more expansive in average. See the methodology for more informations.', icon: '📊', iconBg: '#f0e6ff', format: 'ratio', colorScale: ['#00008b', '#ffffff', '#8b0000'], diverging: true, midpoint: 1 },
+            top5_share: { name: 'Share of top 5%', description: 'PShare of total corporate-owned real estate value held by the top 5% of companies. See the methodology for more informations.', icon: '🏆', iconBg: '#fff0f0', format: 'percent', colorScale: ['#ffffff', '#8b0000'] },
+            total_value: { name: 'Total value', description: 'Total value of corporate-owned real estate (millions €). See the methodology for more informations.', icon: '🏠', iconBg: '#e6f0ff', format: 'currency_millions', colorScale: ['#ffffff', '#4169e1'], logScale: true }
+        };
+        
+        const state = {
+            currentLevel: 'country',
+            currentIndicator: 'foreign_share',
+            currentRegion: null,
+            currentDomain: [0, 1],
+            currentFeatures: [],
+            geoData: { regions: null, departements: null },
+            countryData: null,
+            layers: { current: null }
+        };
+        
+        let countryChart = null;
+        
+        const map = L.map('map', {
+            center: CONFIG.defaultCenter,
+            zoom: CONFIG.defaultZoom,
+            maxZoom: CONFIG.maxZoom,
+            minZoom: CONFIG.minZoom,
+            zoomControl: true
+        });
+        
+        L.tileLayer('https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png', {
+            attribution: '© OSM © CARTO',
+            subdomains: 'abcd',
+            maxZoom: 19
+        }).addTo(map);
+        
+        function formatValue(value, format) {
+            if (value === null || value === undefined || isNaN(value)) return 'N/A';
+            switch (format) {
+                case 'percent': return (value * 100).toFixed(1) + '%';
+                case 'number': return Math.round(value).toLocaleString('fr-FR');
+                case 'currency': return Math.round(value).toLocaleString('fr-FR') + ' €/m²';
+                case 'currency_millions': return value.toFixed(1) + ' M€';
+                case 'ratio': return value.toFixed(2) + 'x';
+                default: return value.toString();
+            }
+        }
+        
+        function calculateDomain(features, indicator) {
+            const config = INDICATORS[indicator];
+            const values = features.map(f => f.properties[indicator]).filter(v => v !== null && v !== undefined && !isNaN(v) && isFinite(v));
+            if (values.length === 0) return [0, 1];
+            let min = Math.min(...values);
+            let max = Math.max(...values);
+            if (config.diverging && config.midpoint !== undefined) {
+                const maxDist = Math.max(Math.abs(max - config.midpoint), Math.abs(min - config.midpoint));
+                min = config.midpoint - maxDist;
+                max = config.midpoint + maxDist;
+            }
+            if (config.logScale) { min = Math.max(min, 1); if (max <= min) max = min * 10; }
+            if (min === max) { min = min * 0.9; max = max * 1.1; if (min === 0) { min = 0; max = 1; } }
+            return [min, max];
+        }
+        
+        function getColor(value, indicator) {
+            const config = INDICATORS[indicator];
+            if (value === null || value === undefined || isNaN(value) || !isFinite(value)) return '#e0e0e0';
+            const domain = state.currentDomain;
+            let t;
+            if (config.logScale && value > 0) {
+                const logMin = Math.log(Math.max(domain[0], 1));
+                const logMax = Math.log(Math.max(domain[1], 1));
+                const logVal = Math.log(Math.max(value, 1));
+                t = (logVal - logMin) / (logMax - logMin);
+            } else if (config.diverging) {
+                const mid = config.midpoint;
+                if (value < mid) t = 0.5 * (value - domain[0]) / (mid - domain[0]);
+                else t = 0.5 + 0.5 * (value - mid) / (domain[1] - mid);
+            } else {
+                t = (value - domain[0]) / (domain[1] - domain[0]);
+            }
+            t = Math.max(0, Math.min(1, t));
+            if (config.diverging && config.colorScale.length === 3) {
+                if (t < 0.5) return interpolateColor(config.colorScale[0], config.colorScale[1], t * 2);
+                else return interpolateColor(config.colorScale[1], config.colorScale[2], (t - 0.5) * 2);
+            }
+            return interpolateColor(config.colorScale[0], config.colorScale[1], t);
+        }
+        
+        function interpolateColor(color1, color2, t) {
+            const c1 = hexToRgb(color1), c2 = hexToRgb(color2);
+            const r = Math.round(c1.r + (c2.r - c1.r) * t);
+            const g = Math.round(c1.g + (c2.g - c1.g) * t);
+            const b = Math.round(c1.b + (c2.b - c1.b) * t);
+            return `rgb(${r}, ${g}, ${b})`;
+        }
+        
+        function hexToRgb(hex) {
+            const result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+            return result ? { r: parseInt(result[1], 16), g: parseInt(result[2], 16), b: parseInt(result[3], 16) } : { r: 255, g: 255, b: 255 };
+        }
+        
+        function showLoading() { document.getElementById('loadingOverlay').classList.add('active'); }
+        function hideLoading() { document.getElementById('loadingOverlay').classList.remove('active'); }
+        
+        async function loadGeoJSON(url) {
+            try {
+                const response = await fetch(url);
+                if (!response.ok) throw new Error(`HTTP ${response.status}`);
+                return await response.json();
+            } catch (error) {
+                console.error(`Erreur chargement ${url}:`, error);
+                return null;
+            }
+        }
+        
+        async function loadRegions() {
+            if (state.geoData.regions) return state.geoData.regions;
+            showLoading();
+            state.geoData.regions = await loadGeoJSON(CONFIG.dataPath + 'regions.geojson');
+            hideLoading();
+            return state.geoData.regions;
+        }
+        
+        async function loadDepartements() {
+            if (state.geoData.departements) return state.geoData.departements;
+            showLoading();
+            state.geoData.departements = await loadGeoJSON(CONFIG.dataPath + 'departements.geojson');
+            hideLoading();
+            return state.geoData.departements;
+        }
+        
+        async function loadCountryData() {
+            if (state.countryData) return state.countryData;
+            state.countryData = await loadGeoJSON(CONFIG.dataPath + 'country_distribution.json');
+            return state.countryData;
+        }
+        
+        function styleFeature(feature) {
+            const value = feature.properties[state.currentIndicator];
+            return { fillColor: getColor(value, state.currentIndicator), weight: 1, opacity: 1, color: '#999', fillOpacity: 0.8 };
+        }
+        
+        function highlightFeature(e) {
+            const layer = e.target;
+            layer.setStyle({ weight: 2, color: '#333', fillOpacity: 0.9 });
+            layer.bringToFront();
+            
+            const props = layer.feature.properties;
+            document.getElementById('infoTitle').textContent = props.name || props.code;
+            
+            if (state.currentLevel === 'country') {
+                updateCountryChart(props.code, 'region');
+            } else if (state.currentLevel === 'region') {
+                updateCountryChart(props.code, 'departement');
+            }
+        }
+        
+        function resetHighlight(e) {
+            if (state.layers.current) state.layers.current.resetStyle(e.target);
+            
+            if (state.currentLevel === 'country') {
+                document.getElementById('infoTitle').textContent = 'France';
+                updateCountryChart('france', 'france');
+            } else if (state.currentLevel === 'region' && state.currentRegion) {
+                document.getElementById('infoTitle').textContent = state.currentRegion.name;
+                updateCountryChart(state.currentRegion.code, 'region');
+            }
+        }
+        
+        function onFeatureClick(e, level) {
+            const props = e.target.feature.properties;
+            if (level === 'country') {
+                zoomToDepartements(props.code, props.name);
+            }
+        }
+        
+        function createTooltipContent(props) {
+            const indicator = INDICATORS[state.currentIndicator];
+            const value = props[state.currentIndicator];
+            let html = `<div class="custom-tooltip">
+                <div class="tooltip-title">${props.name || props.code}</div>
+                <div class="tooltip-row"><span class="label">${indicator.name}</span><span class="value">${formatValue(value, indicator.format)}</span></div>`;
+            if (props.total_value !== undefined) html += `<div class="tooltip-row"><span class="label">Valeur totale</span><span class="value">${formatValue(props.total_value, 'currency_millions')}</span></div>`;
+            if (state.currentLevel === 'country') html += `<div class="tooltip-hint">Cliquez pour zoomer</div>`;
+            html += '</div>';
+            return html;
+        }
+        
+        function updateMapWithFeatures(features, level, clickLevel) {
+            state.currentFeatures = features;
+            state.currentDomain = calculateDomain(features, state.currentIndicator);
+            if (state.layers.current) map.removeLayer(state.layers.current);
+            const geoJsonData = { type: 'FeatureCollection', features: features };
+            state.layers.current = L.geoJSON(geoJsonData, {
+                style: styleFeature,
+                onEachFeature: (feature, layer) => {
+                    layer.on({ mouseover: highlightFeature, mouseout: resetHighlight });
+                    if (clickLevel) layer.on('click', (e) => onFeatureClick(e, clickLevel));
+                    layer.bindTooltip(() => createTooltipContent(feature.properties), { sticky: true, className: 'custom-tooltip-wrapper' });
+                }
+            }).addTo(map);
+            map.fitBounds(state.layers.current.getBounds(), { padding: [20, 20] });
+            updateLegend();
+        }
+        
+        async function showRegions() {
+            const data = await loadRegions();
+            if (!data) return;
+            state.currentLevel = 'country';
+            state.currentRegion = null;
+            updateMapWithFeatures(data.features, 'country', 'country');
+            updateBackButton();
+            updateCountryChart('france', 'france');
+            document.getElementById('infoTitle').textContent = 'France';
+        }
+        
+        async function zoomToDepartements(regionCode, regionName) {
+            const data = await loadDepartements();
+            if (!data) return;
+            state.currentLevel = 'region';
+            state.currentRegion = { code: regionCode, name: regionName };
+            const filteredFeatures = data.features.filter(f => f.properties.region_code === regionCode);
+            if (filteredFeatures.length === 0) { 
+                console.warn('Aucun département trouvé pour la région', regionCode); 
+                return; 
+            }
+            updateMapWithFeatures(filteredFeatures, 'region', null);
+            updateBackButton();
+            updateCountryChart(regionCode, 'region');
+            document.getElementById('infoTitle').textContent = regionName;
+        }
+        
+        function updateBackButton() {
+            const btn = document.getElementById('backButton');
+            if (state.currentLevel === 'country') {
+                btn.classList.remove('visible');
+            } else {
+                btn.classList.add('visible');
+            }
+        }
+        
+        function updateLegend() {
+            const indicator = INDICATORS[state.currentIndicator];
+            const domain = state.currentDomain;
+            document.getElementById('legendTitle').textContent = indicator.name;
+            let gradient;
+            if (indicator.diverging && indicator.colorScale.length === 3) {
+                gradient = `linear-gradient(to right, ${indicator.colorScale[0]}, ${indicator.colorScale[1]}, ${indicator.colorScale[2]})`;
+            } else {
+                gradient = `linear-gradient(to right, ${indicator.colorScale[0]}, ${indicator.colorScale[1]})`;
+            }
+            document.getElementById('legendGradient').style.background = gradient;
+            document.getElementById('legendMin').textContent = formatValue(domain[0], indicator.format);
+            document.getElementById('legendMax').textContent = formatValue(domain[1], indicator.format);
+            let levelText = 'France (régions)';
+            if (state.currentLevel === 'region' && state.currentRegion) levelText = state.currentRegion.name + ' (dép.)';
+            document.getElementById('legendLevel').textContent = levelText;
+        }
+        
+        function updateIndicatorButtons() {
+            const container = document.getElementById('indicatorButtons');
+            let html = '';
+            Object.entries(INDICATORS).forEach(([key, config]) => {
+                const isActive = key === state.currentIndicator;
+                html += `<button class="indicator-btn ${isActive ? 'active' : ''}" onclick="selectIndicator('${key}')">
+                    <span class="icon" style="background: ${isActive ? 'rgba(255,255,255,0.2)' : config.iconBg}">${config.icon}</span>
+                    <span class="label">${config.name}</span>
+                </button>`;
+            });
+            container.innerHTML = html;
+        }
+        
+        function selectIndicator(key) {
+            state.currentIndicator = key;
+            state.currentDomain = calculateDomain(state.currentFeatures, key);
+            updateIndicatorButtons();
+            updateLegend();
+            document.getElementById('infoDescription').textContent = INDICATORS[key].description;
+            if (state.layers.current) state.layers.current.setStyle(styleFeature);
+        }
+        
+        async function updateCountryChart(zoneCode, zoneType) {
+            const data = await loadCountryData();
+            if (!data) return;
+            
+            let chartData;
+            let title;
+            
+            if (zoneType === 'france') {
+                chartData = data.france;
+                title = 'France';
+            } else if (zoneType === 'region') {
+                chartData = data.regions ? data.regions[zoneCode] : null;
+                if (state.geoData.regions) {
+                    const regionFeature = state.geoData.regions.features.find(f => f.properties.code === zoneCode);
+                    title = regionFeature ? regionFeature.properties.name : zoneCode;
+                } else {
+                    title = zoneCode;
+                }
+            } else if (zoneType === 'departement') {
+                chartData = data.departements ? data.departements[zoneCode] : null;
+                if (state.geoData.departements) {
+                    const depFeature = state.geoData.departements.features.find(f => f.properties.code === zoneCode);
+                    title = depFeature ? depFeature.properties.name : zoneCode;
+                } else {
+                    title = zoneCode;
+                }
+            }
+            
+            if (!chartData || !chartData.top15) return;
+            
+            document.getElementById('chartTitle').textContent = `Distribution of company-owned real estate - ${title}`;
+            
+            const validData = chartData.top15.filter(d => d && d.assigned > 0);
+            const labels = validData.map(d => d.code_country);
+            const values = validData.map(d => d.assigned / 1000);
+            
+            const ctx = document.getElementById('countryChart').getContext('2d');
+            
+            if (countryChart) countryChart.destroy();
+            
+            countryChart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: labels,
+                    datasets: [{
+                        data: values,
+                        backgroundColor: '#999999',
+                        borderRadius: 2
+                    }]
+                },
+                options: {
+                    indexAxis: 'y',
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: { display: false },
+                        tooltip: {
+                            callbacks: {
+                                label: (ctx) => `${(ctx.raw).toFixed(3)} Bn€`
+                            }
+                        }
+                    },
+                    scales: {
+                        y: {
+                            grid: { display: false },
+                            ticks: {
+                                font: { size: 9 },
+                                autoSkip: false
+                            }
+                        },
+                        x: {
+                            grid: { color: '#e5e3df' },
+                            ticks: {
+                                font: { size: 8 },
+                                callback: (v) => v.toFixed(1) + ' Bn'
+                            }
+                        }
+                    }
+                }
+            });
+            
+            const fra = chartData.FRA || { assigned: 0, share: 0 };
+            const unknown = chartData.NoCountry || { assigned: 0, share: 0 };
+            document.getElementById('chartTotals').innerHTML = 
+                `<b>France:</b> ${(fra.assigned / 1000).toFixed(1)} Bn€ (${(fra.share * 100).toFixed(1)}%) | ` +
+                `<b>Unknown:</b> ${(unknown.assigned / 1000).toFixed(2)} Bn€ (${(unknown.share * 100).toFixed(1)}%)`;
+        }
+        
+        document.getElementById('backButton').addEventListener('click', function() {
+            showRegions();
+        });
+        
+        async function init() {
+            updateIndicatorButtons();
+            document.getElementById('infoDescription').textContent = INDICATORS[state.currentIndicator].description;
+            await loadCountryData();
+            await showRegions();
+        }
+        
+        init();
+    </script>
+</body>
+</html>

@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INTREALES - Figures</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --color-bg: #f8f7f4;
+            --color-panel: #ffffff;
+            --color-text: #1a1a1a;
+            --color-text-muted: #6b6b6b;
+            --color-border: #e5e3df;
+            --color-accent: #2c5282;
+            --color-accent-light: #ebf4ff;
+            --shadow-sm: 0 1px 3px rgba(0,0,0,0.08);
+            --shadow-md: 0 4px 12px rgba(0,0,0,0.1);
+            --font-serif: 'Source Serif 4', Georgia, serif;
+            --font-sans: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            --color-sci: #e41a1c;
+            --color-other: #377eb8;
+        }
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: var(--font-sans);
+            background: var(--color-bg);
+            color: var(--color-text);
+            min-height: 100vh;
+        }
+        
+        header {
+            background: var(--color-panel);
+            border-bottom: 1px solid var(--color-border);
+            padding: 0.5rem 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: var(--shadow-sm);
+        }
+        
+        .logo {
+            display: flex;
+            align-items: baseline;
+            gap: 0.5rem;
+        }
+        
+        .logo h1 {
+            font-family: var(--font-serif);
+            font-size: 1.25rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            color: var(--color-accent);
+        }
+        
+        .logo span {
+            font-size: 0.75rem;
+            color: var(--color-text-muted);
+        }
+        
+        nav.main-nav {
+            display: flex;
+            gap: 0.25rem;
+        }
+        
+        nav.main-nav a {
+            padding: 0.35rem 0.75rem;
+            text-decoration: none;
+            color: var(--color-text-muted);
+            border-radius: 4px;
+            font-weight: 500;
+            font-size: 0.85rem;
+            transition: all 0.2s;
+        }
+        
+        nav.main-nav a:hover {
+            background: var(--color-bg);
+            color: var(--color-text);
+        }
+        
+        nav.main-nav a.active {
+            background: var(--color-accent);
+            color: white;
+        }
+        
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1.5rem;
+        }
+        
+        .page-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.5rem;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        
+        h2 {
+            font-family: var(--font-serif);
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--color-text);
+        }
+        
+        .zone-selector {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            background: var(--color-panel);
+            padding: 0.75rem 1rem;
+            border-radius: 8px;
+            box-shadow: var(--shadow-sm);
+        }
+        
+        .zone-selector label {
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: var(--color-text-muted);
+        }
+        
+        .zone-selector select {
+            padding: 0.5rem 0.75rem;
+            border: 1px solid var(--color-border);
+            border-radius: 4px;
+            font-family: inherit;
+            font-size: 0.85rem;
+            background: white;
+            cursor: pointer;
+            min-width: 150px;
+        }
+        
+        .zone-selector select:focus {
+            outline: none;
+            border-color: var(--color-accent);
+        }
+        
+        .error-message {
+            background: #fee;
+            border: 1px solid #fcc;
+            border-radius: 8px;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            color: #c00;
+            font-size: 0.9rem;
+        }
+        
+        .info-message {
+            background: var(--color-accent-light);
+            border: 1px solid var(--color-accent);
+            border-radius: 8px;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            color: var(--color-accent);
+            font-size: 0.85rem;
+        }
+        
+        .figures-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+        }
+        
+        .figure-card {
+            background: var(--color-panel);
+            border-radius: 10px;
+            box-shadow: var(--shadow-md);
+            padding: 1.25rem;
+        }
+        
+        .figure-card.full-width {
+            grid-column: 1 / -1;
+        }
+        
+        .figure-card h3 {
+            font-family: var(--font-serif);
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 0.35rem;
+        }
+        
+        .figure-card .caption {
+            font-size: 0.8rem;
+            color: var(--color-text-muted);
+            margin-bottom: 0.75rem;
+            line-height: 1.4;
+        }
+        
+        .chart-wrapper {
+            height: 280px;
+            position: relative;
+        }
+        
+        .legend-custom {
+            display: flex;
+            gap: 1.25rem;
+            margin-top: 0.75rem;
+            justify-content: center;
+            font-size: 0.8rem;
+        }
+        
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+        
+        .legend-color {
+            width: 10px;
+            height: 10px;
+            border-radius: 2px;
+        }
+        
+        @media (max-width: 768px) {
+            .figures-grid {
+                grid-template-columns: 1fr;
+            }
+            .page-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>INTREALES</h1>
+            <span>Foreign real estate property in France</span>
+        </div>
+        <nav class="main-nav">
+    <a href="index.html">Homepage</a>
+    <a href="map.html" class="active">Map</a>
+    <a href="figures.html">Figures</a>
+    <a href="methodology.html">Methodology</a>
+</nav>
+    </header>
+    
+    <main>
+        <div class="page-header">
+            <h2>Figures</h2>
+            <div class="zone-selector">
+                <label>Area :</label>
+                <select id="levelSelect">
+                    <option value="france">All of France</option>
+                    <option value="region">Region</option>
+                    <option value="departement">Departement</option>
+                </select>
+                <select id="zoneSelect" style="display: none;">
+                    <option value="">Please select...</option>
+                </select>
+            </div>
+        </div>
+        
+        <div id="errorContainer"></div>
+        <div id="infoContainer"></div>
+        
+        <div class="figures-grid">
+            <div class="figure-card">
+                <h3>Figure 1: Assignment rate by percentile</h3>
+                <p class="caption">Share of corporate-owned real estate value attributed to identified beneficial owners, by percentile of the company.</p>
+                <div class="chart-wrapper">
+                    <canvas id="chartRate"></canvas>
+                </div>
+                <div class="legend-custom">
+                    <div class="legend-item"><span class="legend-color" style="background: var(--color-sci)"></span> SCI</div>
+                    <div class="legend-item"><span class="legend-color" style="background: var(--color-other)"></span> Autres</div>
+                </div>
+            </div>
+            
+            <div class="figure-card">
+                <h3>Figure 2: Share of non-residents by percentile</h3>
+                <p class="caption">Share of assigned value held by non-resident beneficial owners, by percentile of the company.
+
+</p>
+                <div class="chart-wrapper">
+                    <canvas id="chartForeign"></canvas>
+                </div>
+                <div class="legend-custom">
+                    <div class="legend-item"><span class="legend-color" style="background: var(--color-sci)"></span> SCI</div>
+                    <div class="legend-item"><span class="legend-color" style="background: var(--color-other)"></span> Autres</div>
+                </div>
+            </div>
+            
+            <div class="figure-card">
+                <h3>Figure 3: Indirect ownership by percentile</h3>
+                <p class="caption">Share of value held indirectly through intermediate structures, by percentile of the company.</p>
+                <div class="chart-wrapper">
+                    <canvas id="chartDetention"></canvas>
+                </div>
+                <div class="legend-custom">
+                    <div class="legend-item"><span class="legend-color" style="background: var(--color-sci)"></span> SCI</div>
+                    <div class="legend-item"><span class="legend-color" style="background: var(--color-other)"></span> Autres</div>
+                </div>
+            </div>
+            
+            <div class="figure-card">
+                <h3>Figure 4: Distribution by geographic region</h3>
+                <p class="caption">Distribution of assigned corporate-owned real estate by world region and percentile. Lecture: 5.7% of total corporate real estate value in the 90th percentile could be attributed to European (non-French) beneficial owners</p>
+                <div class="chart-wrapper">
+                    <canvas id="chartRegion"></canvas>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <script>
+        const COLORS = {
+            sci: '#e41a1c',
+            other: '#377eb8',
+            regions: ['#1b9e77', '#d95f02', '#7570b3', '#e7298a', '#66a61e', '#e6ab02', '#a6761d', '#666666']
+        };
+        
+        let charts = {};
+        let geoData = { regions: null, departements: null };
+        let figuresData = null;
+        let currentLevel = 'france';
+        let currentZone = null;
+        
+        function showError(message) {
+            document.getElementById('errorContainer').innerHTML = 
+                `<div class="error-message">${message}</div>`;
+        }
+        
+        function showInfo(message) {
+            document.getElementById('infoContainer').innerHTML = 
+                `<div class="info-message">${message}</div>`;
+        }
+        
+        function clearMessages() {
+            document.getElementById('errorContainer').innerHTML = '';
+            document.getElementById('infoContainer').innerHTML = '';
+        }
+        
+        async function loadGeoJSON(url) {
+            try {
+                const response = await fetch(url);
+                if (!response.ok) throw new Error(`HTTP ${response.status}`);
+                return await response.json();
+            } catch (error) {
+                console.error(`Erreur chargement ${url}:`, error);
+                return null;
+            }
+        }
+        
+        async function loadData() {
+            try {
+                const response = await fetch('data/figures_data.json');
+                if (!response.ok) {
+                    throw new Error(`Erreur HTTP ${response.status}`);
+                }
+                figuresData = await response.json();
+                console.log('Données chargées:', figuresData);
+                return figuresData;
+            } catch (error) {
+                console.error('Erreur chargement données:', error);
+                showError(`Erreur: ${error.message}. Vérifiez que le fichier data/figures_data.json existe.`);
+                return null;
+            }
+        }
+        
+        async function loadGeoData() {
+            geoData.regions = await loadGeoJSON('data/regions.geojson');
+            geoData.departements = await loadGeoJSON('data/departements.geojson');
+        }
+        
+        function populateZoneSelect(level) {
+            const zoneSelect = document.getElementById('zoneSelect');
+            zoneSelect.innerHTML = '<option value="">Please select...</option>';
+            
+            if (level === 'region' && geoData.regions) {
+                geoData.regions.features
+                    .sort((a, b) => a.properties.name.localeCompare(b.properties.name))
+                    .forEach(f => {
+                        const option = document.createElement('option');
+                        option.value = f.properties.code;
+                        option.textContent = f.properties.name;
+                        zoneSelect.appendChild(option);
+                    });
+                zoneSelect.style.display = 'block';
+            } else if (level === 'departement' && geoData.departements) {
+                geoData.departements.features
+                    .sort((a, b) => a.properties.name.localeCompare(b.properties.name))
+                    .forEach(f => {
+                        const option = document.createElement('option');
+                        option.value = f.properties.code;
+                        option.textContent = `${f.properties.code} - ${f.properties.name}`;
+                        zoneSelect.appendChild(option);
+                    });
+                zoneSelect.style.display = 'block';
+            } else {
+                zoneSelect.style.display = 'none';
+            }
+        }
+        
+        function prepareLineData(data, valueKey) {
+            if (!data || !Array.isArray(data) || data.length === 0) {
+                return { labels: [], datasets: [] };
+            }
+            
+            const sciData = data.filter(d => d.sci === true).sort((a, b) => a.percentile - b.percentile);
+            const otherData = data.filter(d => d.sci === false).sort((a, b) => a.percentile - b.percentile);
+            
+            const allPercentiles = [...new Set([...sciData.map(d => d.percentile), ...otherData.map(d => d.percentile)])].sort((a, b) => a - b);
+            
+            return {
+                labels: allPercentiles,
+                datasets: [
+                    {
+                        label: 'Autres entreprises',
+                        data: allPercentiles.map(p => {
+                            const point = otherData.find(d => d.percentile === p);
+                            return point ? point[valueKey] : null;
+                        }),
+                        borderColor: COLORS.other,
+                        backgroundColor: COLORS.other,
+                        pointRadius: 1.5,
+                        pointHoverRadius: 3,
+                        borderWidth: 1.5,
+                        tension: 0.1,
+                        spanGaps: true
+                    },
+                    {
+                        label: 'SCI uniquement',
+                        data: allPercentiles.map(p => {
+                            const point = sciData.find(d => d.percentile === p);
+                            return point ? point[valueKey] : null;
+                        }),
+                        borderColor: COLORS.sci,
+                        backgroundColor: COLORS.sci,
+                        pointRadius: 1.5,
+                        pointHoverRadius: 3,
+                        borderWidth: 1.5,
+                        tension: 0.1,
+                        spanGaps: true
+                    }
+                ]
+            };
+        }
+        
+        function prepareRegionData(data) {
+            if (!data || !Array.isArray(data) || data.length === 0) {
+                return { labels: [], datasets: [] };
+            }
+            
+            const regions = [...new Set(data.map(d => d.region))];
+            const percentiles = [...new Set(data.map(d => d.percentile))].sort((a, b) => a - b);
+            
+            const datasets = regions.map((region, i) => {
+                const regionData = data.filter(d => d.region === region).sort((a, b) => a.percentile - b.percentile);
+                return {
+                    label: region,
+                    data: percentiles.map(p => {
+                        const point = regionData.find(d => d.percentile === p);
+                        return point ? point.share : null;
+                    }),
+                    borderColor: COLORS.regions[i % COLORS.regions.length],
+                    backgroundColor: COLORS.regions[i % COLORS.regions.length],
+                    pointRadius: 1.5,
+                    pointHoverRadius: 3,
+                    borderWidth: 1.5,
+                    tension: 0.1,
+                    spanGaps: true
+                };
+            });
+            
+            return { labels: percentiles, datasets };
+        }
+        
+        function createLineChart(canvasId, data, yMax = null, yFormat = 'percent') {
+            const ctx = document.getElementById(canvasId).getContext('2d');
+            
+            if (charts[canvasId]) {
+                charts[canvasId].destroy();
+            }
+            
+            if (data.labels.length === 0) {
+                return null;
+            }
+            
+            charts[canvasId] = new Chart(ctx, {
+                type: 'line',
+                data: data,
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    interaction: {
+                        mode: 'index',
+                        intersect: false
+                    },
+                    plugins: {
+                        legend: { display: false },
+                        tooltip: {
+                            callbacks: {
+                                label: (ctx) => {
+                                    const value = ctx.raw;
+                                    if (value === null) return null;
+                                    if (yFormat === 'percent') return `${ctx.dataset.label}: ${(value * 100).toFixed(1)}%`;
+                                    return `${ctx.dataset.label}: ${value.toFixed(2)}`;
+                                }
+                            }
+                        }
+                    },
+                    scales: {
+                        x: {
+                            title: { display: true, text: 'Percentile', font: { size: 10 } },
+                            grid: { display: false },
+                            ticks: { font: { size: 9 } }
+                        },
+                        y: {
+                            min: 0,
+                            max: yMax,
+                            ticks: {
+                                callback: (v) => yFormat === 'percent' ? (v * 100) + '%' : v,
+                                font: { size: 9 }
+                            },
+                            grid: { color: '#e5e3df' }
+                        }
+                    }
+                }
+            });
+            
+            return charts[canvasId];
+        }
+        
+        function createRegionChart(data) {
+            const ctx = document.getElementById('chartRegion').getContext('2d');
+            
+            if (charts['chartRegion']) {
+                charts['chartRegion'].destroy();
+            }
+            
+            if (data.labels.length === 0) {
+                return null;
+            }
+            
+            charts['chartRegion'] = new Chart(ctx, {
+                type: 'line',
+                data: data,
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    interaction: {
+                        mode: 'index',
+                        intersect: false
+                    },
+                    plugins: {
+                        legend: {
+                            display: true,
+                            position: 'bottom',
+                            labels: { boxWidth: 10, padding: 10, font: { size: 9 } }
+                        },
+                        tooltip: {
+                            callbacks: {
+                                label: (ctx) => ctx.raw !== null ? `${ctx.dataset.label}: ${(ctx.raw * 100).toFixed(1)}%` : null
+                            }
+                        }
+                    },
+                    scales: {
+                        x: {
+                            title: { display: true, text: 'Percentile', font: { size: 10 } },
+                            grid: { display: false },
+                            ticks: { font: { size: 9 } }
+                        },
+                        y: {
+                            min: 0,
+                            ticks: { callback: (v) => (v * 100) + '%', font: { size: 9 } },
+                            grid: { color: '#e5e3df' }
+                        }
+                    }
+                }
+            });
+            
+            return charts['chartRegion'];
+        }
+        
+        function renderCharts(data) {
+            clearMessages();
+            
+            if (!data) {
+                showError('Aucune donnée disponible');
+                return;
+            }
+            
+            // Figure 1: Rate
+            if (data.rate && data.rate.length > 0) {
+                const rateData = prepareLineData(data.rate, 'rate');
+                createLineChart('chartRate', rateData, 1, 'percent');
+            }
+            
+            // Figure 2: Share Foreign
+            if (data.share_foreign && data.share_foreign.length > 0) {
+                const foreignData = prepareLineData(data.share_foreign, 'share_foreign');
+                createLineChart('chartForeign', foreignData, 0.5, 'percent');
+            }
+            
+            // Figure 3: Detention
+            if (data.detention && data.detention.length > 0) {
+                const detentionData = prepareLineData(data.detention, 'share_detention_ind');
+                createLineChart('chartDetention', detentionData, 0.5, 'percent');
+            }
+            
+            // Figure 4: Region
+            if (data.percentile_region && data.percentile_region.length > 0) {
+                const regionData = prepareRegionData(data.percentile_region);
+                createRegionChart(regionData);
+            }
+        }
+        
+        function updateCharts() {
+            clearMessages();
+            
+            if (currentLevel === 'france') {
+                renderCharts(figuresData);
+            } else {
+                // Pour les régions et départements, les données ne sont pas encore disponibles
+                showInfo(`Les données pour ${currentLevel === 'region' ? 'les régions' : 'les départements'} nécessitent un export supplémentaire depuis R. Actuellement, seules les données au niveau France sont disponibles.`);
+                renderCharts(figuresData); // Afficher quand même les données France
+            }
+        }
+        
+        document.getElementById('levelSelect').addEventListener('change', function() {
+            currentLevel = this.value;
+            currentZone = null;
+            populateZoneSelect(currentLevel);
+            updateCharts();
+        });
+        
+        document.getElementById('zoneSelect').addEventListener('change', function() {
+            currentZone = this.value;
+            updateCharts();
+        });
+        
+        async function init() {
+            await loadGeoData();
+            const data = await loadData();
+            if (data) {
+                renderCharts(data);
+            }
+        }
+        
+        init();
+    </script>
+
+    
+</body>
+</html>
