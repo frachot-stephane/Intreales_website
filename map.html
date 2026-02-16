@@ -622,7 +622,7 @@
             if (!data) return;
             state.currentLevel = 'region';
             state.currentRegion = { code: regionCode, name: regionName };
-            const filteredFeatures = data.features.filter(f => f.properties.code_region === regionCode);
+            const filteredFeatures = data.features.filter(f => (f.properties.code_region || f.properties.region_code) === regionCode);
             if (filteredFeatures.length === 0) { 
                 console.warn('Aucun département trouvé pour la région', regionCode); 
                 return; 
