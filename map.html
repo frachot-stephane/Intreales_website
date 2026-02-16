@@ -19,9 +19,7 @@
             --color-border: #e5e3df;
             --color-accent: #2c5282;
             --color-accent-light: #ebf4ff;
-            --shadow-sm: 0 1px 3px rgba(0,0,0,0.08);
             --shadow-md: 0 4px 12px rgba(0,0,0,0.1);
-            --shadow-lg: 0 8px 24px rgba(0,0,0,0.12);
             --font-serif: 'Source Serif 4', Georgia, serif;
             --font-sans: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
         }
@@ -184,13 +182,13 @@
             flex-shrink: 0;
         }
         
-        .info-panel .description { 
-            font-size: 0.7rem; 
-            color: var(--color-text-muted); 
-            line-height: 1.4; 
-            margin-bottom: 0.5rem;
-            flex-shrink: 0;
-        }
+        .sidebar-section .description { 
+    font-size: 0.75rem; 
+    color: var(--color-text-muted); 
+    line-height: 1.4; 
+    margin-top: 0.75rem;
+    margin-bottom: 0;
+}
         
         .chart-container {
             flex: 1;
@@ -328,8 +326,8 @@
             <span>Foreign real estate property in France</span>
         </div>
         <nav class="main-nav">
-    <a href="index.html">Homepage</a>
-    <a href="map.html">Map</a>
+    <a href="index.html">Home</a>
+    <a href="map.html" class="active">Map</a>
     <a href="figures.html">Figures</a>
     <a href="methodology.html">Methodology</a>
 </nav>
@@ -338,15 +336,15 @@
     <main>
         <aside class="sidebar">
             <div class="sidebar-section">
-                <h2>Indicator</h2>
-                <div class="indicator-grid" id="indicatorButtons"></div>
-            </div>
-            
-            <div class="info-panel" id="infoPanel">
-                <h3 id="infoTitle">France</h3>
-                <p class="description" id="infoDescription">
+    <h2>Indicator</h2>
+    <div class="indicator-grid" id="indicatorButtons"></div>
+    <p class="description" id="infoDescription">
                     Hover over an area to see its statistics.
-                </p>
+                    </p>
+</div>
+
+<div class="info-panel" id="infoPanel">
+    <h3 id="infoTitle">France</h3>
                 
                 <div class="chart-container">
                     <h4 id="chartTitle">Repartition by country (without France)</h4>
@@ -397,13 +395,15 @@
         };
         
         const INDICATORS = {
-            sci_share: { name: 'Share of SCI', description: 'A Civil Real Estate Company (Société Civile Immobilière - SCI) is the preferred legal structure for holding real estate assets in France. The SCI share represents the proportion of total corporate-owned real estate value that is held through SCIs. Check the methodology for more informations about SCIs.', icon: '🏢', iconBg: '#e6f3e6', format: 'percent', colorScale: ['#ffffff', '#228b22'] },
-            n_foreign: { name: 'Number of non-résidents BOs', description: 'Number of non-résidents beneficial owners of a french company that held real-estate in France. See the methodology for more informations.', icon: '👥', iconBg: '#fce4e4', format: 'number', colorScale: ['#ffffff', '#8b0000'], logScale: true },
-            foreign_share: { name: 'Share held by non-residents', description: 'Share of real estate value held by non-residents through companies. See the methodology for more informations.', icon: '🌍', iconBg: '#fff3e6', format: 'percent', colorScale: ['#ffffff', '#8b0000'] },
-            val_m2_foreign: { name: 'Price per sqm for non-residents', description: 'Price per square meter ratio of real estate owned by foreigners through companies. See the methodology for more informations.', icon: '💰', iconBg: '#e6f7e6', format: 'currency', colorScale: ['#ffffff', '#006400'] },
-            ratio_m2: { name: 'Price per sqm ratio', description: 'Price per square meter ratio comparing real estate owned by foreigners versus French nationals. A (>1) ratio implies implies the real estate held by non-residents through companies is more expansive in average. See the methodology for more informations.', icon: '📊', iconBg: '#f0e6ff', format: 'ratio', colorScale: ['#00008b', '#ffffff', '#8b0000'], diverging: true, midpoint: 1 },
-            top5_share: { name: 'Share of top 5%', description: 'PShare of total corporate-owned real estate value held by the top 5% of companies. See the methodology for more informations.', icon: '🏆', iconBg: '#fff0f0', format: 'percent', colorScale: ['#ffffff', '#8b0000'] },
-            total_value: { name: 'Total value', description: 'Total value of corporate-owned real estate (millions €). See the methodology for more informations.', icon: '🏠', iconBg: '#e6f0ff', format: 'currency_millions', colorScale: ['#ffffff', '#4169e1'], logScale: true }
+            share_pp: { name: 'Share of corp. housing', description: 'Share of housing units owned by legal entities (companies). See the methodology for more informations.', icon: '🏗️', iconBg: '#eae5dc', format: 'percent', colorScale: ['#ffffff', '#eae5dc'] },
+            share_pm: { name: 'Share of corp. value', description: 'Share of total real estate value owned by legal entities (companies). See the methodology for more informations.', icon: '💼', iconBg: '#232426', format: 'percent', colorScale: ['#ffffff', '#232426'] },
+            sci_share: { name: 'Share of SCI', description: 'A Civil Real Estate Company (Société Civile Immobilière - SCI) is the preferred legal structure for holding real estate assets in France. The SCI share represents the proportion of total corporate-owned real estate value that is held through SCIs. Check the methodology for more informations about SCIs.', icon: '🏢', iconBg: '#b3f2ec', format: 'percent', colorScale: ['#ffffff', '#b3f2ec'] },
+            n_foreign: { name: 'Number of non-résidents BOs', description: 'Number of non-résidents beneficial owners of a french company that held real-estate in France. See the methodology for more informations.', icon: '👥', iconBg: '#ffd3ae', format: 'number', colorScale: ['#ffffff', '#ffd3ae'], logScale: true },
+            foreign_share: { name: 'Share held by non-residents', description: 'Share of real estate value held by non-residents through companies. See the methodology for more informations.', icon: '🌍', iconBg: '#081e3f', format: 'percent', colorScale: ['#ffffff', '#081e3f'] },
+            val_m2_foreign: { name: 'Price per sqm for non-residents', description: 'Price per square meter ratio of real estate owned by foreigners through companies. See the methodology for more informations.', icon: '💰', iconBg: '#d9edb9', format: 'currency', colorScale: ['#ffffff', '#d9edb9'] },
+            ratio_m2: { name: 'Price per sqm ratio', description: 'Price per square meter ratio comparing real estate owned by foreigners versus French nationals. A (>1) ratio implies implies the real estate held by non-residents through companies is more expansive in average. See the methodology for more informations.', icon: '📊', iconBg: '#232426', format: 'ratio', colorScale: ['#00008b', '#ffffff', '#8b0000'], diverging: true, midpoint: 1 },
+            top5_share: { name: 'Share of top 5%', description: 'PShare of total corporate-owned real estate value held by the top 5% of companies. See the methodology for more informations.', icon: '🏆', iconBg: '#bdbdef', format: 'percent', colorScale: ['#ffffff', '#bdbdef'] },
+            total_value: { name: 'Total value', description: 'Total value of corporate-owned real estate (millions €). See the methodology for more informations.', icon: '🏠', iconBg: '#380d19', format: 'currency_millions', colorScale: ['#ffffff', '#380d19'], logScale: true }
         };
         
         const state = {
@@ -479,6 +479,10 @@
                 t = (value - domain[0]) / (domain[1] - domain[0]);
             }
             t = Math.max(0, Math.min(1, t));
+            // Applique le décalage de 15% pour les échelles non-divergentes
+            if (!config.diverging) {
+                t = 0.15 + t * 0.85;
+            }
             if (config.diverging && config.colorScale.length === 3) {
                 if (t < 0.5) return interpolateColor(config.colorScale[0], config.colorScale[1], t * 2);
                 else return interpolateColor(config.colorScale[1], config.colorScale[2], (t - 0.5) * 2);
@@ -579,9 +583,8 @@
             const value = props[state.currentIndicator];
             let html = `<div class="custom-tooltip">
                 <div class="tooltip-title">${props.name || props.code}</div>
-                <div class="tooltip-row"><span class="label">${indicator.name}</span><span class="value">${formatValue(value, indicator.format)}</span></div>`;
-            if (props.total_value !== undefined) html += `<div class="tooltip-row"><span class="label">Valeur totale</span><span class="value">${formatValue(props.total_value, 'currency_millions')}</span></div>`;
-            if (state.currentLevel === 'country') html += `<div class="tooltip-hint">Cliquez pour zoomer</div>`;
+                <div class="tooltip-row"><span class="label">${indicator.name}</span><span class="value" style="margin-left: 3px;">${formatValue(value, indicator.format)}</span></div>`;
+            if (state.currentLevel === 'country') html += `<div class="tooltip-hint">Click to zoom</div>`;
             html += '</div>';
             return html;
         }
@@ -619,7 +622,7 @@
             if (!data) return;
             state.currentLevel = 'region';
             state.currentRegion = { code: regionCode, name: regionName };
-            const filteredFeatures = data.features.filter(f => f.properties.region_code === regionCode);
+            const filteredFeatures = data.features.filter(f => f.properties.code_region === regionCode);
             if (filteredFeatures.length === 0) { 
                 console.warn('Aucun département trouvé pour la région', regionCode); 
                 return; 
