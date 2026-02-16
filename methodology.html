@@ -26,14 +26,15 @@
         * { margin: 0; padding: 0; box-sizing: border-box; }
         
         body {
-            font-family: var(--font-sans);
-            background: var(--color-bg);
-            color: var(--color-text);
-            min-height: 100vh;
-        }
+    font-family: var(--font-sans);
+    background: var(--color-bg);
+    color: var(--color-text);
+    min-height: 100vh;
+}
         
         header {
-            background: var(--color-panel);
+            background-size: cover;
+            background-position: center;
             border-bottom: 1px solid var(--color-border);
             padding: 1rem 2rem;
             display: flex;
@@ -163,18 +164,37 @@
         </p>
         
         <section class="content-section">
-            <h2>1. Data sources</h2>
-            <div class="placeholder">
-                To complete (Fichiers Fonciers, RBE, INPI, etc.)
-            </div>
-        </section>
+    <h2>1. Data sources</h2>
+    <div class="placeholder" style="text-align: justify;">
+        Data on the French real estate stock comes from land registry files, which contain comprehensive administrative data on properties, parcels, 
+        and real estate owners in France. The information in this database is derived from property tax records. 
+        When the property owner is a legal entity, its unique identification number (SIREN) is recorded.
+        <br><br>
+        <a href="https://datafoncier.cerema.fr/fichiers-fonciers" target="_blank">https://datafoncier.cerema.fr/fichiers-fonciers</a>
+        <br><br>
+        Beneficial ownership data is sourced from the Register of Beneficial Owners (RBO), a registry covering all French companies. 
+        Under French law, any shareholder or partner holding at least 25% of a company's capital or voting rights is deemed a beneficial owner and is required to declare themselves in this register.
+        It contains personal information about beneficial owners, including their name, date of birth, nationality, etc., as well as their ownership stakes in the company.
+        <br><br>
+        <a href="https://www.inpi.fr/ressources/formalites-dentreprises/beneficiaires-effectifs" target="_blank">https://www.inpi.fr/ressources/formalites-dentreprises/beneficiaires-effectifs</a>
+        <br><br> We can therefore link the Register of Beneficial Owners to companies that own real estate in France and attribute the real estate value held by each beneficial owner proportionally to their ownership stake in the company.
+    </div>
+</section>
         
         <section class="content-section">
-            <h2>2. Définitions</h2>
-            <div class="placeholder">
-               To complete (bénéficiaire effectif, SCI, non-résident, etc.)
-            </div>
-        </section>
+    <h2>2. Définitions</h2>
+    <div class="placeholder" style="text-align: justify;">
+        A <strong>beneficial owner</strong> (BO) is a shareholder or partner of a company who owns at least 25% of the company's share capital. 
+        In the RBO, only BOs are subject to a legal obligation to declare themselves. It should be noted that some partners have registered themselves in the Register of Beneficial Owners even though they owned less than 25% of the company and therefore were not legally required to do so.
+        <br><br>
+        An <strong> Société Civile Immobilière (SCI) </strong> is a French legal entity used to jointly own and manage real estate assets. 
+        It allows several individuals to hold property together through shares in the company, making it easier to organize management, ownership, and the transfer of real estate, 
+        particularly within a family context. An SCI is not intended to carry out commercial activities and is generally subject to personal income tax, with the option to elect for corporate tax. 
+        <br><br>
+        A <strong> non-resident </strong> is an individual who lives outside France, regardless of their nationality. For example, a person born in France but residing in Singapore will be considered a non-resident.
+    
+    </div>
+</section>
         
         <section class="content-section">
             <h2>3. Indicator Methodology</h2>
@@ -190,12 +210,6 @@
             </div>
         </section>
         
-        <section class="content-section">
-            <h2>5. References</h2>
-            <div class="placeholder">
-                Pas grand chose à dire ici
-            </div>
-        </section>
     </main>
     
     <footer>
