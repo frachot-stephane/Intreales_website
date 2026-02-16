@@ -3,1002 +3,1002 @@
     {
       "percentile": 39,
       "sci": true,
-      "rate": 55.1238
+      "rate": 0.5512
     },
     {
       "percentile": 95,
       "sci": true,
-      "rate": 52.3236
+      "rate": 0.5232
     },
     {
       "percentile": 30,
       "sci": false,
-      "rate": 58.2296
+      "rate": 0.5823
     },
     {
       "percentile": 2,
       "sci": true,
-      "rate": 56.2101
+      "rate": 0.5621
     },
     {
       "percentile": 38,
       "sci": true,
-      "rate": 56.2103
+      "rate": 0.5621
     },
     {
       "percentile": 91,
       "sci": true,
-      "rate": 52.6255
+      "rate": 0.5263
     },
     {
       "percentile": 97,
       "sci": true,
-      "rate": 52.7479
+      "rate": 0.5275
     },
     {
       "percentile": 96,
       "sci": true,
-      "rate": 52.2149
+      "rate": 0.5221
     },
     {
       "percentile": 65,
       "sci": true,
-      "rate": 54.0088
+      "rate": 0.5401
     },
     {
       "percentile": 100,
       "sci": true,
-      "rate": 24.186
+      "rate": 0.2419
     },
     {
       "percentile": 50,
       "sci": true,
-      "rate": 55.4528
+      "rate": 0.5545
     },
     {
       "percentile": 68,
       "sci": true,
-      "rate": 53.814
+      "rate": 0.5381
     },
     {
       "percentile": 45,
       "sci": true,
-      "rate": 55.6972
+      "rate": 0.557
     },
     {
       "percentile": 90,
       "sci": false,
-      "rate": 54.0011
+      "rate": 0.54
     },
     {
       "percentile": 74,
       "sci": true,
-      "rate": 53.7237
+      "rate": 0.5372
     },
     {
       "percentile": 85,
       "sci": true,
-      "rate": 53.6698
+      "rate": 0.5367
     },
     {
       "percentile": 90,
       "sci": true,
-      "rate": 52.5085
+      "rate": 0.5251
     },
     {
       "percentile": 67,
       "sci": true,
-      "rate": 55.0615
+      "rate": 0.5506
     },
     {
       "percentile": 33,
       "sci": true,
-      "rate": 56.4397
+      "rate": 0.5644
     },
     {
       "percentile": 82,
       "sci": true,
-      "rate": 53.7794
+      "rate": 0.5378
     },
     {
       "percentile": 10,
       "sci": false,
-      "rate": 57.4793
+      "rate": 0.5748
     },
     {
       "percentile": 2,
       "sci": false,
-      "rate": 57.131
+      "rate": 0.5713
     },
     {
       "percentile": 28,
       "sci": true,
-      "rate": 55.49
+      "rate": 0.5549
     },
     {
       "percentile": 82,
       "sci": false,
-      "rate": 55.8481
+      "rate": 0.5585
     },
     {
       "percentile": 62,
       "sci": false,
-      "rate": 57.0143
+      "rate": 0.5701
     },
     {
       "percentile": 23,
       "sci": true,
-      "rate": 55.9699
+      "rate": 0.5597
     },
     {
       "percentile": 66,
       "sci": true,
-      "rate": 54.6216
+      "rate": 0.5462
     },
     {
       "percentile": 26,
       "sci": true,
-      "rate": 55.9033
+      "rate": 0.559
     },
     {
       "percentile": 91,
       "sci": false,
-      "rate": 54.531
+      "rate": 0.5453
     },
     {
       "percentile": 92,
       "sci": true,
-      "rate": 53.2994
+      "rate": 0.533
     },
     {
       "percentile": 60,
       "sci": false,
-      "rate": 56.4158
+      "rate": 0.5642
     },
     {
       "percentile": 80,
       "sci": true,
-      "rate": 54.2155
+      "rate": 0.5422
     },
     {
       "percentile": 78,
       "sci": false,
-      "rate": 56.6929
+      "rate": 0.5669
     },
     {
       "percentile": 42,
       "sci": true,
-      "rate": 55.2264
+      "rate": 0.5523
     },
     {
       "percentile": 75,
       "sci": true,
-      "rate": 53.5772
+      "rate": 0.5358
     },
     {
       "percentile": 96,
       "sci": false,
-      "rate": 55.2962
+      "rate": 0.553
     },
     {
       "percentile": 83,
       "sci": true,
-      "rate": 53.5846
+      "rate": 0.5358
     },
     {
       "percentile": 63,
       "sci": false,
-      "rate": 56.3163
+      "rate": 0.5632
     },
     {
       "percentile": 73,
       "sci": true,
-      "rate": 54.118
+      "rate": 0.5412
     },
     {
       "percentile": 32,
       "sci": true,
-      "rate": 55.8616
+      "rate": 0.5586
     },
     {
       "percentile": 27,
       "sci": true,
-      "rate": 56.2651
+      "rate": 0.5627
     },
     {
       "percentile": 28,
       "sci": false,
-      "rate": 57.1082
+      "rate": 0.5711
     },
     {
       "percentile": 83,
       "sci": false,
-      "rate": 55.1968
+      "rate": 0.552
     },
     {
       "percentile": 16,
       "sci": true,
-      "rate": 56.0757
+      "rate": 0.5608
     },
     {
       "percentile": 81,
       "sci": true,
-      "rate": 53.4329
+      "rate": 0.5343
     },
     {
       "percentile": 9,
       "sci": true,
-      "rate": 55.0621
+      "rate": 0.5506
     },
     {
       "percentile": 43,
       "sci": true,
-      "rate": 55.6005
+      "rate": 0.556
     },
     {
       "percentile": 15,
       "sci": true,
-      "rate": 55.8266
+      "rate": 0.5583
     },
     {
       "percentile": 86,
       "sci": true,
-      "rate": 53.2426
+      "rate": 0.5324
     },
     {
       "percentile": 48,
       "sci": true,
-      "rate": 55.1766
+      "rate": 0.5518
     },
     {
       "percentile": 56,
       "sci": false,
-      "rate": 55.3303
+      "rate": 0.5533
     },
     {
       "percentile": 58,
       "sci": false,
-      "rate": 57.4349
+      "rate": 0.5743
     },
     {
       "percentile": 5,
       "sci": false,
-      "rate": 54.6878
+      "rate": 0.5469
     },
     {
       "percentile": 71,
       "sci": false,
-      "rate": 56.6246
+      "rate": 0.5662
     },
     {
       "percentile": 56,
       "sci": true,
-      "rate": 55.0708
+      "rate": 0.5507
     },
     {
       "percentile": 70,
       "sci": false,
-      "rate": 55.6994
+      "rate": 0.557
     },
     {
       "percentile": 87,
       "sci": true,
-      "rate": 53.2204
+      "rate": 0.5322
     },
     {
       "percentile": 7,
       "sci": true,
-      "rate": 56.1458
+      "rate": 0.5615
     },
     {
       "percentile": 29,
       "sci": true,
-      "rate": 56.2109
+      "rate": 0.5621
     },
     {
       "percentile": 76,
       "sci": false,
-      "rate": 57.5169
+      "rate": 0.5752
     },
     {
       "percentile": 1,
       "sci": true,
-      "rate": 56.9265
+      "rate": 0.5693
     },
     {
       "percentile": 79,
       "sci": true,
-      "rate": 53.7724
+      "rate": 0.5377
     },
     {
       "percentile": 35,
       "sci": true,
-      "rate": 55.4365
+      "rate": 0.5544
     },
     {
       "percentile": 11,
       "sci": false,
-      "rate": 56.4286
+      "rate": 0.5643
     },
     {
       "percentile": 75,
       "sci": false,
-      "rate": 56.5841
+      "rate": 0.5658
     },
     {
       "percentile": 57,
       "sci": true,
-      "rate": 55.2034
+      "rate": 0.552
     },
     {
       "percentile": 16,
       "sci": false,
-      "rate": 57.7818
+      "rate": 0.5778
     },
     {
       "percentile": 54,
       "sci": false,
-      "rate": 56.077
+      "rate": 0.5608
     },
     {
       "percentile": 84,
       "sci": true,
-      "rate": 53.684
+      "rate": 0.5368
     },
     {
       "percentile": 1,
       "sci": false,
-      "rate": 54.8253
+      "rate": 0.5483
     },
     {
       "percentile": 50,
       "sci": false,
-      "rate": 56.7859
+      "rate": 0.5679
     },
     {
       "percentile": 33,
       "sci": false,
-      "rate": 58.8626
+      "rate": 0.5886
     },
     {
       "percentile": 71,
       "sci": true,
-      "rate": 54.0685
+      "rate": 0.5407
     },
     {
       "percentile": 55,
       "sci": true,
-      "rate": 56.0672
+      "rate": 0.5607
     },
     {
       "percentile": 92,
       "sci": false,
-      "rate": 55.7538
+      "rate": 0.5575
     },
     {
       "percentile": 72,
       "sci": true,
-      "rate": 54.54
+      "rate": 0.5454
     },
     {
       "percentile": 13,
       "sci": true,
-      "rate": 56.5463
+      "rate": 0.5655
     },
     {
       "percentile": 14,
       "sci": false,
-      "rate": 58.4697
+      "rate": 0.5847
     },
     {
       "percentile": 77,
       "sci": true,
-      "rate": 54.2894
+      "rate": 0.5429
     },
     {
       "percentile": 29,
       "sci": false,
-      "rate": 57.8733
+      "rate": 0.5787
     },
     {
       "percentile": 65,
       "sci": false,
-      "rate": 55.5072
+      "rate": 0.5551
     },
     {
       "percentile": 34,
       "sci": true,
-      "rate": 55.2261
+      "rate": 0.5523
     },
     {
       "percentile": 59,
       "sci": false,
-      "rate": 55.7485
+      "rate": 0.5575
     },
     {
       "percentile": 49,
       "sci": true,
-      "rate": 55.6254
+      "rate": 0.5563
     },
     {
       "percentile": 48,
       "sci": false,
-      "rate": 57.038
+      "rate": 0.5704
     },
     {
       "percentile": 86,
       "sci": false,
-      "rate": 55.4025
+      "rate": 0.554
     },
     {
       "percentile": 66,
       "sci": false,
-      "rate": 54.5364
+      "rate": 0.5454
     },
     {
       "percentile": 17,
       "sci": false,
-      "rate": 58.7099
+      "rate": 0.5871
     },
     {
       "percentile": 97,
       "sci": false,
-      "rate": 54.3875
+      "rate": 0.5439
     },
     {
       "percentile": 100,
       "sci": false,
-      "rate": 18.0674
+      "rate": 0.1807
     },
     {
       "percentile": 54,
       "sci": true,
-      "rate": 55.5464
+      "rate": 0.5555
     },
     {
       "percentile": 61,
       "sci": false,
-      "rate": 56.5704
+      "rate": 0.5657
     },
     {
       "percentile": 88,
       "sci": true,
-      "rate": 53.3905
+      "rate": 0.5339
     },
     {
       "percentile": 24,
       "sci": true,
-      "rate": 55.8797
+      "rate": 0.5588
     },
     {
       "percentile": 47,
       "sci": true,
-      "rate": 55.5559
+      "rate": 0.5556
     },
     {
       "percentile": 93,
       "sci": false,
-      "rate": 54.7264
+      "rate": 0.5473
     },
     {
       "percentile": 19,
       "sci": true,
-      "rate": 55.7487
+      "rate": 0.5575
     },
     {
       "percentile": 72,
       "sci": false,
-      "rate": 56.8134
+      "rate": 0.5681
     },
     {
       "percentile": 64,
       "sci": true,
-      "rate": 54.5062
+      "rate": 0.5451
     },
     {
       "percentile": 25,
       "sci": false,
-      "rate": 56.8507
+      "rate": 0.5685
     },
     {
       "percentile": 98,
       "sci": true,
-      "rate": 53.1127
+      "rate": 0.5311
     },
     {
       "percentile": 79,
       "sci": false,
-      "rate": 56.0648
+      "rate": 0.5606
     },
     {
       "percentile": 34,
       "sci": false,
-      "rate": 58.0005
+      "rate": 0.58
     },
     {
       "percentile": 62,
       "sci": true,
-      "rate": 54.4626
+      "rate": 0.5446
     },
     {
       "percentile": 99,
       "sci": true,
-      "rate": 51.716
+      "rate": 0.5172
     },
     {
       "percentile": 61,
       "sci": true,
-      "rate": 56.0841
+      "rate": 0.5608
     },
     {
       "percentile": 99,
       "sci": false,
-      "rate": 52.1773
+      "rate": 0.5218
     },
     {
       "percentile": 46,
       "sci": false,
-      "rate": 56.4019
+      "rate": 0.564
     },
     {
       "percentile": 51,
       "sci": true,
-      "rate": 55.1489
+      "rate": 0.5515
     },
     {
       "percentile": 94,
       "sci": true,
-      "rate": 52.4759
+      "rate": 0.5248
     },
     {
       "percentile": 95,
       "sci": false,
-      "rate": 53.328
+      "rate": 0.5333
     },
     {
       "percentile": 68,
       "sci": false,
-      "rate": 56.5235
+      "rate": 0.5652
     },
     {
       "percentile": 58,
       "sci": true,
-      "rate": 55.2474
+      "rate": 0.5525
     },
     {
       "percentile": 89,
       "sci": true,
-      "rate": 52.9457
+      "rate": 0.5295
     },
     {
       "percentile": 87,
       "sci": false,
-      "rate": 55.3367
+      "rate": 0.5534
     },
     {
       "percentile": 38,
       "sci": false,
-      "rate": 57.8166
+      "rate": 0.5782
     },
     {
       "percentile": 5,
       "sci": true,
-      "rate": 56.2261
+      "rate": 0.5623
     },
     {
       "percentile": 93,
       "sci": true,
-      "rate": 52.1207
+      "rate": 0.5212
     },
     {
       "percentile": 41,
       "sci": true,
-      "rate": 55.7661
+      "rate": 0.5577
     },
     {
       "percentile": 53,
       "sci": true,
-      "rate": 55.172
+      "rate": 0.5517
     },
     {
       "percentile": 69,
       "sci": true,
-      "rate": 54.2919
+      "rate": 0.5429
     },
     {
       "percentile": 47,
       "sci": false,
-      "rate": 55.7438
+      "rate": 0.5574
     },
     {
       "percentile": 46,
       "sci": true,
-      "rate": 55.2213
+      "rate": 0.5522
     },
     {
       "percentile": 78,
       "sci": true,
-      "rate": 54.2775
+      "rate": 0.5428
     },
     {
       "percentile": 85,
       "sci": false,
-      "rate": 56.6964
+      "rate": 0.567
     },
     {
       "percentile": 55,
       "sci": false,
-      "rate": 56.615
+      "rate": 0.5662
     },
     {
       "percentile": 14,
       "sci": true,
-      "rate": 55.1862
+      "rate": 0.5519
     },
     {
       "percentile": 98,
       "sci": false,
-      "rate": 53.1278
+      "rate": 0.5313
     },
     {
       "percentile": 25,
       "sci": true,
-      "rate": 55.6912
+      "rate": 0.5569
     },
     {
       "percentile": 77,
       "sci": false,
-      "rate": 56.4795
+      "rate": 0.5648
     },
     {
       "percentile": 89,
       "sci": false,
-      "rate": 54.0436
+      "rate": 0.5404
     },
     {
       "percentile": 27,
       "sci": false,
-      "rate": 58.8572
+      "rate": 0.5886
     },
     {
       "percentile": 40,
       "sci": true,
-      "rate": 55.5277
+      "rate": 0.5553
     },
     {
       "percentile": 11,
       "sci": true,
-      "rate": 56.0434
+      "rate": 0.5604
     },
     {
       "percentile": 60,
       "sci": true,
-      "rate": 55.4529
+      "rate": 0.5545
     },
     {
       "percentile": 39,
       "sci": false,
-      "rate": 57.7663
+      "rate": 0.5777
     },
     {
       "percentile": 6,
       "sci": true,
-      "rate": 55.7805
+      "rate": 0.5578
     },
     {
       "percentile": 4,
       "sci": true,
-      "rate": 56.0151
+      "rate": 0.5602
     },
     {
       "percentile": 30,
       "sci": true,
-      "rate": 55.8869
+      "rate": 0.5589
     },
     {
       "percentile": 94,
       "sci": false,
-      "rate": 54.8826
+      "rate": 0.5488
     },
     {
       "percentile": 24,
       "sci": false,
-      "rate": 57.5936
+      "rate": 0.5759
     },
     {
       "percentile": 76,
       "sci": true,
-      "rate": 54.2104
+      "rate": 0.5421
     },
     {
       "percentile": 73,
       "sci": false,
-      "rate": 57.6655
+      "rate": 0.5767
     },
     {
       "percentile": 22,
       "sci": true,
-      "rate": 55.8824
+      "rate": 0.5588
     },
     {
       "percentile": 81,
       "sci": false,
-      "rate": 54.8504
+      "rate": 0.5485
     },
     {
       "percentile": 84,
       "sci": false,
-      "rate": 55.457
+      "rate": 0.5546
     },
     {
       "percentile": 42,
       "sci": false,
-      "rate": 58.6211
+      "rate": 0.5862
     },
     {
       "percentile": 59,
       "sci": true,
-      "rate": 55.3953
+      "rate": 0.554
     },
     {
       "percentile": 26,
       "sci": false,
-      "rate": 58.4084
+      "rate": 0.5841
     },
     {
       "percentile": 88,
       "sci": false,
-      "rate": 56.5041
+      "rate": 0.565
     },
     {
       "percentile": 52,
       "sci": false,
-      "rate": 56.4112
+      "rate": 0.5641
     },
     {
       "percentile": 51,
       "sci": false,
-      "rate": 56.3211
+      "rate": 0.5632
     },
     {
       "percentile": 44,
       "sci": false,
-      "rate": 58.3466
+      "rate": 0.5835
     },
     {
       "percentile": 12,
       "sci": true,
-      "rate": 55.3332
+      "rate": 0.5533
     },
     {
       "percentile": 20,
       "sci": true,
-      "rate": 56.0375
+      "rate": 0.5604
     },
     {
       "percentile": 67,
       "sci": false,
-      "rate": 56.1615
+      "rate": 0.5616
     },
     {
       "percentile": 70,
       "sci": true,
-      "rate": 55.0238
+      "rate": 0.5502
     },
     {
       "percentile": 80,
       "sci": false,
-      "rate": 55.3223
+      "rate": 0.5532
     },
     {
       "percentile": 52,
       "sci": true,
-      "rate": 55.0812
+      "rate": 0.5508
     },
     {
       "percentile": 49,
       "sci": false,
-      "rate": 55.8986
+      "rate": 0.559
     },
     {
       "percentile": 53,
       "sci": false,
-      "rate": 57.8109
+      "rate": 0.5781
     },
     {
       "percentile": 31,
       "sci": true,
-      "rate": 56.1679
+      "rate": 0.5617
     },
     {
       "percentile": 36,
       "sci": true,
-      "rate": 55.5468
+      "rate": 0.5555
     },
     {
       "percentile": 74,
       "sci": false,
-      "rate": 56.9753
+      "rate": 0.5698
     },
     {
       "percentile": 21,
       "sci": true,
-      "rate": 55.9372
+      "rate": 0.5594
     },
     {
       "percentile": 3,
       "sci": true,
-      "rate": 55.9416
+      "rate": 0.5594
     },
     {
       "percentile": 40,
       "sci": false,
-      "rate": 57.1331
+      "rate": 0.5713
     },
     {
       "percentile": 6,
       "sci": false,
-      "rate": 56.6089
+      "rate": 0.5661
     },
     {
       "percentile": 63,
       "sci": true,
-      "rate": 54.6977
+      "rate": 0.547
     },
     {
       "percentile": 22,
       "sci": false,
-      "rate": 56.9911
+      "rate": 0.5699
     },
     {
       "percentile": 8,
       "sci": true,
-      "rate": 55.7859
+      "rate": 0.5579
     },
     {
       "percentile": 23,
       "sci": false,
-      "rate": 58.206
+      "rate": 0.5821
     },
     {
       "percentile": 18,
       "sci": true,
-      "rate": 55.3108
+      "rate": 0.5531
     },
     {
       "percentile": 8,
       "sci": false,
-      "rate": 57.3397
+      "rate": 0.5734
     },
     {
       "percentile": 32,
       "sci": false,
-      "rate": 58.7347
+      "rate": 0.5873
     },
     {
       "percentile": 44,
       "sci": true,
-      "rate": 55.3742
+      "rate": 0.5537
     },
     {
       "percentile": 15,
       "sci": false,
-      "rate": 57.7469
+      "rate": 0.5775
     },
     {
       "percentile": 20,
       "sci": false,
-      "rate": 57.1777
+      "rate": 0.5718
     },
     {
       "percentile": 17,
       "sci": true,
-      "rate": 55.9879
+      "rate": 0.5599
     },
     {
       "percentile": 37,
       "sci": true,
-      "rate": 55.5769
+      "rate": 0.5558
     },
     {
       "percentile": 57,
       "sci": false,
-      "rate": 56.4635
+      "rate": 0.5646
     },
     {
       "percentile": 31,
       "sci": false,
-      "rate": 58.9333
+      "rate": 0.5893
     },
     {
       "percentile": 36,
       "sci": false,
-      "rate": 58.5424
+      "rate": 0.5854
     },
     {
       "percentile": 10,
       "sci": true,
-      "rate": 55.629
+      "rate": 0.5563
     },
     {
       "percentile": 9,
       "sci": false,
-      "rate": 57.7337
+      "rate": 0.5773
     },
     {
       "percentile": 45,
       "sci": false,
-      "rate": 58.0535
+      "rate": 0.5805
     },
     {
       "percentile": 3,
       "sci": false,
-      "rate": 58.5178
+      "rate": 0.5852
     },
     {
       "percentile": 64,
       "sci": false,
-      "rate": 55.5128
+      "rate": 0.5551
     },
     {
       "percentile": 12,
       "sci": false,
-      "rate": 56.6487
+      "rate": 0.5665
     },
     {
       "percentile": 19,
       "sci": false,
-      "rate": 55.7443
+      "rate": 0.5574
     },
     {
       "percentile": 35,
       "sci": false,
-      "rate": 56.1238
+      "rate": 0.5612
     },
     {
       "percentile": 18,
       "sci": false,
-      "rate": 57.2877
+      "rate": 0.5729
     },
     {
       "percentile": 37,
       "sci": false,
-      "rate": 55.874
+      "rate": 0.5587
     },
     {
       "percentile": 21,
       "sci": false,
-      "rate": 59.0954
+      "rate": 0.591
     },
     {
       "percentile": 43,
       "sci": false,
-      "rate": 58.2078
+      "rate": 0.5821
     },
     {
       "percentile": 13,
       "sci": false,
-      "rate": 57.6417
+      "rate": 0.5764
     },
     {
       "percentile": 69,
       "sci": false,
-      "rate": 55.6965
+      "rate": 0.557
     },
     {
       "percentile": 41,
       "sci": false,
-      "rate": 57.1351
+      "rate": 0.5714
     },
     {
       "percentile": 4,
       "sci": false,
-      "rate": 55.8171
+      "rate": 0.5582
     },
     {
       "percentile": 7,
       "sci": false,
-      "rate": 55.6986
+      "rate": 0.557
     }
   ],
   "share_foreign": [
