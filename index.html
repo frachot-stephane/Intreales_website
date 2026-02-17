@@ -7,7 +7,7 @@
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     
     <style>
         :root {
@@ -19,8 +19,8 @@
             --color-accent: #2c5282;
             --color-accent-light: #ebf4ff;
             --shadow-md: 0 4px 12px rgba(0,0,0,0.1);
-            --font-serif: 'Source Serif 4', Georgia, serif;
-            --font-sans: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            --font-serif: 'Inter', sans-serif;
+            --font-sans: 'Inter', sans-serif;
         }
         
         * {
@@ -48,12 +48,25 @@
             box-shadow: 0 1px 3px rgba(0,0,0,0.08);
         }
         
+        .logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: nowrap;
+} 
+
         .logo h1 {
             font-family: var(--font-serif);
             font-size: 1.5rem;
             font-weight: 700;
             color: var(--color-accent);
         }
+
+        .logo-video {
+    height: 65px;
+    width: auto;
+    margin-right: 0.5rem;
+}
         
         nav {
             display: flex;
@@ -163,8 +176,11 @@
 <body>
     <header>
         <div class="logo">
-            <h1>INTREALES</h1>
-        </div>
+    <video autoplay muted playsinline class="logo-video">
+        <source src="Logo_animated.mp4" type="video/mp4">
+    </video>
+    <h1>INTREALES</h1>
+</div>
         <nav>
             <a href="index.html" class="active">Homepage</a>
             <a href="map.html">Map</a>
