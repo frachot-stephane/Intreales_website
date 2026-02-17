@@ -268,9 +268,9 @@
                     <canvas id="chartRate"></canvas>
                 </div>
                 <div class="legend-custom">
-                    <div class="legend-item"><span class="legend-color" style="background: var(--color-sci)"></span> SCI</div>
-                    <div class="legend-item"><span class="legend-color" style="background: var(--color-other)"></span> Autres</div>
-                </div>
+    <div class="legend-item"><span class="legend-color" style="background-color: #e41a1c;"></span> SCI</div>
+    <div class="legend-item"><span class="legend-color" style="background-color: #377eb8;"></span> Autres</div>
+</div>
             </div>
             
             <div class="figure-card">
@@ -282,9 +282,9 @@
                     <canvas id="chartForeign"></canvas>
                 </div>
                 <div class="legend-custom">
-                    <div class="legend-item"><span class="legend-color" style="background: var(--color-sci)"></span> SCI</div>
-                    <div class="legend-item"><span class="legend-color" style="background: var(--color-other)"></span> Autres</div>
-                </div>
+    <div class="legend-item"><span class="legend-color" style="background-color: #e41a1c;"></span> SCI</div>
+    <div class="legend-item"><span class="legend-color" style="background-color: #377eb8;"></span> Autres</div>
+</div>
             </div>
             
             <div class="figure-card">
@@ -294,14 +294,14 @@
                     <canvas id="chartDetention"></canvas>
                 </div>
                 <div class="legend-custom">
-                    <div class="legend-item"><span class="legend-color" style="background: var(--color-sci)"></span> SCI</div>
-                    <div class="legend-item"><span class="legend-color" style="background: var(--color-other)"></span> Autres</div>
-                </div>
+    <div class="legend-item"><span class="legend-color" style="background-color: #e41a1c;"></span> SCI</div>
+    <div class="legend-item"><span class="legend-color" style="background-color: #377eb8;"></span> Autres</div>
+</div>
             </div>
             
             <div class="figure-card">
                 <h3>Figure 4: Distribution by geographic region</h3>
-                <p class="caption">Distribution of assigned corporate-owned real estate by world region and percentile. Lecture: 5.7% of total corporate real estate value in the 90th percentile could be attributed to European (non-French) beneficial owners</p>
+                <p class="caption">Distribution of assigned corporate-owned real estate by world region and percentile. Click on the name of a region to get rid of it. Lecture: Among firms at the 90th percentile of total real estate value, 5.3% of that value is held by European non-residents.</p>
                 <div class="chart-wrapper">
                     <canvas id="chartRegion"></canvas>
                 </div>
@@ -475,156 +475,208 @@
         }
         
         function createLineChart(canvasId, data, yMax = null, yFormat = 'percent') {
-            const ctx = document.getElementById(canvasId).getContext('2d');
-            
-            if (charts[canvasId]) {
-                charts[canvasId].destroy();
-            }
-            
-            if (data.labels.length === 0) {
-                return null;
-            }
-            
-            charts[canvasId] = new Chart(ctx, {
-                type: 'line',
-                data: data,
-                options: {
-                    responsive: true,
-                    maintainAspectRatio: false,
-                    interaction: {
-                        mode: 'index',
-                        intersect: false
-                    },
-                    plugins: {
-                        legend: { display: false },
-                        tooltip: {
-                            callbacks: {
-                                label: (ctx) => {
-                                    const value = ctx.raw;
-                                    if (value === null) return null;
-                                    if (yFormat === 'percent') return `${ctx.dataset.label}: ${(value * 100).toFixed(1)}%`;
-                                    return `${ctx.dataset.label}: ${value.toFixed(2)}`;
-                                }
-                            }
-                        }
-                    },
-                    scales: {
-                        x: {
-                            title: { display: true, text: 'Percentile', font: { size: 10 } },
-                            grid: { display: false },
-                            ticks: { font: { size: 9 } }
-                        },
-                        y: {
-                            min: 0,
-                            max: yMax,
-                            ticks: {
-                                callback: (v) => yFormat === 'percent' ? (v * 100) + '%' : v,
-                                font: { size: 9 }
-                            },
-                            grid: { color: '#e5e3df' }
+    const ctx = document.getElementById(canvasId).getContext('2d');
+    
+    if (charts[canvasId]) {
+        charts[canvasId].destroy();
+    }
+    
+    if (data.labels.length === 0) {
+        return null;
+    }
+    
+    // Calculer le max dynamique si non spécifié
+    let dynamicMax = yMax;
+    if (!dynamicMax) {
+        const allValues = data.datasets.flatMap(ds => ds.data.filter(v => v !== null));
+        dynamicMax = Math.ceil(Math.max(...allValues) * 10) / 10; // Arrondir au 0.1 supérieur
+    }
+    
+    charts[canvasId] = new Chart(ctx, {
+        type: 'line',
+        data: data,
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            interaction: {
+                mode: 'index',
+                intersect: false
+            },
+            plugins: {
+                legend: { display: false },
+                tooltip: {
+                    callbacks: {
+                        label: (ctx) => {
+                            const value = ctx.raw;
+                            if (value === null) return null;
+                            if (yFormat === 'percent') return `${ctx.dataset.label}: ${(value * 100).toFixed(1)}%`;
+                            return `${ctx.dataset.label}: ${value.toFixed(2)}`;
                         }
                     }
                 }
-            });
-            
-            return charts[canvasId];
+            },
+            scales: {
+                x: {
+                    title: { display: true, text: 'Percentile', font: { size: 10 } },
+                    grid: { display: false },
+                    ticks: { font: { size: 9 } }
+                },
+                y: {
+                    min: 0,
+                    max: dynamicMax,
+                    ticks: {
+                        callback: (v) => yFormat === 'percent' ? (v * 100).toFixed(1) + '%' : v,
+                        font: { size: 9 }
+                    },
+                    grid: { color: '#e5e3df' }
+                }
+            }
         }
+    });
+    
+    return charts[canvasId];
+}
         
         function createRegionChart(data) {
-            const ctx = document.getElementById('chartRegion').getContext('2d');
-            
-            if (charts['chartRegion']) {
-                charts['chartRegion'].destroy();
-            }
-            
-            if (data.labels.length === 0) {
-                return null;
-            }
-            
-            charts['chartRegion'] = new Chart(ctx, {
-                type: 'line',
-                data: data,
-                options: {
-                    responsive: true,
-                    maintainAspectRatio: false,
-                    interaction: {
-                        mode: 'index',
-                        intersect: false
-                    },
-                    plugins: {
-                        legend: {
-                            display: true,
-                            position: 'bottom',
-                            labels: { boxWidth: 10, padding: 10, font: { size: 9 } }
-                        },
-                        tooltip: {
-                            callbacks: {
-                                label: (ctx) => ctx.raw !== null ? `${ctx.dataset.label}: ${(ctx.raw * 100).toFixed(1)}%` : null
-                            }
+    const ctx = document.getElementById('chartRegion').getContext('2d');
+    
+    if (charts['chartRegion']) {
+        charts['chartRegion'].destroy();
+    }
+    
+    if (data.labels.length === 0) {
+        return null;
+    }
+    
+    charts['chartRegion'] = new Chart(ctx, {
+        type: 'line',
+        data: data,
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            interaction: {
+                mode: 'index',
+                intersect: false
+            },
+            plugins: {
+                legend: {
+                    display: true,
+                    position: 'bottom',
+                    labels: { boxWidth: 10, padding: 10, font: { size: 9 } },
+                    onClick: function(e, legendItem, legend) {
+                        const index = legendItem.datasetIndex;
+                        const chart = legend.chart;
+                        const meta = chart.getDatasetMeta(index);
+                        
+                        // Toggle visibility
+                        meta.hidden = meta.hidden === null ? !chart.data.datasets[index].hidden : null;
+                        
+                        // Recalculer le max avec seulement les séries visibles
+                        const visibleValues = chart.data.datasets
+                            .filter((ds, i) => !chart.getDatasetMeta(i).hidden)
+                            .flatMap(ds => ds.data.filter(v => v !== null));
+                        
+                        if (visibleValues.length > 0) {
+                            const newMax = Math.ceil(Math.max(...visibleValues) * 20) / 20 + 0.005;
+                            chart.options.scales.y.max = newMax;
                         }
-                    },
-                    scales: {
-                        x: {
-                            title: { display: true, text: 'Percentile', font: { size: 10 } },
-                            grid: { display: false },
-                            ticks: { font: { size: 9 } }
-                        },
-                        y: {
-                            min: 0,
-                            ticks: { callback: (v) => (v * 100) + '%', font: { size: 9 } },
-                            grid: { color: '#e5e3df' }
+                        
+                        chart.update();
+                    }
+                },
+                tooltip: {
+                    mode: 'index',
+                    intersect: false,
+                    callbacks: {
+                        label: (ctx) => {
+                            if (ctx.raw === null) return null;
+                            return `${ctx.dataset.label}: ${(ctx.raw * 100).toFixed(1)}%`;
                         }
                     }
                 }
-            });
-            
-            return charts['chartRegion'];
+            },
+            scales: {
+                x: {
+                    title: { display: true, text: 'Percentile', font: { size: 10 } },
+                    grid: { display: false },
+                    ticks: { font: { size: 9 } }
+                },
+                y: {
+                    min: 0,
+                    ticks: { 
+                        callback: (v) => (v * 100).toFixed(1) + '%', 
+                        font: { size: 9 } 
+                    },
+                    grid: { color: '#e5e3df' }
+                }
+            }
         }
+    });
+    
+    // Calculer le max initial
+    const allValues = data.datasets.flatMap(ds => ds.data.filter(v => v !== null));
+    const dynamicMax = Math.ceil(Math.max(...allValues) * 10) / 10;
+    charts['chartRegion'].options.scales.y.max = dynamicMax;
+    charts['chartRegion'].update();
+    
+    return charts['chartRegion'];
+}
         
         function renderCharts(data) {
-            clearMessages();
-            
-            if (!data) {
-                showError('Aucune donnée disponible');
-                return;
-            }
-            
-            // Figure 1: Rate
-            if (data.rate && data.rate.length > 0) {
-                const rateData = prepareLineData(data.rate, 'rate');
-                createLineChart('chartRate', rateData, 1, 'percent');
-            }
-            
-            // Figure 2: Share Foreign
-            if (data.share_foreign && data.share_foreign.length > 0) {
-                const foreignData = prepareLineData(data.share_foreign, 'share_foreign');
-                createLineChart('chartForeign', foreignData, 0.5, 'percent');
-            }
-            
-            // Figure 3: Detention
-            if (data.detention && data.detention.length > 0) {
-                const detentionData = prepareLineData(data.detention, 'share_detention_ind');
-                createLineChart('chartDetention', detentionData, 0.5, 'percent');
-            }
-            
-            // Figure 4: Region
-            if (data.percentile_region && data.percentile_region.length > 0) {
-                const regionData = prepareRegionData(data.percentile_region);
-                createRegionChart(regionData);
-            }
-        }
+    clearMessages();
+    if (!data) {
+        showError('Aucune donnée disponible');
+        return;
+    }
+    // Figure 1: Rate
+    if (data.rate && data.rate.length > 0) {
+        const rateData = prepareLineData(data.rate, 'rate');
+        createLineChart('chartRate', rateData, null, 'percent');
+    }
+    // Figure 2: Share Foreign
+    if (data.share_foreign && data.share_foreign.length > 0) {
+        const foreignData = prepareLineData(data.share_foreign, 'share_foreign');
+        createLineChart('chartForeign', foreignData, null, 'percent');
+    }
+    // Figure 3: Detention
+    if (data.detention && data.detention.length > 0) {
+        const detentionData = prepareLineData(data.detention, 'share_detention_ind');
+        createLineChart('chartDetention', detentionData, null, 'percent');
+    }
+    // Figure 4: Region
+    if (data.percentile_region && data.percentile_region.length > 0) {
+        const regionData = prepareRegionData(data.percentile_region);
+        createRegionChart(regionData);
+        document.getElementById('chartRegion').parentElement.parentElement.style.display = 'block';
+    } else {
+        document.getElementById('chartRegion').parentElement.parentElement.style.display = 'none';
+    }
+}
         
         function updateCharts() {
-            clearMessages();
-            
-            if (currentLevel === 'france') {
-                renderCharts(figuresData);
-            } else {
-                // Pour les régions et départements, les données ne sont pas encore disponibles
-                showInfo(`Les données pour ${currentLevel === 'region' ? 'les régions' : 'les départements'} nécessitent un export supplémentaire depuis R. Actuellement, seules les données au niveau France sont disponibles.`);
-                renderCharts(figuresData); // Afficher quand même les données France
-            }
+    clearMessages();
+    if (!figuresData) {
+        showError('Données non chargées');
+        return;
+    }
+    if (currentLevel === 'france') {
+        renderCharts(figuresData.france);
+    } else if (currentLevel === 'region' && currentZone) {
+        const regionData = figuresData.regions ? figuresData.regions[currentZone] : null;
+        if (regionData) {
+            renderCharts(regionData);
+        } else {
+            showError(`Pas de données pour la région ${currentZone}`);
         }
+    } else if (currentLevel === 'departement' && currentZone) {
+        const depData = figuresData.departements ? figuresData.departements[currentZone] : null;
+        if (depData) {
+            renderCharts(depData);
+        } else {
+            showError(`Pas de données pour le département ${currentZone}`);
+        }
+    }
+}
         
         document.getElementById('levelSelect').addEventListener('change', function() {
             currentLevel = this.value;
@@ -642,7 +694,7 @@
             await loadGeoData();
             const data = await loadData();
             if (data) {
-                renderCharts(data);
+                renderCharts(data.france, true);
             }
         }
         
