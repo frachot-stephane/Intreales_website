@@ -110,10 +110,10 @@
         }
         
         .hero p {
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             color: var(--color-text-muted);
             line-height: 1.6;
-            margin-bottom: 3rem;
+            margin-bottom: 2rem;
         }
         
         .cards {
@@ -121,17 +121,23 @@
             grid-template-columns: repeat(3, 1fr);
             gap: 2rem;
             margin-top: 2rem;
+            max-width: 1000px;
         }
         
         .card {
             background: var(--color-panel);
             border-radius: 12px;
-            padding: 2rem;
+            padding: 1rem;
+            min-height: 300px;
             text-align: center;
             box-shadow: var(--shadow-md);
             transition: transform 0.2s, box-shadow 0.2s;
             text-decoration: none;
             color: inherit;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
         
         .card:hover {
@@ -140,14 +146,14 @@
         }
         
         .card .icon {
-            font-size: 3rem;
+            font-size: 4rem;
             margin-bottom: 1rem;
         }
         
         .card h3 {
             font-family: var(--font-serif);
-            font-size: 1.3rem;
-            margin-bottom: 0.5rem;
+            font-size: 1.4rem;
+            margin-bottom: 0.4rem;
         }
         
         .card p {
@@ -155,6 +161,38 @@
             color: var(--color-text-muted);
         }
         
+        .tooltip-word {
+            font-weight: bold;
+            border-bottom: 1px dotted var(--color-text-muted);
+            cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><text y="18" font-size="18" fill="black">?</text></svg>') 10 10, help;
+            position: relative;
+        }
+
+        .tooltip-word::after {
+            content: attr(data-tooltip);
+            position: absolute;
+            bottom: 130%;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #333;
+            color: white;
+            padding: 0.8rem 1rem;
+            border-radius: 10px;
+            font-size: 0.9rem;
+            font-weight: normal;
+            white-space: normal;
+            width: 280px;
+            text-align: center;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.15s;
+            z-index: 10;
+        }
+
+        .tooltip-word:hover::after {
+            opacity: 1;
+        }
+
         footer {
             text-align: center;
             padding: 2rem;
@@ -191,12 +229,26 @@
     
     <main>
         <div class="hero">
-            <h2>International Real Estate Ownership in France</h2>
-            <p>
-                Explore corporate real estate ownership in France interactively.
-                Discover how real estate investments are distributed geographically by nationality, 
-                the scale of foreign investment across regions, and underlying ownership structures.
-            </p>
+    <h2>International Real Estate Ownership in France</h2>
+        <p>
+        Explore corporate real estate ownership in France interactively.
+        Discover how real estate investments are distributed geographically by nationality, 
+        the scale of foreign investment across regions, and underlying ownership structures.
+        </p>
+        <p>
+        This website aims to increase transparency in French real estate ownership, 
+        particularly for properties held through legal entities. It cross-references 
+        the Fichiers Fonciers (France's comprehensive land registry) with the Registre 
+        des Bénéficiaires Effectifs (the beneficial ownership register), in which every 
+        shareholder or partner holding more than 25% of a French company is required to 
+        declare their stake. This makes it possible to allocate a company's real estate 
+        assets to its 
+        <span class="tooltip-word" data-tooltip="A beneficial owner is a shareholder or partner that hold at least 25% of the company">beneficial owners</span> 
+        in proportion to their ownership share. For example, 
+        if a beneficial owner holds 40% of a company with a real estate portfolio worth 
+        €700,000, they are attributed €700,000 × 40% = €280,000 in property assets.
+        </p>
+</div>
             
             <div class="cards">
                 <a href="map.html" class="card">
@@ -216,7 +268,6 @@
                     <h3>Methodology</h3>
                     <p>Learn about our data sources and analytical methods.</p>
                 </a>
-            </div>
         </div>
     </main>
     
