@@ -773,6 +773,21 @@
         document.getElementById('backButton').addEventListener('click', function() {
             showRegions();
         });
+        map.on('click', function(e) {
+    if (!e.originalEvent.target.closest('.leaflet-interactive')) {
+        if (state.currentLevel === 'region') {
+            showRegions();
+        }
+    }
+});
+map.on('zoomend', function() {
+    if (state.currentLevel === 'region') {
+        const zoom = map.getZoom();
+        if (zoom <= 6) {
+            showRegions();
+        }
+    }
+});
         
         async function init() {
             updateIndicatorButtons();
